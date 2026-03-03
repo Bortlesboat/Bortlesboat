@@ -1,29 +1,38 @@
 # Andrew Barnes
 
-**Senior Financial Analyst | Python for FP&A | Building Data-Driven Tools**
+**Senior Financial Analyst | Python Developer | Quantitative Systems Builder**
 
-I'm a finance professional learning to code. My focus is using Python to automate FP&A workflows, analyze trading data, and build tools that solve real problems.
+I build tools that solve real problems — quantitative trading analytics, real-time stock monitors, and data pipeline automation. 7+ years in finance, now writing production Python daily.
 
-## What I'm Working On
+## Featured Projects
 
-- **Trading Analytics** - Quantitative analysis of 1,200+ trades using Python (pandas, numpy, scipy). Discovered actionable patterns through statistical analysis.
-- **Habit & Trade Tracker** - Python + Excel integration for daily tracking and automated P&L calculation
-- **FP&A Automation** - Building proof-of-concept tools for month-end close workflows
+### [Trading Analytics System](https://github.com/Bortlesboat/trading-analytics)
+[![CI](https://github.com/Bortlesboat/trading-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/Bortlesboat/trading-analytics/actions/workflows/ci.yml)
 
-## Skills
+Quantitative analysis engine for 1,200+ trades. Calculates Sharpe, Sortino, Kelly Criterion, Monte Carlo simulations, and behavioral pattern detection (revenge trading, tilt, edge decay). Built with pandas, numpy, scipy.
 
-**Finance:** FP&A, financial modeling, variance analysis, forecasting, month-end close
+### [Target Stock Checker](https://github.com/Bortlesboat/stock-checker)
+[![CI](https://github.com/Bortlesboat/stock-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/Bortlesboat/stock-checker/actions/workflows/ci.yml)
 
-**Technical:** Python (pandas, numpy, scipy), SQL, Excel/VBA, Power BI, Tableau
+Real-time product availability monitor using Playwright headless browser. Defeats client-side React rendering, blocks 20+ tracking domains for speed, and delivers sub-4-second detection cycles with desktop alerts.
 
-**Learning:** Building full data pipelines, API integrations, automation at scale
+### [Receipt Parser](https://github.com/Bortlesboat/receipt-parser)
+Transforms unstructured receipt data into categorized spending analytics with automated Excel dashboards. Parses transactions, auto-categorizes items, and generates multi-dimensional spending breakdowns.
+
+## Tech Stack
+
+**Languages:** Python, SQL, VBA
+
+**Libraries:** pandas, numpy, scipy, Playwright, openpyxl
+
+**Tools:** Git, GitHub Actions, Claude Code
+
+**Domain:** FP&A, financial modeling, quantitative analysis, data pipelines
 
 ## Background
 
-- 7+ years in finance/accounting roles
-- Currently Senior Financial Analyst at a tech company
+- 7+ years in finance/accounting, currently Senior Financial Analyst
+- Building Python tooling for quantitative analysis and workflow automation
 - Spanish (professional working proficiency)
-
-## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrew-barnes-705a08195/)
