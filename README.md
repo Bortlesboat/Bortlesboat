@@ -1,38 +1,47 @@
 # Andrew Barnes
 
-**Senior Financial Analyst | Python Developer | Quantitative Systems Builder**
+**FP&A Analyst | Python & Rust Developer | Open Source Contributor**
 
-I build tools that solve real problems — quantitative trading analytics, real-time stock monitors, and data pipeline automation. 7+ years in finance, now writing production Python daily.
+I build financial analysis tools and contribute to core infrastructure projects. Background in FP&A and quantitative analysis, now shipping code to projects used by millions of developers.
+
+## Open Source Contributions
+
+**40+ PRs** across 15+ repositories. Contributions accepted to:
+
+| Project | What I Contributed | Language |
+|---------|-------------------|----------|
+| [**python/cpython**](https://github.com/python/cpython/pull/145538) | argparse documentation | Python |
+| [**pytorch/pytorch**](https://github.com/pytorch/pytorch/pull/176595) | RMSNorm documentation fix | Python |
+| [**bitcoin/bitcoin**](https://github.com/bitcoin/bitcoin/pull/34738) | Test assertion improvements | Python |
+| [**astral-sh/ruff**](https://github.com/astral-sh/ruff/pull/23737) | B043 lint rule implementation | Rust |
+| [**numpy/numpy**](https://github.com/numpy/numpy/pull/30939) | Error message improvement | Python |
+| [**matplotlib/matplotlib**](https://github.com/matplotlib/matplotlib/pull/31241) | `__repr__` for 21 classes | Python |
+| [**rust-bitcoin/rust-bitcoin**](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | `From<Infallible>` for 31 error types | Rust |
+| [**googleworkspace/cli**](https://github.com/googleworkspace/cli/pull/108) | OAuth scope filtering, error handling, tests | Rust |
+| [**goldmansachs/gs-quant**](https://github.com/goldmansachs/gs-quant/pull/340) | pandas 2.x compatibility | Python |
+| [**microsoft/qlib**](https://github.com/microsoft/qlib/pull/2144) | Lint fixes, LightGBM deprecation | Python |
+| [**plotly/plotly.py**](https://github.com/plotly/plotly.py/pull/5533) | Documentation examples | Python |
 
 ## Featured Projects
 
-### [Trading Analytics System](https://github.com/Bortlesboat/trading-analytics)
-[![CI](https://github.com/Bortlesboat/trading-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/Bortlesboat/trading-analytics/actions/workflows/ci.yml)
+### [Bitcoin Fee Observatory](https://github.com/Bortlesboat/bitcoin-fee-observatory)
+FP&A-grade analytics dashboard for on-chain fee markets. Streamlit + SQLite + Plotly, connected to a local Bitcoin node. Fee market analysis, block explorer, adoption curves, mining economics.
 
-Quantitative analysis engine for 1,200+ trades. Calculates Sharpe, Sortino, Kelly Criterion, Monte Carlo simulations, and behavioral pattern detection (revenge trading, tilt, edge decay). Built with pandas, numpy, scipy.
+### [Bitcoin Protocol Guide](https://github.com/Bortlesboat/bitcoin-protocol-guide)
+Deep dive into Bitcoin internals — UTXOs, Script, SegWit, Taproot, Ordinals. Real transaction examples with CLI verification commands.
 
-### [Target Stock Checker](https://github.com/Bortlesboat/stock-checker)
-[![CI](https://github.com/Bortlesboat/stock-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/Bortlesboat/stock-checker/actions/workflows/ci.yml)
+### [Trading Analytics](https://github.com/Bortlesboat/trading-analytics)
+Quantitative analysis engine for 1,200+ trades. Sharpe, Sortino, Kelly Criterion, Monte Carlo simulations, behavioral pattern detection. Built with pandas, numpy, scipy.
 
-Real-time product availability monitor using Playwright headless browser. Defeats client-side React rendering, blocks 20+ tracking domains for speed, and delivers sub-4-second detection cycles with desktop alerts.
+### [Stock Checker](https://github.com/Bortlesboat/stock-checker)
+Real-time product availability monitor using Playwright. Sub-4-second detection cycles with desktop alerts.
 
-### [Receipt Parser](https://github.com/Bortlesboat/receipt-parser)
-Transforms unstructured receipt data into categorized spending analytics with automated Excel dashboards. Parses transactions, auto-categorizes items, and generates multi-dimensional spending breakdowns.
+## Tech
 
-## Tech Stack
+**Languages:** Python, Rust, SQL
 
-**Languages:** Python, SQL, VBA
-
-**Libraries:** pandas, numpy, scipy, Playwright, openpyxl
-
-**Tools:** Git, GitHub Actions, Claude Code
+**Open source focus:** Developer tooling, scientific computing, Bitcoin protocol, financial libraries
 
 **Domain:** FP&A, financial modeling, quantitative analysis, data pipelines
-
-## Background
-
-- 7+ years in finance/accounting, currently Senior Financial Analyst
-- Building Python tooling for quantitative analysis and workflow automation
-- Spanish (professional working proficiency)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrew-barnes-705a08195/)
