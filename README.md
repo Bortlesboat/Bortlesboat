@@ -54,17 +54,17 @@ I contribute to projects I use and care about:
 
 ## 📊 GitHub Stats
 
-[![Profile Details](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/master/profile-summary-card-output/github_dark/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Profile Details](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
 <details>
 <summary>📈 More Stats</summary>
 <br>
 
-[![Repos Per Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/master/profile-summary-card-output/github_dark/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![Most Commit Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/master/profile-summary-card-output/github_dark/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Repos Per Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Most Commit Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
-[![Stats](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/master/profile-summary-card-output/github_dark/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![Productive Time](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/master/profile-summary-card-output/github_dark/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Stats](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Productive Time](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
 </details>
 
