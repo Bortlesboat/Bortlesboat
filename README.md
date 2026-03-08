@@ -1,98 +1,72 @@
-# Hey, I'm Andrew 👋
+# Andrew Barnes
 
-**FP&A Analyst** · Python & Rust Developer · Open Source Contributor
+**FP&A Analyst** · Python & Rust · Open Source Contributor
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat&logo=rust&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![Bitcoin](https://img.shields.io/badge/-Bitcoin-F7931A?style=flat&logo=bitcoin&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
 
-I work in FP&A by day and build developer tools, financial systems, and Bitcoin infrastructure by night. **40+ PRs** across 15+ repositories including CPython, PyTorch, Bitcoin Core, and Ruff.
+FP&A by day, building developer tools and Bitcoin infrastructure by night. I contribute upstream to the tools I use — **8 PRs merged** across CPython, nushell, Rust-Clippy, and more, with **40+ open** across Bitcoin Core, PyTorch, Ruff, and other major projects.
 
 ---
 
-## 🔧 What I Work On
+## Open Source Contributions
 
-- **📈 Financial Engineering** — FP&A automation, quantitative analysis, portfolio modeling
-- **₿ Bitcoin Protocol** — Core contributions, protocol research, on-chain analytics
-- **🛠️ Developer Tooling** — Linters, CLI tools, scientific computing libraries
-- **🤖 Automation** — Web scraping, monitoring systems, data pipelines
+**Merged into:**
 
----
+| Project | PR | What |
+|---------|-----|------|
+| **python/cpython** | [#145538](https://github.com/python/cpython/pull/145538) | Document argparse `add_argument()` return value |
+| **nushell/nushell** | [#17746](https://github.com/nushell/nushell/pull/17746) | Fix type mismatch error in `bytes collect` |
+| **googleworkspace/cli** | [#108](https://github.com/googleworkspace/cli/pull/108), [#112](https://github.com/googleworkspace/cli/pull/112), [#192](https://github.com/googleworkspace/cli/pull/192), [#193](https://github.com/googleworkspace/cli/pull/193) | OAuth scope filtering, Linux musl target, error handling |
+| **pmorissette/ffn** | [#285](https://github.com/pmorissette/ffn/pull/285) | Fix Sortino ratio calculation |
+| **pmorissette/bt** | [#503](https://github.com/pmorissette/bt/pull/503) | Fix pandas deprecation in WeighInvVol |
 
-## 🛠️ Projects
+**Under review at:**
 
-- **[Bitcoin Fee Observatory](https://github.com/Bortlesboat/bitcoin-fee-observatory)** — FP&A-grade analytics dashboard for on-chain fee markets. Streamlit + SQLite + Plotly
-- **[Bitcoin Protocol Guide](https://github.com/Bortlesboat/bitcoin-protocol-guide)** — Deep dive into Bitcoin internals — UTXOs, Script, SegWit, Taproot, Ordinals
-- **[Trading Analytics](https://github.com/Bortlesboat/trading-analytics)** — Quantitative analysis engine for 1,200+ trades. Sharpe, Sortino, Kelly Criterion, Monte Carlo
-- **[Stock Checker](https://github.com/Bortlesboat/stock-checker)** — Real-time product availability monitor using Playwright with sub-4-second detection cycles
+| Project | PR | What |
+|---------|-----|------|
+| **bitcoin/bitcoin** | [#34761](https://github.com/bitcoin/bitcoin/pull/34761) | Scripted-diff: replace bare assert with assert_equal across 30 files |
+| **astral-sh/ruff** | [#23737](https://github.com/astral-sh/ruff/pull/23737) | Implement B043 `delattr-with-constant` lint rule (approved) |
+| **rust-lang/rust-clippy** | [#16684](https://github.com/rust-lang/rust-clippy/pull/16684) | Fix `is_cfg_test` false positives on compound cfg attributes |
+| **rust-bitcoin/rust-bitcoin** | [#5781](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | Implement `From<Infallible>` for 31 error types |
+| **DioxusLabs/dioxus** | [#5352](https://github.com/DioxusLabs/dioxus/pull/5352) | Fix calculator example panic |
+| **anthropics/claude-agent-sdk** | [#642](https://github.com/anthropics/claude-agent-sdk-python/pull/642), [#650](https://github.com/anthropics/claude-agent-sdk-python/pull/650), [#651](https://github.com/anthropics/claude-agent-sdk-python/pull/651) | Graceful shutdown race fix, MCP content block handling |
+| **coinbase/coinbase-advanced-py** | [#124](https://github.com/coinbase/coinbase-advanced-py/pull/124) | PEM key caching (approved) |
+| **casey/just** | [#3106](https://github.com/casey/just/pull/3106) | `--cheatsheet` subcommand |
 
----
-
-## 🌍 Open Source
-
-I contribute to projects I use and care about:
-
-| Project | What I Contributed | Language |
-|---------|-------------------|----------|
-| [**python/cpython**](https://github.com/python/cpython/pull/145538) | argparse documentation | Python |
-| [**pytorch/pytorch**](https://github.com/pytorch/pytorch/pull/176595) | RMSNorm documentation fix | Python |
-| [**bitcoin/bitcoin**](https://github.com/bitcoin/bitcoin/pull/34738) | Test assertion improvements | Python |
-| [**astral-sh/ruff**](https://github.com/astral-sh/ruff/pull/23737) | B043 lint rule implementation | Rust |
-| [**numpy/numpy**](https://github.com/numpy/numpy/pull/30939) | Error message improvement | Python |
-| [**matplotlib/matplotlib**](https://github.com/matplotlib/matplotlib/pull/31241) | `__repr__` for 21 classes | Python |
-| [**rust-bitcoin/rust-bitcoin**](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | `From<Infallible>` for 31 error types | Rust |
-| [**googleworkspace/cli**](https://github.com/googleworkspace/cli/pull/108) | OAuth scope filtering + tests | Rust |
-| [**goldmansachs/gs-quant**](https://github.com/goldmansachs/gs-quant/pull/340) | pandas 2.x compatibility | Python |
-| [**microsoft/qlib**](https://github.com/microsoft/qlib/pull/2144) | Lint fixes, LightGBM deprecation | Python |
+Also contributed to: PyTorch, NumPy, Matplotlib, SciPy, astral-sh/uv, Alpaca, OpenAI, Bitcoin Knots, plotly.py, Microsoft qlib, Goldman Sachs gs-quant
 
 ---
 
-## 📊 GitHub Stats
+## Projects
 
-[![Profile Details](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+### Bitcoin Infrastructure
+- **[Satoshi API](https://github.com/Bortlesboat/bitcoin-api)** — Self-hosted Bitcoin REST API. 50+ endpoints, FastAPI, MCP support. Live at [bitcoinsapi.com](https://bitcoinsapi.com)
+- **[Bitcoin MCP](https://github.com/Bortlesboat/bitcoin-mcp)** — MCP server for Bitcoin Core. 35 tools for AI agents to query blockchain data
+- **[BAIP](https://github.com/Bortlesboat/baip-python)** — Bitcoin Agent Identity Protocol. Verifiable AI agent identities via ordinal inscriptions
+- **[Fee Observatory](https://github.com/Bortlesboat/bitcoin-fee-observatory)** — Fee market analytics dashboard with block economics and mining revenue analysis
+- **[Protocol Guide](https://github.com/Bortlesboat/bitcoin-protocol-guide)** — Bitcoin internals reference — UTXOs, Script, SegWit, Taproot, Ordinals
 
-<details>
-<summary>📈 More Stats</summary>
-<br>
+### Financial & Quantitative
+- **[Trading Analytics](https://github.com/Bortlesboat/trading-analytics)** — Quantitative analysis for 1,200+ trades. Sharpe, Sortino, Kelly, Monte Carlo
+- **[Receipt Parser](https://github.com/Bortlesboat/receipt-parser)** — Transaction extraction, auto-categorization, spending analytics
 
-[![Repos Per Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![Most Commit Language](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-
-[![Stats](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![Productive Time](https://raw.githubusercontent.com/Bortlesboat/Bortlesboat/main/profile-summary-card-output/github_dark/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-
-</details>
-
----
-
-## 🚀 Background
-
-Started in financial planning & analysis, then discovered that the most impactful FP&A work is the stuff you automate. Now I ship code to projects used by millions of developers while building financial tools that bridge the gap between Wall Street rigor and open source.
+### Developer Tools
+- **[Stock Checker](https://github.com/Bortlesboat/stock-checker)** — Real-time product monitor. Playwright, sub-4s detection, desktop alerts
+- **[Claude Usage Monitor](https://github.com/Bortlesboat/claude-usage-monitor)** — System tray app for Claude Code usage stats
 
 ---
 
-## 🤝 Let's Connect
+## Background
+
+I work in FP&A (Financial Planning & Analysis) and build software that automates financial workflows. The overlap between finance and engineering is where I do my best work — quantitative analysis, protocol economics, and infrastructure that bridges the gap between Wall Street rigor and open source.
+
+**Focus areas:** Bitcoin protocol internals, quantitative finance, Rust systems programming, Python tooling
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrew-barnes-705a08195/)
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:bortstheboat@gmail.com)
-
----
-
-<details>
-<summary>🎲 Random Facts</summary>
-<br>
-
-- Options trading is a hobby — concentrated positions are intentional, not reckless
-- I think Bitcoin protocol knowledge should be accessible to everyone
-- FP&A + Python is a rare combo that solves real problems
-
-</details>
-
----
-
-> *"Ship code to projects you use. The best portfolio is merged pull requests."*
+[![Website](https://img.shields.io/badge/-bitcoinsapi.com-F7931A?style=flat&logo=bitcoin&logoColor=white)](https://bitcoinsapi.com)
