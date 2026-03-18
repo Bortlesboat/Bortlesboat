@@ -1,20 +1,21 @@
 # Hey, I'm Andy 👋
 
-FP&A analyst by day. I build open-source Bitcoin and AI agent tooling in Python and Rust.
-
-I contribute to things I use: [cpython](https://github.com/python/cpython/pull/145538), [nushell](https://github.com/nushell/nushell/pull/17746), [ruff](https://github.com/astral-sh/ruff/pull/23737), [rust-clippy](https://github.com/rust-lang/rust-clippy/pull/16684), [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781), [bitcoin core](https://github.com/bitcoin/bitcoin/pull/34761), and others.
+I build open-source Bitcoin infrastructure and AI agent tooling. Bitcoin Core reviewer (19+ reviews). ~165 PRs across 30 repos, 33 merged.
 
 ---
 
 ### Main Projects
 
-| Project | What it does | Install |
-|---------|-------------|---------|
-| **[bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp)** | Most comprehensive Bitcoin MCP server — 43 tools for AI agents. Zero config. First Bitcoin MCP on the [official Anthropic registry](https://github.com/modelcontextprotocol/servers). | `pip install bitcoin-mcp` |
-| **[Satoshi API](https://github.com/Bortlesboat/bitcoin-api)** | Bitcoin fee intelligence API — 87 endpoints, self-hostable. Live at [bitcoinsapi.com](https://bitcoinsapi.com). | `pip install satoshi-api` |
-| **[Claude Usage Monitor](https://github.com/Bortlesboat/claude-usage-monitor)** | System tray app showing real-time Claude Code rate limits, reset timers, token stats. | `pip install claude-usage-tray` |
-| **[BAIP](https://github.com/Bortlesboat/baip-python)** | Bitcoin Agent Identity Protocol — verifiable AI agent identities via ordinal inscriptions. | `pip install baip` |
-| **[trading-analytics](https://github.com/Bortlesboat/trading-analytics)** | Sharpe, Sortino, Kelly, Monte Carlo, behavioral pattern detection. | Clone |
+| Project | What it does | Stats |
+|---------|-------------|-------|
+| **[Satoshi API](https://github.com/Bortlesboat/bitcoin-api)** | Bitcoin fee intelligence API — know when to send, save money on every transaction. Live at [bitcoinsapi.com](https://bitcoinsapi.com). | 108 endpoints, 725 tests, Apache 2.0 |
+| **[bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp)** | First Bitcoin MCP server on the [Anthropic Registry](https://registry.modelcontextprotocol.io). Fee intelligence, mempool analysis, block/tx inspection for AI agents. | 49 tools, 116 tests, MIT |
+| **[BAIP-1](https://github.com/Bortlesboat/baip-python)** | Bitcoin Agent Identity Protocol — verifiable AI agent identities anchored to Bitcoin via ordinal inscriptions. BIP-340 Schnorr signatures. | 55 tests, MIT |
+| **[Fee Observatory](https://github.com/Bortlesboat/bitcoin-fee-observatory)** | Bitcoin fee market analytics dashboard — block economics, mining revenue, adoption curves. | Streamlit + SQLite |
+
+### Open Source Contributions
+
+I contribute to things I use: [bitcoin/bitcoin](https://github.com/bitcoin/bitcoin) (19+ reviews), [cpython](https://github.com/python/cpython), [rust-lightning](https://github.com/lightningdevkit/rust-lightning), [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin), [bitcoinbook](https://github.com/bitcoinbook/bitcoinbook), [lnbook](https://github.com/lnbook/lnbook), [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp), and [many more](https://github.com/Bortlesboat?tab=repositories&type=fork).
 
 ### Stats
 
@@ -22,4 +23,4 @@ I contribute to things I use: [cpython](https://github.com/python/cpython/pull/1
 
 ---
 
-📫 bortstheboat@gmail.com · [LinkedIn](https://www.linkedin.com/in/andrew-barnes-705a08195/) · [𝕏 @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
+**[bitcoinsapi.com](https://bitcoinsapi.com)** · [𝕏 @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
