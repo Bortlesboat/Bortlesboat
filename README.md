@@ -1,6 +1,8 @@
 # Hey, I'm Andy 👋
 
-I build open-source Bitcoin infrastructure and AI agent tooling. 200+ PRs across 35+ repos, 40 merged. Bitcoin Core reviewer.
+Python engineer and FP&A analyst building open-source infrastructure. 200+ PRs across 35+ repos, 40+ merged.
+
+Contributor to **CPython**, **Bitcoin Core**, **NVIDIA NemoClaw**, **OpenBB**, **Streamlit**, **MLflow**, and more.
 
 ---
 
@@ -8,17 +10,28 @@ I build open-source Bitcoin infrastructure and AI agent tooling. 200+ PRs across
 
 | Project | What it does | |
 |---------|-------------|-|
-| **[Satoshi API](https://github.com/Bortlesboat/bitcoin-api)** | Bitcoin fee intelligence API — stop overpaying fees. 108 endpoints, 725 tests. Live at [bitcoinsapi.com](https://bitcoinsapi.com). | [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/Bortlesboat/bitcoin-api) |
-| **[bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp)** | The most comprehensive Bitcoin MCP server. 49 tools for AI agents — fees, mempool, blocks, transactions, mining. On the [Anthropic Registry](https://registry.modelcontextprotocol.io). | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/bitcoin-mcp) |
-| **[BAIP-1](https://github.com/Bortlesboat/baip-python)** | Bitcoin Agent Identity Protocol — verifiable AI agent identities anchored to Bitcoin via ordinal inscriptions. BIP-340 Schnorr signatures. | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/baip-python) |
+| **[Satoshi API](https://github.com/Bortlesboat/bitcoin-api)** | Bitcoin fee intelligence API — 108 endpoints, 725 tests. Live at [bitcoinsapi.com](https://bitcoinsapi.com). | [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/Bortlesboat/bitcoin-api) |
+| **[bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp)** | Bitcoin MCP server — 49 tools for AI agents. On the [Anthropic Registry](https://registry.modelcontextprotocol.io). | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/bitcoin-mcp) |
+| **[BAIP-1](https://github.com/Bortlesboat/baip-python)** | Bitcoin Agent Identity Protocol — verifiable AI agent identities anchored to Bitcoin. BIP-340 Schnorr signatures. | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/baip-python) |
 | **[ComfyUI Bridge](https://github.com/Bortlesboat/comfyui-bridge)** | ComfyUI bridge server + OpenClaw skill. Local image generation, faceswap, style transfer via chat. | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/comfyui-bridge) |
-| **[ChainPulse](https://github.com/Bortlesboat/chainpulse)** | AI-powered Bitcoin network intelligence in your terminal. Ask questions, get structured analysis. | [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Bortlesboat/chainpulse) |
-| **[Bitcoin Protocol Guide](https://github.com/Bortlesboat/bitcoin-protocol-guide)** | Bitcoin protocol internals — UTXOs, Script, SegWit, Taproot, Ordinals. Real transaction examples with CLI verification. | |
-| **[Fee Observatory](https://github.com/Bortlesboat/bitcoin-fee-observatory)** | Bitcoin fee market analytics dashboard — block economics, mining revenue, adoption curves. | |
 
 ### Open Source Contributions
 
-I contribute upstream to things I use: [bitcoin/bitcoin](https://github.com/bitcoin/bitcoin), [cpython](https://github.com/python/cpython), [rust-lightning](https://github.com/lightningdevkit/rust-lightning), [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin), [bitcoinbook](https://github.com/bitcoinbook/bitcoinbook), [lnbook](https://github.com/lnbook/lnbook), [OpenBB](https://github.com/OpenBB-finance/OpenBB), [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp), [NVIDIA NemoClaw](https://github.com/NVIDIA/NemoClaw), and [many more](https://github.com/Bortlesboat?tab=repositories&type=fork).
+Highlights from upstream work:
+
+| Project | Contribution |
+|---------|-------------|
+| [python/cpython](https://github.com/python/cpython) | Core Python runtime |
+| [bitcoin/bitcoin](https://github.com/bitcoin/bitcoin) | Bitcoin Core — code review and test coverage |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | CI pipeline, unit tests |
+| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | CLI test coverage |
+| [streamlit/streamlit](https://github.com/streamlit/streamlit) | UI fixes, config features |
+| [mlflow/mlflow](https://github.com/mlflow/mlflow) | ONNX provider fix |
+| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | SHA-512 SBOM hash support |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Cost calculation across 7 providers |
+| [alibaba/page-agent](https://github.com/alibaba/page-agent) | Response validation |
+| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Path normalization fix |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Windows/macOS multiprocessing fix |
 
 ### Stats
 
@@ -26,4 +39,4 @@ I contribute upstream to things I use: [bitcoin/bitcoin](https://github.com/bitc
 
 ---
 
-**[bitcoinsapi.com](https://bitcoinsapi.com)** · [𝕏 @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
+**[bitcoinsapi.com](https://bitcoinsapi.com)** · [LinkedIn](https://linkedin.com/in/andrew-barnes-705a08195)
