@@ -10,6 +10,7 @@ Current public proof: 500+ pull requests, 125+ merged PRs, and merged work acros
 | --- | --- | --- |
 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Bitcoin fee intelligence API, live at [bitcoinsapi.com](https://bitcoinsapi.com), with x402 pay-per-call support. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49-tool Bitcoin MCP server, 126 tests, PyPI install, zero-config agent setup. | Gives Claude, Cursor, VS Code, and other MCP clients direct Bitcoin network context. |
+| [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Public 2026 enterprise-agent hackathon build with hosted demo, release, architecture diagram, Splunk HEC proof, and case study. | Makes agent tool calls, approvals, retries, errors, x402 payments, and final outcomes inspectable as run evidence. |
 | [x402 operator work](https://github.com/x402-foundation/x402/pull/1733) | Merged x402 Foundation test coverage plus local self-hosted facilitator, SIWX, and payable MCP proofs. | Shows protocol work from both sides: upstream maintainability and operator-grade payment flows. |
 | [mesh-llm contributions](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Merged security primitives, model-size health timeout, and capacity-label fixes. | Practical distributed inference fixes in a fast-moving Rust AI infrastructure project. |
 | [OpenViking contributions](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Merged Windows PID-lock and console-input reliability fixes. | Cross-platform agent context infrastructure work with small, testable patches. |
@@ -19,6 +20,7 @@ Current public proof: 500+ pull requests, 125+ merged PRs, and merged work acros
 
 - [Public proof portfolio](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-portfolio.md)
 - [Case studies](https://github.com/Bortlesboat/Bortlesboat/blob/main/case-studies.md)
+- [AgentOps Ledger case study](https://bortlesboat.github.io/x402-insights/case-study.html)
 - [Selected merged contributions](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md)
 
 ## Contribution Pattern
