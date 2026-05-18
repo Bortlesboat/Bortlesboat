@@ -1,27 +1,32 @@
-# Andrew Barnes
+# Andy Barnes
 
-I build Bitcoin fee intelligence, Lightning/x402 tooling, and developer infrastructure in Python.
+Finance-native Python engineer building Bitcoin fee intelligence, x402 payment tooling, and agent-ready developer infrastructure.
 
-Current focus:
+Current public proof: 500+ pull requests, 125+ merged PRs, and merged work across 90+ repositories. The strongest through-line is practical infrastructure: make hard financial or protocol data easier for humans and AI agents to use, test it, and ship the smallest credible public artifact.
 
-- fee-aware Bitcoin tools for apps and agents
-- Lightning and x402 payment flows
-- protocol education and small, tested upstream contributions
+## Flagship Work
 
-### Selected projects
+| Artifact | Proof | Why it matters |
+| --- | --- | --- |
+| [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Bitcoin fee intelligence API, live at [bitcoinsapi.com](https://bitcoinsapi.com), with x402 pay-per-call support. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49-tool Bitcoin MCP server, 126 tests, PyPI install, zero-config agent setup. | Gives Claude, Cursor, VS Code, and other MCP clients direct Bitcoin network context. |
+| [x402 operator work](https://github.com/x402-foundation/x402/pull/1733) | Merged x402 Foundation test coverage plus local self-hosted facilitator, SIWX, and payable MCP proofs. | Shows protocol work from both sides: upstream maintainability and operator-grade payment flows. |
+| [mesh-llm contributions](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Merged security primitives, model-size health timeout, and capacity-label fixes. | Practical distributed inference fixes in a fast-moving Rust AI infrastructure project. |
+| [OpenViking contributions](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Merged Windows PID-lock and console-input reliability fixes. | Cross-platform agent context infrastructure work with small, testable patches. |
+| [qlib-options](https://github.com/Bortlesboat/qlib-options) | qlib-compatible options snapshot and factor pipeline with 25 focused tests. | Bridges finance workflow needs with reusable quant research tooling. |
 
-- [**bitcoin-api**](https://github.com/Bortlesboat/bitcoin-api) - self-hostable Bitcoin fee intelligence API. Live at [bitcoinsapi.com](https://bitcoinsapi.com)
-- [**bitcoin-mcp**](https://github.com/Bortlesboat/bitcoin-mcp) - Bitcoin MCP server for AI agents and developer tools
-- [**bitcoin-protocol-guide**](https://github.com/Bortlesboat/bitcoin-protocol-guide) - Bitcoin protocol internals with CLI-verifiable examples
-- [**baip-python**](https://github.com/Bortlesboat/baip-python) - BIP-340-based agent identities anchored to Bitcoin
+## Case Studies
 
-### Recent upstream work
+- [Public proof portfolio](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-portfolio.md)
+- [Case studies](https://github.com/Bortlesboat/Bortlesboat/blob/main/case-studies.md)
+- [Selected merged contributions](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md)
 
-- [**bitcoin/bitcoin**](https://github.com/bitcoin/bitcoin) - review and test coverage
-- [**coinbase/x402#1873**](https://github.com/coinbase/x402/pull/1873) - Python Lightning reference implementation under `bip122/exact`
-- [**coinbase/coinbase-advanced-py#128**](https://github.com/coinbase/coinbase-advanced-py/pull/128) - cache parsed PEM private keys to avoid repeated parsing
-- [**duckdb/duckdb#21699**](https://github.com/duckdb/duckdb/pull/21699) - improve guidance for `DROP` type mismatches
+## Contribution Pattern
 
-I prefer narrow, well-tested changes that solve real developer problems.
+I usually contribute where I can reproduce the problem locally and leave behind a cleaner test boundary: Bitcoin and Lightning libraries, x402, MCP servers, AI infrastructure, finance tooling, and Python ecosystem projects.
 
-[bitcoinsapi.com](https://bitcoinsapi.com) · [LinkedIn](https://www.linkedin.com/in/andrew-barnes-705a08195/)
+Recent merged examples include [rust-lightning](https://github.com/lightningdevkit/rust-lightning/pull/4470), [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781), [CPython](https://github.com/python/cpython/pull/145538), [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr), [statsmodels](https://github.com/statsmodels/statsmodels/pull/9773), [x402 Foundation](https://github.com/x402-foundation/x402/pulls?q=author%3ABortlesboat+is%3Apr), [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat), and [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat).
+
+## Links
+
+[Portfolio site](https://bortlesboat.github.io) | [Satoshi API](https://bitcoinsapi.com) | [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
