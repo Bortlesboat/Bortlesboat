@@ -2,7 +2,17 @@
 
 Updated: 2026-05-18
 
-This is a curated contribution record, not a full activity dump. Live GitHub search currently reports 500+ authored PRs and 125+ merged PRs, with merged work across 90+ repositories.
+This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
+
+## OpenAI, Microsoft, And Google Workspace
+
+| Repo | PR | Status | Why it matters |
+| --- | --- | --- | --- |
+| `openai/privacy-filter` | [#1 fix train runner syntax error](https://github.com/openai/privacy-filter/pull/1) | Merged | Small correctness fix in OpenAI research tooling. |
+| `microsoft/VibeVoice` | [#280 fix realtime demo NameError](https://github.com/microsoft/VibeVoice/pull/280) | Merged | AI audio demo reliability fix in a Microsoft repository. |
+| `googleworkspace/cli` | [#108 filter Alert Center scopes from user OAuth login](https://github.com/googleworkspace/cli/pull/108) | Merged | OAuth/setup polish in the Google Workspace CLI. |
+| `googleworkspace/cli` | [#112 add Linux musl build target](https://github.com/googleworkspace/cli/pull/112) | Merged | Packaging/install coverage for the Google Workspace CLI. |
+| `googleworkspace/cli` | [#193 log token cache errors](https://github.com/googleworkspace/cli/pull/193) | Merged | Developer/operator diagnostics for Google Workspace auth, useful in automated workflow setup. |
 
 ## Bitcoin, Lightning, And Payments
 
@@ -47,7 +57,7 @@ This is a curated contribution record, not a full activity dump. Live GitHub sea
 | [Bortlesboat/bitcoin-api](https://github.com/Bortlesboat/bitcoin-api) | Live Bitcoin API with x402 support | Main flagship artifact. |
 | [Bortlesboat/bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49 tools and 126 tests | Main MCP artifact. |
 | [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current enterprise-agent hackathon artifact. |
-| [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact. |
+| [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact for the FP&A-to-automation bridge. |
 | [Bortlesboat/KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Go/SQLite markdown social app | Agent-readable app artifact. |
 | [Bortlesboat/Bortlesboat.github.io](https://github.com/Bortlesboat/Bortlesboat.github.io) | Portfolio front door | Public narrative wrapper. |
 

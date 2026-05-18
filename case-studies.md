@@ -1,6 +1,6 @@
 # Bortlesboat Case Studies
 
-These are public-safe proof summaries for roles or grants that value Bitcoin infrastructure, agent tooling, financial automation, and practical open-source execution.
+These are public-safe summaries for finance, AI, protocol, and open-source audiences. The career throughline is senior finance analyst judgment applied to tech FP&A systems and AI workflow automation. Each note shows who the work helped, what changed, how it was tested, and where the public evidence lives.
 
 ## Current Hackathon Build: AgentOps Ledger
 
@@ -32,7 +32,7 @@ These are public-safe proof summaries for roles or grants that value Bitcoin inf
 
 ## 2. bitcoin-mcp: Bitcoin Context For AI Agents
 
-**Problem:** AI agents need reliable Bitcoin context without scraping block explorers or hand-wiring RPC calls.
+**Problem:** AI workflow automators need reliable Bitcoin context without scraping block explorers or hand-wiring RPC calls.
 
 **Implementation:** Built a Python MCP server with fee, mempool, block, transaction, mining, price, and supply tools; packaged it for one-command setup.
 
@@ -42,7 +42,7 @@ These are public-safe proof summaries for roles or grants that value Bitcoin inf
 
 **Result:** 49 MCP tools, 6 prompts, 8 resources, PyPI distribution, and zero-config setup for common agent clients.
 
-**Relevance:** Clear proof for agent infrastructure, MCP, Bitcoin developer tooling, and grant proposals around open agent access to financial data.
+**Relevance:** Clear proof for AI workflow automation, MCP, Bitcoin developer tooling, and grant proposals around open agent access to financial data.
 
 ## 3. x402 Operator Lab And Payable MCP
 
@@ -116,7 +116,7 @@ These are public-safe proof summaries for roles or grants that value Bitcoin inf
 
 ## 8. Finance Dashboard: Private FP&A Automation
 
-**Problem:** Personal finance, custody, statements, receipts, and investment records can sprawl across portals, emails, PDFs, and CSV exports.
+**Problem:** FP&A managers and senior analysts often work across portals, emails, PDFs, CSV exports, statements, and manual review.
 
 **Implementation:** Built a Streamlit and SQLite dashboard with spending, cash flow, budget, net worth, statement, import, categorization, custody, and finance-intake surfaces.
 
@@ -124,9 +124,9 @@ These are public-safe proof summaries for roles or grants that value Bitcoin inf
 
 **Evidence:** Sanitized case study only. The repo and data include private financial records and are intentionally not linked publicly.
 
-**Result:** A working local finance control plane that demonstrates applied FP&A automation without exposing private data.
+**Result:** A working local finance control plane that demonstrates manager-track FP&A automation without exposing private data.
 
-**Relevance:** Useful for $150K+ finance automation, analytics engineering, and FP&A systems roles.
+**Relevance:** Useful for tech FP&A manager-track roles, finance automation roles, analytics engineering, and AI workflow automation work.
 
 ## 9. KarpathyTalk: Agent-Readable Markdown Social App
 
@@ -142,16 +142,16 @@ These are public-safe proof summaries for roles or grants that value Bitcoin inf
 
 **Relevance:** Supports agent-native product engineering and low-complexity web systems credibility.
 
-## 10. Selected Upstream PRs: Small Patches In Serious Repos
+## 10. Selected Upstream PRs: AI, Finance, And Developer Tools
 
 **Problem:** High-quality open source depends on focused fixes that respect project style and reduce future maintenance cost.
 
-**Implementation:** Contributed small, reviewable patches across Bitcoin/Lightning, Python, finance, and AI infrastructure projects.
+**Implementation:** Contributed small, reviewable patches across AI infrastructure, developer tooling, finance, Bitcoin/Lightning, Python, and protocol projects.
 
 **Tests:** Most merged PRs are test, docs, or reliability patches with narrow validation surfaces.
 
-**Evidence:** [rust-lightning #4470](https://github.com/lightningdevkit/rust-lightning/pull/4470), [rust-bitcoin #5781](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781), [CPython #145538](https://github.com/python/cpython/pull/145538), [OpenBB PRs](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr), [statsmodels #9773](https://github.com/statsmodels/statsmodels/pull/9773).
+**Evidence:** [OpenAI privacy-filter #1](https://github.com/openai/privacy-filter/pull/1), [Microsoft VibeVoice #280](https://github.com/microsoft/VibeVoice/pull/280), [Google Workspace CLI PRs](https://github.com/googleworkspace/cli/pulls?q=author%3ABortlesboat+is%3Apr+is%3Amerged), [OpenBB PRs](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr), [rust-lightning #4470](https://github.com/lightningdevkit/rust-lightning/pull/4470), [CPython #145538](https://github.com/python/cpython/pull/145538), [statsmodels #9773](https://github.com/statsmodels/statsmodels/pull/9773).
 
-**Result:** Merged work in respected ecosystems, showing the ability to enter unfamiliar codebases and leave a useful patch behind.
+**Result:** Merged work in respected AI, developer-tool, finance, Python, and Bitcoin/Lightning ecosystems, showing the ability to enter unfamiliar codebases and leave a useful patch behind.
 
-**Relevance:** Reinforces senior-role credibility: debugging, tests, docs, and maintainability across domains.
+**Relevance:** Reinforces senior-role credibility: debugging, tests, docs, finance systems, AI workflow tooling, and maintainability across domains.
