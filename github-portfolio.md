@@ -16,16 +16,17 @@ This is stronger than a broad "I contribute everywhere" profile. The proof shoul
 | --- | --- | --- | --- |
 | 1 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, docs, tests, and real API surface. |
 | 2 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 49 Bitcoin MCP tools, 126 tests, PyPI install, and clear agent-tooling relevance. |
-| 3 | x402 operator lab and payable MCP | Yes | Shows facilitator, SIWX, discovery, wallet-role, and MCP payment understanding beyond a toy route. |
-| 4 | [x402 Foundation contributions](https://github.com/x402-foundation/x402/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Merged tests/docs and maintainer-responsive iteration in a high-signal payments repo. |
-| 5 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
-| 6 | [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Yes | Two merged cross-platform reliability fixes in an agent context database. |
-| 7 | [qlib-options](https://github.com/Bortlesboat/qlib-options) | Yes | Finance-domain package with qlib-compatible options factors and a narrow limitation boundary. |
-| 8 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
-| 9 | [KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Yes | Agent-readable markdown social app; useful product-engineering proof, less central than Bitcoin/x402. |
-| 10 | Selected merged PRs | Yes | CPython, rust-lightning, rust-bitcoin, OpenBB, statsmodels, x402, mesh-llm, OpenViking. |
-| 11 | Bortlesboat.github.io | Yes, as wrapper | This is the front door, not a flagship technical artifact. |
-| 12 | Bortlesboat profile README | Yes, as wrapper | Should route readers to proof, not try to be the proof itself. |
+| 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current 2026 enterprise-agent hackathon build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
+| 4 | x402 operator lab and payable MCP | Yes | Shows facilitator, SIWX, discovery, wallet-role, and MCP payment understanding beyond a toy route. |
+| 5 | [x402 Foundation contributions](https://github.com/x402-foundation/x402/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Merged tests/docs and maintainer-responsive iteration in a high-signal payments repo. |
+| 6 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
+| 7 | [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Yes | Two merged cross-platform reliability fixes in an agent context database. |
+| 8 | [qlib-options](https://github.com/Bortlesboat/qlib-options) | Yes | Finance-domain package with qlib-compatible options factors and a narrow limitation boundary. |
+| 9 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
+| 10 | [KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Yes | Agent-readable markdown social app; useful product-engineering proof, less central than Bitcoin/x402. |
+| 11 | Selected merged PRs | Yes | CPython, rust-lightning, rust-bitcoin, OpenBB, statsmodels, x402, mesh-llm, OpenViking. |
+| 12 | Bortlesboat.github.io | Yes, as wrapper | This is the front door, not a flagship technical artifact. |
+| 13 | Bortlesboat profile README | Yes, as wrapper | Should route readers to proof, not try to be the proof itself. |
 
 ## Deprioritized Or Risky Claims
 
