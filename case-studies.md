@@ -2,7 +2,7 @@
 
 These are public-safe summaries for finance, AI, protocol, and open-source audiences. The career throughline is senior finance analyst judgment applied to tech FP&A systems and AI workflow automation. Each note shows who the work helped, what changed, how it was tested, and where the public evidence lives.
 
-## Current Hackathon Build: AgentOps Ledger
+## Current AgentOps Ledger Build
 
 **Problem:** Enterprise teams cannot safely hand agents real tools, paid APIs, or approval-gated workflows without knowing what the agent did on the way to the final answer.
 
@@ -12,9 +12,9 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Evidence:** [Hosted case study](https://bortlesboat.github.io/x402-insights/case-study.html), [repository](https://github.com/Bortlesboat/x402-insights), [hosted demo](https://bortlesboat.github.io/x402-insights/), [release](https://github.com/Bortlesboat/x402-insights/releases/tag/agentops-ledger-2026-05-18), [architecture](https://github.com/Bortlesboat/x402-insights/blob/main/ARCHITECTURE.md), [Splunk HEC proof](https://github.com/Bortlesboat/x402-insights/blob/main/docs/hackathon/splunk-hec-proof.md).
 
-**Result:** A polished, public 2026 enterprise-agent hackathon artifact that turns tool calls, approval gates, retries, errors, x402 payments, and final outcomes into inspectable run evidence.
+**Result:** A polished, public AgentOps artifact that turns tool calls, approval gates, retries, errors, x402 payments, and final outcomes into inspectable run evidence.
 
-**Relevance:** Strong proof for enterprise-agent infrastructure, agent observability, x402 payments, Splunk telemetry, and hackathon/grant credibility. Submissions and prize outcomes are tracked separately and only claimed after confirmation.
+**Relevance:** Strong proof for enterprise-agent infrastructure, agent observability, x402 payments, Splunk telemetry, and grant-reviewer credibility. External outcomes are intentionally omitted unless publicly confirmed.
 
 ## 1. Satoshi API: Bitcoin Fee Intelligence
 

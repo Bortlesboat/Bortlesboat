@@ -56,7 +56,7 @@ This is a curated contribution record, not a full activity dump. It supports a s
 | --- | --- | --- |
 | [Bortlesboat/bitcoin-api](https://github.com/Bortlesboat/bitcoin-api) | Live Bitcoin API with x402 support | Main flagship artifact. |
 | [Bortlesboat/bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49 tools and 126 tests | Main MCP artifact. |
-| [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current enterprise-agent hackathon artifact. |
+| [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current public AgentOps artifact. |
 | [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact for the FP&A-to-automation bridge. |
 | [Bortlesboat/KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Go/SQLite markdown social app | Agent-readable app artifact. |
 | [Bortlesboat/Bortlesboat.github.io](https://github.com/Bortlesboat/Bortlesboat.github.io) | Portfolio front door | Public narrative wrapper. |

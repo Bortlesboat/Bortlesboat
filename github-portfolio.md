@@ -16,7 +16,7 @@ The more precise career story: senior finance analyst and Python builder focused
 | --- | --- | --- | --- |
 | 1 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Yes | Merged fixes in recognizable AI and developer-tool repositories. |
 | 2 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Public finance-platform parser cleanup and CLI test work. |
-| 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current 2026 enterprise-agent hackathon build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
+| 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current public AgentOps build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
 | 4 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
 | 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, Agentic-ready discovery metadata, docs, tests, and real API surface. |
 | 6 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 49 Bitcoin MCP tools, 126 tests, PyPI install, and clear agent-tooling relevance. |
@@ -37,8 +37,8 @@ The more precise career story: senior finance analyst and Python builder focused
 ## Deprioritized Or Risky Claims
 
 - Do not claim the x402 Lightning PR is merged. The public PR #1873 is open in `x402-foundation/x402`, not a merged Coinbase PR.
-- Do not claim x402-insights proves revenue. The public Satoshi demo is observability/product proof; canonical revenue proof remains source-classified Satoshi API x402 stats.
-- Do not claim Agentic.Market enrichment is complete. Satoshi's provider-side x402 discovery metadata is live, but the Agentic profile remains unenriched until the aggregator updates or confirms it.
+- Do not claim x402-insights proves revenue. The public Satoshi demo supports observability/product proof only.
+- Do not claim third-party marketplace enrichment is complete unless the public aggregator page visibly confirms it. It is safe to say provider-side x402 discovery metadata is live when the provider endpoint is reachable.
 - Do not overstate Bitcoin Core as merged contributor proof. Use "Bitcoin Core reviewer/test contributor" unless a merged `bitcoin/bitcoin` PR is available.
 - Do not publish Finance Dashboard repo paths, local paths, config files, imported financial CSV/PDF names, private finance IDs, or private finance screenshots.
 - Do not lead with total repository count or total PR count. They are scale signals, but the value is in the handful of artifacts above.
