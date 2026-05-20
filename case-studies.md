@@ -1,12 +1,12 @@
 # Bortlesboat Case Studies
 
-These are public-safe summaries for finance, AI, protocol, and open-source audiences. The career throughline is senior finance analyst judgment applied to tech FP&A systems and AI workflow automation. Each note shows who the work helped, what changed, how it was tested, and where the public evidence lives.
+These are public-safe summaries for finance, AI, protocol, and open-source audiences. The main story is senior finance analyst judgment applied to tech FP&A systems and AI workflow automation. Each note shows who the work helped, what changed, how it was tested, and where the public evidence lives.
 
 ## Current AgentOps Ledger Build
 
 **Problem:** Enterprise teams cannot safely hand agents real tools, paid APIs, or approval-gated workflows without knowing what the agent did on the way to the final answer.
 
-**Implementation:** Built AgentOps Ledger in the public `x402-insights` repo as a flight recorder for enterprise agents: TypeScript SDK helpers, Express/SQLite run ledger, dashboard, deterministic vendor-risk demo data, audit JSON export, x402-style payment events, and a Splunk HEC adapter.
+**Implementation:** Built AgentOps Ledger in the public `x402-insights` repo as a run log for enterprise agents: TypeScript SDK helpers, Express/SQLite ledger, dashboard, deterministic vendor-risk demo data, audit JSON export, x402-style payment events, and a Splunk HEC adapter.
 
 **Tests:** SDK, server, and Splunk HEC adapter smoke tests pass; static hosted-demo verifier checks metadata, proof links, and case-study coverage; Playwright screenshots verify desktop and mobile rendering.
 

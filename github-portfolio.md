@@ -8,7 +8,7 @@ The portfolio should read as one story:
 
 > Senior finance analyst and Python builder focused on tech FP&A systems, AI workflow automation, and reputable public software proof.
 
-The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and reputable public surfaces, not raw activity volume. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
+The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and recognizable public work, not activity volume. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
 
 ## Strongest Public Artifacts
 
@@ -18,7 +18,7 @@ The more precise career story: senior finance analyst and Python builder focused
 | 2 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Public finance-platform parser cleanup and CLI test work. |
 | 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current public AgentOps build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
 | 4 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
-| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, Agentic-ready discovery metadata, docs, tests, and real API surface. |
+| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, agent-facing discovery metadata, docs, tests, and real API surface. |
 | 6 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 49 Bitcoin MCP tools, 126 tests, PyPI install, and clear agent-tooling relevance. |
 | 7 | [qlib-options](https://github.com/Bortlesboat/qlib-options) | Yes | Finance-domain package with qlib-compatible options factors and a narrow limitation boundary. |
 | 8 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
