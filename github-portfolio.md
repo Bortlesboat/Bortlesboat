@@ -8,7 +8,7 @@ The portfolio should read as one story:
 
 > Senior finance analyst and Python builder focused on tech FP&A systems, AI workflow automation, and reputable public software proof.
 
-The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and reputable public surfaces, not raw activity volume. The clearest single proof point is KarpathyTalk PR #1, a Go/SQLite concurrency fix merged by Andrej Karpathy. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
+The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The clearest single proof point is KarpathyTalk PR #1, a Go/SQLite concurrency fix merged by Andrej Karpathy. The profile should lead with audience and recognizable public work, not activity volume. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
 
 ## Strongest Public Artifacts
 
@@ -17,9 +17,9 @@ The more precise career story: senior finance analyst and Python builder focused
 | 1A | [KarpathyTalk PR #1](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e) | Yes, feature prominently | Best single contribution story: Go/SQLite race-prone social toggles fixed transactionally, merged by Andrej Karpathy, with [surviving merge evidence](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b). |
 | 1 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Yes | Merged fixes in recognizable AI and developer-tool repositories. |
 | 2 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Public finance-platform parser cleanup and CLI test work. |
-| 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current 2026 enterprise-agent hackathon build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
+| 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current public AgentOps build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
 | 4 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
-| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, Agentic-ready discovery metadata, docs, tests, and real API surface. |
+| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, agent-facing discovery metadata, docs, tests, and real API surface. |
 | 6 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 49 Bitcoin MCP tools, 126 tests, PyPI install, and clear agent-tooling relevance. |
 | 7 | [qlib-options](https://github.com/Bortlesboat/qlib-options) | Yes | Finance-domain package with qlib-compatible options factors and a narrow limitation boundary. |
 | 8 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
@@ -38,8 +38,8 @@ The more precise career story: senior finance analyst and Python builder focused
 ## Deprioritized Or Risky Claims
 
 - Do not claim the x402 Lightning PR is merged. The public PR #1873 is open in `x402-foundation/x402`, not a merged Coinbase PR.
-- Do not claim x402-insights proves revenue. The public Satoshi demo is observability/product proof; canonical revenue proof remains source-classified Satoshi API x402 stats.
-- Do not claim Agentic.Market enrichment is complete. Satoshi's provider-side x402 discovery metadata is live, but the Agentic profile remains unenriched until the aggregator updates or confirms it.
+- Do not claim x402-insights proves revenue. The public Satoshi demo supports observability/product proof only.
+- Do not claim third-party marketplace enrichment is complete unless the public aggregator page visibly confirms it. It is safe to say provider-side x402 discovery metadata is live when the provider endpoint is reachable.
 - Do not overstate Bitcoin Core as merged contributor proof. Use "Bitcoin Core reviewer/test contributor" unless a merged `bitcoin/bitcoin` PR is available.
 - Do not publish Finance Dashboard repo paths, local paths, config files, imported financial CSV/PDF names, private finance IDs, or private finance screenshots.
 - Do not lead with total repository count or total PR count. They are scale signals, but the value is in the handful of artifacts above.
