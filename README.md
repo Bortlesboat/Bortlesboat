@@ -1,15 +1,23 @@
 # Andy Barnes
 
-Senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation.
+Senior finance analyst and Python builder focused on tech FP&A systems, AI workflow automation, and public software proof.
 
-I separate myself by pairing FP&A judgment with working software: board-style variance commentary, finance-data workflows, AI-tool integrations, and small merged fixes in reputable public codebases. Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus live product work around Bitcoin fee intelligence.
+I separate myself by pairing FP&A judgment with working software: board-style variance commentary, finance-data workflows, AI-tool integrations, and small merged fixes in reputable public codebases. Selected public work includes KarpathyTalk PR #1, FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus live product work around Bitcoin fee intelligence.
+
+## Featured Proof: KarpathyTalk PR #1
+
+I fixed a concurrency and data-integrity bug in KarpathyTalk's Go/SQLite social toggle layer by making like, repost, and bookmark operations transactional. Andrej Karpathy merged it as PR #1.
+
+- [Author commit: `bc1e4ff`](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e) - `+50/-24` in `internal/app/db.go`.
+- [Merge evidence: `4ba1e23`](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b) - `Merge pull request #1 from Bortlesboat/fix/toggle-race-conditions`.
+- Plain English: a double-click/race-condition bug could make social counts drift; the fix keeps the check, row mutation, and counter update in one database transaction.
 
 ## Role Direction
 
 | Direction | Relevant proof |
 | --- | --- |
 | Tech FP&A manager track | Variance Memo, Finance Dashboard write-up, OpenBB PRs, qlib-options, board-commentary workflows. |
-| AI workflow automation | Google Workspace CLI, google_workspace_mcp, bitcoin-mcp, OpenViking, mesh-llm, MCP/x402 operator work. |
+| AI workflow automation | KarpathyTalk PR #1, Google Workspace CLI, google_workspace_mcp, bitcoin-mcp, OpenViking, mesh-llm, MCP/x402 operator work. |
 | Finance-native engineering | Python, SQL/SQLite, Streamlit, FastAPI, finance parsers, tested data-intake workflows. |
 
 ## Who This Work Serves
@@ -17,7 +25,7 @@ I separate myself by pairing FP&A judgment with working software: board-style va
 | Audience | Relevant proof |
 | --- | --- |
 | Finance and FP&A teams | Variance Memo, Finance Dashboard write-up, OpenBB PRs, qlib-options. |
-| AI tool maintainers and operators | OpenAI privacy-filter, Microsoft VibeVoice, mesh-llm, OpenViking. |
+| AI tool maintainers and operators | KarpathyTalk PR #1, OpenAI privacy-filter, Microsoft VibeVoice, mesh-llm, OpenViking. |
 | Workspace and developer-tool users | Google Workspace CLI, google_workspace_mcp, CPython docs. |
 | Protocol and payment operators | Satoshi API, bitcoin-mcp, x402 operator work, rust-lightning. |
 
@@ -25,6 +33,7 @@ I separate myself by pairing FP&A judgment with working software: board-style va
 
 | Artifact | Proof | Why it matters |
 | --- | --- | --- |
+| [KarpathyTalk PR #1](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e) | Fixed Go/SQLite race-prone social toggles; merge evidence is [commit `4ba1e23`](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b). | Best single credibility proof: recognizable maintainer, first PR, concrete bug, small surgical patch. |
 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Merged fixes in `openai/privacy-filter`, `microsoft/VibeVoice`, and `googleworkspace/cli`. | Useful to AI research tooling, speech-model demos, and Workspace admin/developer workflows. |
 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Merged finance-platform parser cleanup and CLI tests. | Finance tooling credibility for analysts, developers, and tech FP&A teams. |
 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Bitcoin fee intelligence API, live at [bitcoinsapi.com](https://bitcoinsapi.com), with x402 pay-per-call support. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
@@ -47,6 +56,8 @@ I separate myself by pairing FP&A judgment with working software: board-style va
 I usually contribute where I can reproduce the problem locally and leave behind a cleaner test boundary: FP&A automation, AI workflow tooling, finance platforms, Bitcoin and Lightning libraries, x402, MCP servers, and Python ecosystem projects.
 
 Recent merged examples include [OpenAI privacy-filter](https://github.com/openai/privacy-filter/pull/1), [Microsoft VibeVoice](https://github.com/microsoft/VibeVoice/pull/280), [Google Workspace CLI](https://github.com/googleworkspace/cli/pulls?q=author%3ABortlesboat+is%3Apr+is%3Amerged), [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr), [rust-lightning](https://github.com/lightningdevkit/rust-lightning/pull/4470), [CPython](https://github.com/python/cpython/pull/145538), [x402 Foundation](https://github.com/x402-foundation/x402/pulls?q=author%3ABortlesboat+is%3Apr), and [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat).
+
+The cleanest single contribution story is [KarpathyTalk PR #1](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e): a Go/SQLite concurrency fix merged by Andrej Karpathy, with surviving [merge evidence](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b).
 
 ## Links
 

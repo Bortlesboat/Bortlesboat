@@ -8,12 +8,13 @@ The portfolio should read as one story:
 
 > Senior finance analyst and Python builder focused on tech FP&A systems, AI workflow automation, and reputable public software proof.
 
-The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and reputable public surfaces, not raw activity volume. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
+The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and reputable public surfaces, not raw activity volume. The clearest single proof point is KarpathyTalk PR #1, a Go/SQLite concurrency fix merged by Andrej Karpathy. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
 
 ## Strongest Public Artifacts
 
 | Rank | Artifact | Keep? | Why |
 | --- | --- | --- | --- |
+| 1A | [KarpathyTalk PR #1](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e) | Yes, feature prominently | Best single contribution story: Go/SQLite race-prone social toggles fixed transactionally, merged by Andrej Karpathy, with [surviving merge evidence](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b). |
 | 1 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Yes | Merged fixes in recognizable AI and developer-tool repositories. |
 | 2 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Public finance-platform parser cleanup and CLI test work. |
 | 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current 2026 enterprise-agent hackathon build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
@@ -24,7 +25,7 @@ The more precise career story: senior finance analyst and Python builder focused
 | 8 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
 | 9 | x402 operator lab, x402-insights, and payable MCP | Yes | Shows facilitator, SIWX, discovery metadata, wallet-role, MCP payment understanding, public Satoshi paid-call observability, and enterprise-agent run evidence. |
 | 10 | [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Yes | Two merged cross-platform reliability fixes in an agent context database. |
-| 11 | [KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Yes | Agent-readable markdown social app; useful product-engineering proof, less central than AI/finance/Bitcoin/x402. |
+| 11 | [KarpathyTalk repository](https://github.com/Bortlesboat/KarpathyTalk) | Yes | Keep the repo shell, but feature PR #1 specifically because the merged concurrency fix is the stronger and easier-to-understand proof. |
 | 12 | Selected merged PRs | Yes | OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, rust-bitcoin, OpenBB, statsmodels, x402, mesh-llm, OpenViking. |
 
 ## Public Surfaces

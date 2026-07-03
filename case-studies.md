@@ -2,6 +2,20 @@
 
 These are public-safe summaries for finance, AI, protocol, and open-source audiences. The career throughline is senior finance analyst judgment applied to tech FP&A systems and AI workflow automation. Each note shows who the work helped, what changed, how it was tested, and where the public evidence lives.
 
+## Featured Proof: KarpathyTalk PR #1
+
+**Problem:** KarpathyTalk's like, repost, and bookmark toggles updated rows and counters across separate statements. Under concurrent requests, counts could drift from the actual toggle state.
+
+**Implementation:** Made each social toggle transactional in Go/SQLite, keeping the existence check, insert/delete, and count update inside one database transaction.
+
+**Tests:** The original public PR page is no longer API-accessible, so the durable proof is preserved through the author commit and merge commit. The author patch is `+50/-24` in `internal/app/db.go`.
+
+**Evidence:** [Author commit `bc1e4ff`](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e), [merge evidence `4ba1e23`](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b), and [recovery summary](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#featured-contribution-karpathytalk-pr-1).
+
+**Result:** Andrej Karpathy merged it as PR #1. Plain English: it fixed a race-prone social-count bug with a small, reviewable database patch.
+
+**Relevance:** This is the strongest single public credibility proof because it is recognizable, concrete, technical, and easy to explain.
+
 ## Current Hackathon Build: AgentOps Ledger
 
 **Problem:** Enterprise teams cannot safely hand agents real tools, paid APIs, or approval-gated workflows without knowing what the agent did on the way to the final answer.
@@ -128,19 +142,19 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Relevance:** Useful for tech FP&A manager-track roles, finance automation roles, analytics engineering, and AI workflow automation work.
 
-## 9. KarpathyTalk: Agent-Readable Markdown Social App
+## 9. KarpathyTalk PR #1: Go/SQLite Social Toggle Integrity
 
-**Problem:** Builder communities often lock posts behind opaque UI surfaces, while agents and humans need simple read access to durable markdown.
+**Problem:** Social toggles for likes, reposts, and bookmarks could be hit concurrently. If the row mutation and aggregate count update diverged, the app could show stale or incorrect counts.
 
-**Implementation:** Built a Go and SQLite social app with GitHub login, markdown posts, replies, reposts, profile feeds, JSON APIs, RSS, and raw markdown endpoints.
+**Implementation:** Wrapped each toggle path in a transaction and moved the check, insert/delete, and counter update into the same atomic unit.
 
-**Tests:** Schema-backed app structure, live deployment notes, and a narrow local branch for hashtag filtering.
+**Tests:** Recovered and preserved the author diff, merge commit, branch ref, patch, and verified bundle locally after the original PR route was removed.
 
-**Evidence:** [Repository](https://github.com/Bortlesboat/KarpathyTalk).
+**Evidence:** [Author commit `bc1e4ff`](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e), [merge evidence `4ba1e23`](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b), [repository](https://github.com/Bortlesboat/KarpathyTalk).
 
-**Result:** A small public app that treats markdown as the source of truth and keeps data accessible to humans and LLM agents.
+**Result:** KarpathyTalk PR #1, merged by Andrej Karpathy, with a small Go/SQLite integrity fix that is understandable to both technical and non-technical reviewers.
 
-**Relevance:** Supports agent-native product engineering and low-complexity web systems credibility.
+**Relevance:** Supports agent-native product engineering, data-integrity, Go/SQLite, and high-signal open-source contribution credibility.
 
 ## 10. Selected Upstream PRs: AI, Finance, And Developer Tools
 
