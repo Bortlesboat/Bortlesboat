@@ -6,6 +6,13 @@ I pair FP&A judgment with working software: variance commentary, finance-data wo
 
 Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus live product work around Bitcoin fee intelligence.
 
+## Open Source at a Glance
+
+- **154 merged pull requests** into repositories I don't own, all within the last 12 months — [verify via GitHub search](https://github.com/search?q=author%3ABortlesboat+is%3Apr+is%3Amerged+-user%3ABortlesboat&type=pullrequests)
+- Multiple merges in: [ffn](https://github.com/pmorissette/ffn/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (7), [vLLM](https://github.com/vllm-project/vllm/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (6), [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (5), [deer-flow](https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (5), [Google Workspace CLI](https://github.com/googleworkspace/cli/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (4), [Scrapling](https://github.com/D4Vinci/Scrapling/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (4), [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (3), [x402](https://github.com/x402-foundation/x402/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2), [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2), [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2)
+- Single merged fixes in [CPython](https://github.com/python/cpython/pull/145538), [DuckDB](https://github.com/duckdb/duckdb/pull/21327), [nushell](https://github.com/nushell/nushell/pull/17746), [uv](https://github.com/astral-sh/uv/pull/18353), [Dioxus](https://github.com/DioxusLabs/dioxus/pull/5352), [marimo](https://github.com/marimo-team/marimo/pull/8785), [firecrawl](https://github.com/mendableai/firecrawl/pull/3243), [browser-use](https://github.com/browser-use/browser-use/pull/4305), and 60+ other repositories
+- Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) (49-tool Bitcoin MCP server on [PyPI](https://pypi.org/project/bitcoin-mcp/), 126 tests) and the [Satoshi API](https://bitcoinsapi.com)
+
 ## Role Direction
 
 | Direction | Relevant proof |
