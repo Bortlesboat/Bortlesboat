@@ -4,6 +4,12 @@ Updated: 2026-05-18
 
 This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
 
+## Featured Contribution: KarpathyTalk PR #1
+
+| Repo | Proof | Status | Why it matters |
+| --- | --- | --- | --- |
+| `karpathy/KarpathyTalk` | [Author commit `bc1e4ff`](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e), [merge evidence `4ba1e23`](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b) | Merged as PR #1 | Fixed Go/SQLite social-toggle race conditions by making like, repost, and bookmark mutations transactional. Best single contribution story: recognizable maintainer, concrete data-integrity bug, small reviewable patch. |
+
 ## OpenAI, Microsoft, And Google Workspace
 
 | Repo | PR | Status | Why it matters |
@@ -58,7 +64,7 @@ This is a curated contribution record, not a full activity dump. It supports a s
 | [Bortlesboat/bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49 tools and 126 tests | Main MCP artifact. |
 | [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current public AgentOps artifact. |
 | [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact for the FP&A-to-automation bridge. |
-| [Bortlesboat/KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Go/SQLite markdown social app | Agent-readable app artifact. |
+| [Bortlesboat/KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | [KarpathyTalk PR #1 author commit](https://github.com/Bortlesboat/KarpathyTalk/commit/bc1e4ff747b1ee36104c501645e29c13021e796e) and [merge evidence](https://github.com/industriousonesoft/KarpathyTalk/commit/4ba1e2397c7c72dbc970a28c4a7d3c18628e4e5b) | Go/SQLite social-toggle concurrency fix merged by Andrej Karpathy. |
 | [Bortlesboat/Bortlesboat.github.io](https://github.com/Bortlesboat/Bortlesboat.github.io) | Portfolio front door | Public narrative wrapper. |
 
 ## Review Notes
