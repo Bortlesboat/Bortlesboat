@@ -1,8 +1,50 @@
 # Selected GitHub Contributions
 
-Updated: 2026-05-18
+Updated: 2026-09-07
 
 This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
+
+## Verified Contribution Pattern
+
+**209 authored, merged PRs in 141 external public repositories**, verified September 7, 2026. There are repeat merges in 32 repositories, including ffn (9), vLLM (6), google_workspace_mcp (6), and Mesh-LLM (6). **59 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
+
+The record shows merged work in seven consecutive months, March through September 2026. September is partial. The earlier zero months are included below so the full measurement window is visible.
+
+| Merge month | Merged PRs |
+| --- | ---: |
+| 2025-09 | 0 |
+| 2025-10 | 0 |
+| 2025-11 | 0 |
+| 2025-12 | 0 |
+| 2026-01 | 0 |
+| 2026-02 | 0 |
+| 2026-03 | 65 |
+| 2026-04 | 31 |
+| 2026-05 | 32 |
+| 2026-06 | 22 |
+| 2026-07 | 40 |
+| 2026-08 | 17 |
+| 2026-09 | 2 |
+
+The first and last months cover only the dates inside the September 7, 2025–September 7, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-09-07..2026-09-07&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
+
+```text
+author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-09-07..2026-09-07
+```
+
+To refresh, run `node scripts/fetch-stats.cjs` in [the portfolio repository](https://github.com/Bortlesboat/Bortlesboat.github.io). It paginates GitHub search, rejects incomplete results, and counts by `pull_request.merged_at`. A failed refresh preserves the previous snapshot and exits with an error. This dated profile snapshot is updated separately after review.
+
+### Recent examples
+
+| Merged | Work | Contribution |
+| --- | --- | --- |
+| 2026-08-28 | [Moby #53322](https://github.com/moby/moby/pull/53322) | Unit-test the AWS client boundary. |
+| 2026-08-18 | [LiveKit Agents #6568](https://github.com/livekit/agents/pull/6568) | Provider-event handling across restarts. |
+| 2026-08-18 | [google_workspace_mcp #921](https://github.com/taylorwilsdon/google_workspace_mcp/pull/921) | Normalize camelCase parameters. |
+| 2026-07-28 | [Roboflow Supervision #2459](https://github.com/roboflow/supervision/pull/2459) | Reset sink state for reuse. |
+| 2026-04-19 | [vLLM #39120](https://github.com/vllm-project/vllm/pull/39120) | Correct sequence-offset handling on ROCm. |
+
+Maintainer work on my own projects is listed separately below. The links show concrete fixes and review outcomes; counts do not imply maintainer status in upstream projects.
 
 ## OpenAI, Microsoft, And Google Workspace
 
@@ -54,11 +96,10 @@ This is a curated contribution record, not a full activity dump. It supports a s
 
 | Repo | Proof | Notes |
 | --- | --- | --- |
-| [Bortlesboat/bitcoin-api](https://github.com/Bortlesboat/bitcoin-api) | Live Bitcoin API with x402 support | Main flagship artifact. |
-| [Bortlesboat/bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49 tools and 126 tests | Main MCP artifact. |
+| [Bortlesboat/bitcoin-api](https://github.com/Bortlesboat/bitcoin-api) | Self-hostable Bitcoin API with optional x402 integration; former hosting paused | Main flagship artifact. |
+| [Bortlesboat/bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 50 standard tools; 180 tests passed on Python 3.12 on 2026-09-07 | Main MCP artifact. |
 | [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current public AgentOps artifact. |
 | [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact for the FP&A-to-automation bridge. |
-| [Bortlesboat/KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Go/SQLite markdown social app | Agent-readable app artifact. |
 | [Bortlesboat/Bortlesboat.github.io](https://github.com/Bortlesboat/Bortlesboat.github.io) | Portfolio front door | Public narrative wrapper. |
 
 ## Review Notes

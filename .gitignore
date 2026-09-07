@@ -1,4 +1,4 @@
-# This profile repo should only track the README, GitHub workflow, and generated profile cards.
+# This profile repo tracks public portfolio documents, reviewed contribution evidence, workflows, and profile cards.
 # Local clone/release/worktree spillover belongs elsewhere and must not be staged here.
 /*
 !/.gitignore
@@ -6,6 +6,7 @@
 !/case-studies.md
 !/github-portfolio.md
 !/github-contributions.md
+!/oss-contributions.json
 !/.github/
 !/.github/**
 !/profile-summary-card-output/

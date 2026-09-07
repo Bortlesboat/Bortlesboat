@@ -1,6 +1,6 @@
 # GitHub Portfolio Audit
 
-Updated: 2026-05-18
+Updated: 2026-09-07
 
 ## Positioning
 
@@ -17,14 +17,14 @@ The more precise career story: senior finance analyst and Python builder focused
 | 1 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Yes | Merged fixes in recognizable AI and developer-tool repositories. |
 | 2 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Yes | Public finance-platform parser cleanup and CLI test work. |
 | 3 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/case-study.html) | Yes | Current public AgentOps build with hosted demo, release, architecture, Splunk HEC proof, and public case study. |
-| 4 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Three merged Rust AI-infra PRs across security, launch reliability, and operator UX. |
-| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Live Bitcoin fee-intelligence product, x402 pay-per-call, agent-facing discovery metadata, docs, tests, and real API surface. |
-| 6 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 49 Bitcoin MCP tools, 126 tests, PyPI install, and clear agent-tooling relevance. |
+| 4 | [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Yes | Six merged PRs as of 2026-09-07 across security, startup reliability, and operator UX; see the dated contribution record. |
+| 5 | [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Yes | Self-hostable Bitcoin fee-intelligence API with docs, tests, and optional x402 integration. The former hosted deployment is paused. |
+| 6 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Yes | 50 standard Bitcoin MCP tools; 180 tests passed on Python 3.12 on 2026-09-07. Follow current source-install and backend configuration instructions. |
 | 7 | [qlib-options](https://github.com/Bortlesboat/qlib-options) | Yes | Finance-domain package with qlib-compatible options factors and a narrow limitation boundary. |
 | 8 | Finance Dashboard | Yes, sanitized | Strong FP&A automation proof, but no repo/data link because it contains private financial artifacts. |
 | 9 | x402 operator lab, x402-insights, and payable MCP | Yes | Shows facilitator, SIWX, discovery metadata, wallet-role, MCP payment understanding, public Satoshi paid-call observability, and enterprise-agent run evidence. |
 | 10 | [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Yes | Two merged cross-platform reliability fixes in an agent context database. |
-| 11 | [KarpathyTalk](https://github.com/Bortlesboat/KarpathyTalk) | Yes | Agent-readable markdown social app; useful product-engineering proof, less central than AI/finance/Bitcoin/x402. |
+| 11 | KarpathyTalk | Historical only | Repository is not currently public; excluded from current verifiable portfolio evidence. |
 | 12 | Selected merged PRs | Yes | OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, rust-bitcoin, OpenBB, statsmodels, x402, mesh-llm, OpenViking. |
 
 ## Public Surfaces
