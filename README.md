@@ -1,17 +1,19 @@
-# Andy Barnes
+# Andrew Barnes
 
 Senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation.
 
 I pair FP&A judgment with working software: variance commentary, finance-data workflows, AI-tool integrations, and small merged fixes in public codebases maintainers recognize.
 
-Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus live product work around Bitcoin fee intelligence.
+Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus open-source Bitcoin fee intelligence tooling.
 
 ## Open Source at a Glance
 
-- **154 merged pull requests** into repositories I don't own, all within the last 12 months — [verify via GitHub search](https://github.com/search?q=author%3ABortlesboat+is%3Apr+is%3Amerged+-user%3ABortlesboat&type=pullrequests)
-- Multiple merges in: [ffn](https://github.com/pmorissette/ffn/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (7), [vLLM](https://github.com/vllm-project/vllm/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (6), [google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (5), [deer-flow](https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (5), [Google Workspace CLI](https://github.com/googleworkspace/cli/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (4), [Scrapling](https://github.com/D4Vinci/Scrapling/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (4), [mesh-llm](https://github.com/Mesh-LLM/mesh-llm/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (3), [x402](https://github.com/x402-foundation/x402/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2), [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2), [OpenViking](https://github.com/volcengine/OpenViking/pulls?q=is%3Apr+author%3ABortlesboat+is%3Amerged) (2)
-- Single merged fixes in [CPython](https://github.com/python/cpython/pull/145538), [DuckDB](https://github.com/duckdb/duckdb/pull/21327), [nushell](https://github.com/nushell/nushell/pull/17746), [uv](https://github.com/astral-sh/uv/pull/18353), [Dioxus](https://github.com/DioxusLabs/dioxus/pull/5352), [marimo](https://github.com/marimo-team/marimo/pull/8785), [firecrawl](https://github.com/mendableai/firecrawl/pull/3243), [browser-use](https://github.com/browser-use/browser-use/pull/4305), and 60+ other repositories
-- Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) (49-tool Bitcoin MCP server on [PyPI](https://pypi.org/project/bitcoin-mcp/), 126 tests) and the [Satoshi API](https://bitcoinsapi.com)
+Verified September 7, 2026, for the window September 7, 2025 through September 7, 2026:
+
+- **209 authored, merged pull requests across 141 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 209 PRs](oss-contributions.json).
+- Merged work in each month from March through September 2026; **59 merges since July 1** and repeat contributions to **32 repositories**.
+- Repeat work includes ffn (9), vLLM (6), google_workspace_mcp (6), Mesh-LLM (6), deer-flow (5), and Google Workspace CLI (4). Counts use the same dated window.
+- Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp): 50 standard tools, 6 prompts, 8 resources; current source tested with 180 passing tests on Python 3.12. [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) is the self-hostable backend; its former public hosted service is paused.
 
 ## Role Direction
 
@@ -36,8 +38,8 @@ Selected public work includes FP&A automation, OpenBB and qlib finance tooling, 
 | --- | --- | --- |
 | [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Merged fixes in `openai/privacy-filter`, `microsoft/VibeVoice`, and `googleworkspace/cli`. | Useful to AI research tooling, speech-model demos, and Workspace admin/developer workflows. |
 | [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Merged finance-platform parser cleanup and CLI tests. | Finance tooling credibility for analysts, developers, and tech FP&A teams. |
-| [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Bitcoin fee intelligence API, live at [bitcoinsapi.com](https://bitcoinsapi.com), with x402 pay-per-call support. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
-| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49-tool Bitcoin MCP server, 126 tests, PyPI install, zero-config agent setup. | AI workflow automation proof: agents can call financial/protocol context through a tested tool layer. |
+| [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Self-hostable Bitcoin fee intelligence API with tests and optional x402 integration. Former public hosting is paused. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 50 standard MCP tools with 6 prompts and 8 resources. Requires a local node or configured compatible API; see the source-install instructions. | AI workflow automation proof: agents can call financial/protocol context through a tested tool layer. |
 | [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/launch.html) | Public AgentOps build with hosted demo, release, architecture diagram, Splunk HEC proof, launch page, and case study. | Makes agent tool calls, approvals, retries, errors, x402 payments, and final outcomes inspectable as run evidence. |
 | [x402 operator work](https://github.com/x402-foundation/x402/pull/1733) | Merged x402 Foundation test coverage plus local self-hosted facilitator, SIWX, and payable MCP proofs. | Shows protocol work from both sides: upstream maintainability and payment-flow demos. |
 | [mesh-llm contributions](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Merged security primitives, model-size health timeout, and capacity-label fixes. | Practical distributed inference fixes in a fast-moving Rust AI infrastructure project. |
@@ -58,6 +60,13 @@ I usually contribute where I can reproduce the problem locally and leave behind 
 
 Recent merged examples:
 
+- [Moby #53322](https://github.com/moby/moby/pull/53322) — unit-test the AWS client boundary (August 28, 2026).
+- [LiveKit Agents #6568](https://github.com/livekit/agents/pull/6568) — provider-event handling across restarts (August 18, 2026).
+- [google_workspace_mcp #921](https://github.com/taylorwilsdon/google_workspace_mcp/pull/921) — camelCase parameter normalization (August 18, 2026).
+- [Roboflow Supervision #2459](https://github.com/roboflow/supervision/pull/2459) — reset sink state (July 28, 2026).
+
+Further merged work:
+
 - [OpenAI privacy-filter](https://github.com/openai/privacy-filter/pull/1)
 - [Microsoft VibeVoice](https://github.com/microsoft/VibeVoice/pull/280)
 - [Google Workspace CLI](https://github.com/googleworkspace/cli/pulls?q=author%3ABortlesboat+is%3Apr+is%3Amerged)
@@ -69,4 +78,4 @@ Recent merged examples:
 
 ## Links
 
-[Portfolio site](https://bortlesboat.github.io) | [Satoshi API](https://bitcoinsapi.com) | [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
+[Portfolio site](https://bortlesboat.github.io) | [Satoshi API source](https://github.com/Bortlesboat/bitcoin-api) | [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)

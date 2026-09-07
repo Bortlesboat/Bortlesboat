@@ -24,9 +24,9 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Tests:** Public repo advertises 725 tests; local focused scans show hundreds of pytest cases across API, auth, analytics, admin, and x402 surfaces.
 
-**Evidence:** [Repository](https://github.com/Bortlesboat/bitcoin-api), [live site](https://bitcoinsapi.com), [x402 auth-layer PR](https://github.com/Bortlesboat/bitcoin-api/pull/25).
+**Evidence:** [Repository](https://github.com/Bortlesboat/bitcoin-api), [self-hosting guide](https://github.com/Bortlesboat/bitcoin-api/blob/master/docs/self-hosting.md), [x402 auth-layer PR](https://github.com/Bortlesboat/bitcoin-api/pull/25).
 
-**Result:** A live, open-source Bitcoin API that turns protocol data into practical fee decisions and gives the rest of the portfolio a real seller surface.
+**Result:** A self-hostable, open-source Bitcoin API that turns protocol data into practical fee decisions. The former public hosted service is paused; historical payment demos do not establish current availability or revenue.
 
 **Relevance:** Strongest anchor for Bitcoin infrastructure roles, grants, and paid API credibility.
 
@@ -36,11 +36,11 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Implementation:** Built a Python MCP server with fee, mempool, block, transaction, mining, price, and supply tools; packaged it for one-command setup.
 
-**Tests:** 126 tests and a GitHub Actions test badge in the public README.
+**Tests:** 180 tests passed on Python 3.12 on September 7, 2026, including the optional L402 client. The public README links to ongoing CI results.
 
 **Evidence:** [Repository](https://github.com/Bortlesboat/bitcoin-mcp), [README](https://github.com/Bortlesboat/bitcoin-mcp#readme).
 
-**Result:** 49 MCP tools, 6 prompts, 8 resources, PyPI distribution, and zero-config setup for common agent clients.
+**Result:** 50 standard MCP tools, 6 prompts, and 8 resources. Current installation uses source while the next PyPI release is pending, and requires a local Bitcoin node or explicitly configured compatible API.
 
 **Relevance:** Clear proof for AI workflow automation, MCP, Bitcoin developer tooling, and grant proposals around open agent access to financial data.
 
@@ -52,7 +52,7 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Tests:** TypeScript test suite covers walletless trials, SIWX storage, MCP auth/reuse, facilitator clients, growth telemetry, and public page contracts.
 
-**Evidence:** [x402 Foundation PR #1733](https://github.com/x402-foundation/x402/pull/1733), [Satoshi API x402 route](https://github.com/Bortlesboat/bitcoin-api), [x402 discovery surface](https://x402.bitcoinsapi.com/llms.txt).
+**Evidence:** [x402 Foundation PR #1733](https://github.com/x402-foundation/x402/pull/1733), [Satoshi API x402 route](https://github.com/Bortlesboat/bitcoin-api), [historical operator work](https://github.com/Bortlesboat/x402-insights).
 
 **Result:** Practical proof that agent payments can be tested as an operator workflow, not just a protocol diagram.
 
@@ -82,7 +82,7 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Evidence:** [PR #156](https://github.com/Mesh-LLM/mesh-llm/pull/156), [PR #210](https://github.com/Mesh-LLM/mesh-llm/pull/210), [PR #222](https://github.com/Mesh-LLM/mesh-llm/pull/222).
 
-**Result:** Three merged PRs in a distributed LLM infrastructure project, including security and operator UX work.
+**Result:** Six authored, merged PRs in Mesh-LLM as of September 7, 2026; the three linked examples cover security, startup reliability, and operator UX. See the dated contribution snapshot for all six.
 
 **Relevance:** Supports senior AI infrastructure roles where reliability, security, and maintainer taste matter.
 
@@ -136,9 +136,9 @@ These are public-safe summaries for finance, AI, protocol, and open-source audie
 
 **Tests:** Schema-backed app structure, live deployment notes, and a narrow local branch for hashtag filtering.
 
-**Evidence:** [Repository](https://github.com/Bortlesboat/KarpathyTalk).
+**Evidence:** Historical project only. The repository is not currently public and is excluded from current verifiable portfolio evidence.
 
-**Result:** A small public app that treats markdown as the source of truth and keeps data accessible to humans and LLM agents.
+**Result:** A historical markdown-first app prototype. No current public availability is claimed.
 
 **Relevance:** Supports agent-native product engineering and low-complexity web systems credibility.
 
