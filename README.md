@@ -8,8 +8,6 @@ Selected public work includes FP&A automation, OpenBB and qlib finance tooling, 
 
 ## Open Source at a Glance
 
-Verified September 7, 2026, for the window September 7, 2025 through September 7, 2026:
-
 - **209 authored, merged pull requests across 141 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 209 PRs](oss-contributions.json).
 - Merged work in each month from March through September 2026; **59 merges since July 1** and repeat contributions to **32 repositories**.
 - Repeat work includes ffn (9), vLLM (6), google_workspace_mcp (6), Mesh-LLM (6), deer-flow (5), and Google Workspace CLI (4). Counts use the same dated window.
