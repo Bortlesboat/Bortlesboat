@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "results": [
+    {
+      "revision": "8b45b9ee991fb4a0e8611e5b0c39fc733d84c5e1",
+      "phase": "seed",
+      "observedAt": "2026-09-24T23:35:44.838Z",
+      "result": "online_control_passed",
+      "outpoints": [
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+      ],
+      "values": [
+        90000,
+        30000
+      ],
+      "quote": {
+        "txCount": 9,
+        "totalFeeSats": 3030,
+        "fundingRequiredSats": 4076,
+        "recoveredSats": 119408
+      },
+      "retained": [
+        "wallet key",
+        "wallet/contract SQLite state",
+        "full virtual transaction data",
+        "confirmed fee funds"
+      ]
+    },
+    {
+      "revision": "8b45b9ee991fb4a0e8611e5b0c39fc733d84c5e1",
+      "phase": "missing",
+      "observedAt": "2026-09-24T23:36:04.578Z",
+      "result": "cached_balance_survives_but_exit_data_is_required",
+      "outpoints": [
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+      ],
+      "failure": "indexer request failed",
+      "causeCode": "ECONNREFUSED",
+      "failedPath": "/v1/indexer/vtxo/496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb/0/chain"
+    },
+    {
+      "revision": "8b45b9ee991fb4a0e8611e5b0c39fc733d84c5e1",
+      "phase": "prepare",
+      "observedAt": "2026-09-24T23:36:13.333Z",
+      "result": "prepared_from_persistent_state_with_ark_unavailable",
+      "totals": {
+        "txCount": 9,
+        "totalFeeSats": 3030,
+        "fundingRequiredSats": 4076,
+        "recoveredSats": 119408
+      },
+      "outpoints": [
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+        "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+      ]
+    },
+    {
+      "revision": "8b45b9ee991fb4a0e8611e5b0c39fc733d84c5e1",
+      "phase": "execute",
+      "observedAt": "2026-09-24T23:36:30.354Z",
+      "result": "keyless_fresh_process_exit_confirmed",
+      "confirmedSweeps": 2,
+      "recoveredSats": 119408,
+      "events": [
+        {
+          "stepIndex": 0,
+          "kind": "broadcast",
+          "status": "skipped",
+          "txid": "c88310b5b3f5160e24ea032b3c6075d7d8451e0ab289d6c1c7ab9245f6bb5e27"
+        },
+        {
+          "stepIndex": 1,
+          "kind": "package",
+          "status": "broadcast",
+          "txid": "dbd170244b7234540d1bdd56914324f85c9aa0909f1d4a932b8d766e494e609c",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "kind": "package",
+          "status": "confirmed",
+          "txid": "dbd170244b7234540d1bdd56914324f85c9aa0909f1d4a932b8d766e494e609c",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "kind": "package",
+          "status": "broadcast",
+          "txid": "de669ab2a7e37fc3ac087f3ae57d7dafd109ba1c5c35a879754e85b5a9948f26",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "kind": "package",
+          "status": "confirmed",
+          "txid": "de669ab2a7e37fc3ac087f3ae57d7dafd109ba1c5c35a879754e85b5a9948f26",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "kind": "package",
+          "status": "broadcast",
+          "txid": "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "kind": "package",
+          "status": "confirmed",
+          "txid": "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0",
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "kind": "sweep",
+          "status": "waiting_csv",
+          "txid": "4c7e86f7b0285e9937f65dad7397f3bd0098f6c1c72dc741f154172c5eeea60a",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0"
+          ],
+          "maturesAtHeight": 163
+        },
+        {
+          "stepIndex": 5,
+          "kind": "sweep",
+          "status": "broadcast",
+          "txid": "87424fc7849cd2c26a999a1fdb90740b37b49622204e86b65f3305294f02843a",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "kind": "sweep",
+          "status": "broadcast",
+          "txid": "4c7e86f7b0285e9937f65dad7397f3bd0098f6c1c72dc741f154172c5eeea60a",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0"
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "kind": "sweep",
+          "status": "confirmed",
+          "txid": "4c7e86f7b0285e9937f65dad7397f3bd0098f6c1c72dc741f154172c5eeea60a",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:0"
+          ]
+        },
+        {
+          "stepIndex": 5,
+          "kind": "sweep",
+          "status": "confirmed",
+          "txid": "87424fc7849cd2c26a999a1fdb90740b37b49622204e86b65f3305294f02843a",
+          "forVtxos": [
+            "496d50464aaf50d58cc852ce7996109cccf26a1d005a4a630378d5d11f9e9bdb:1"
+          ]
+        }
+      ]
+    },
+    {
+      "revision": "8b45b9ee991fb4a0e8611e5b0c39fc733d84c5e1",
+      "phase": "spend",
+      "observedAt": "2026-09-24T23:36:38.542Z",
+      "result": "recovered_output_spent_and_confirmed",
+      "transaction": "c10f3d5cd87ae31230f6f306877114c0f1301f5890839acdd43e470757a805fe",
+      "spentSweepTxids": [
+        "4c7e86f7b0285e9937f65dad7397f3bd0098f6c1c72dc741f154172c5eeea60a"
+      ]
+    }
+  ]
+}
