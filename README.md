@@ -13,6 +13,12 @@ Selected public work includes FP&A automation, OpenBB and qlib finance tooling, 
 - Repeat work includes ffn (9), vLLM (6), google_workspace_mcp (6), Mesh-LLM (6), deer-flow (5), and Google Workspace CLI (4). Counts use the same dated window.
 - Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp): 50 standard tools, 6 prompts, 8 resources; current source tested with 180 passing tests on Python 3.12. [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) is the self-hostable backend; its former public hosted service is paused.
 
+## Bitcoin Contributions and Research
+
+[Bitcoin research portfolio](bitcoin-research/README.md): selected merged changes in rust-lightning, rust-bitcoin and ord, alongside current verifier and fee-benchmark work. Each entry links to its upstream review and states whether it has merged.
+
+My current research question is what a private-payment wallet must retain to recover and spend when a service becomes unavailable. The portfolio includes reproducible experiments and their limits.
+
 ## Role Direction
 
 | Direction | Relevant proof |
