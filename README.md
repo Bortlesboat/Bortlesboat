@@ -6,6 +6,10 @@ I pair FP&A judgment with working software: variance commentary, finance-data wo
 
 Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus open-source Bitcoin fee intelligence tooling.
 
+<a href="https://bortlesboat.github.io/#motion-study"><img src="https://bortlesboat.github.io/reel/reel.gif" alt="Proof of Work: a 15-second motion study rendered frame by frame in canvas code" width="100%"></a>
+
+**Proof of Work**, a 15-second motion study drawn frame by frame in canvas code. [Watch it render live](https://bortlesboat.github.io/reel/) · [1080p60 with sound](https://bortlesboat.github.io/reel/reel-1080.mp4)
+
 ## Open Source at a Glance
 
 - **209 authored, merged pull requests across 141 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 209 PRs](oss-contributions.json).
