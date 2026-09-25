@@ -1,0 +1,34 @@
+{
+  "all_owned_nodes_stopped": true,
+  "authentic_shielded_verifier": false,
+  "background_transactions_per_block": 2,
+  "binary_name": "bitcoind.exe",
+  "binary_sha256": "f79eeb94e1379986df9f7be4c78c8fc8e18dc9be64a31cbaa8acad249d3db77a",
+  "blockmaxweight": 10000,
+  "blockreservedweight": 2000,
+  "case_count": 24,
+  "complete": true,
+  "core_version_required": "31.1",
+  "fee_rates_sat_vb": {
+    "background": 10,
+    "initial": 1,
+    "retry": 20
+  },
+  "network": "regtest",
+  "paper_sha256": "97d92987331f1365b88a4ec909701d7b1a74fa3ea7e07101bfc3e7243409ec18",
+  "paper_url": "https://www.allocinit.xyz/uploads/shielded-bitcoin.pdf",
+  "payload": "610-byte visibly synthetic LABSB1",
+  "profile": {
+    "minimum_depth": 1,
+    "window": 100
+  },
+  "refresh_reserve_blocks": 2,
+  "retry_step": 5,
+  "smoke_only": false,
+  "source_sha256": {
+    "bench.py": "97b0adcdd59e2f7c93ee7521788ae5a7e0a16d0ae0888c75edd834b695395293",
+    "core.py": "3d1d656534fc2bed458b9d6d6efbcf89c7d2a7c58b5921e7ceca08a738687c97",
+    "policy.py": "e70eae35c1a10c61c117928144881e1e524462cc6d8cc65401daf74d8405de5a"
+  },
+  "wallet_depth": 6
+}

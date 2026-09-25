@@ -1,0 +1,1006 @@
+{
+  "controls": {
+    "boundary": {
+      "cases": [
+        {
+          "anchor_age": 100,
+          "anchor_height": 101,
+          "authentic_shielded_acceptance": null,
+          "fee_sats": 736,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "021e4e13baedd00607facdb20819154908fc5708d74c75868a2d9b58da2d88e4",
+            "vout": 0
+          },
+          "hex": "02000000000101e4882dda589b2d8a86754cd70857fc0849151908b2cdfa0706d0edba134e1e020000000000fdffffff0220ef052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231650000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235bfdef6e15be88843ca469fc280731a4bec6eb0c79d6645bafad3a192023131d3c3a7205e4aa98bf7a32f3b1e30c7c8a9a1bda95f39f4e6ccc274730967f7211e5181a0ecbab752ff3e4fe1b4b0d96dae139934e21a96456e50a37dbcbcc8767318b040b9de7da52ec54ee58523df9f66aff358f7fdec6b9e11e89173b524f23d511dd1dac4b3dc477b0b896aa1c3882b1174023cebe99b56750f503e16980431891c3c1f5f725ef7371a4fa6ace37b2546630bcf9b79064234c41ad7d4afbb42ec861a8cc7f8043800d7830be62bd378334f4123187c5d6b9a9fa80ffd2e39749ebfb5b12c09a4cd6e0c70703bff258d5ca41351426b37b5635f2fe66fa05f7125b9ef76e44c12970ec45945be623f8c5a87b6c053c44dbf351b5de19d862282d83f20dd95c248fc571e634043def62b1bf05e480b3d0122d8ab08b02abbbb0895380da22823b206029ea917e15eb5e5eb3ed24abebe30d2eedeca0ce42507a50aec7168cc7be4e4a20dff7b5aadb4e525426c1bb89327e5225ef02734ff4f4cfade894fb58b6386d193fb3ba91f83856368c40df7d59e3ceaacad51c6cf704f88b184cd279c6799590c52aed57ea035ad06c45747875a480277a136320c1fd461fc8bd4cc8dc1034137643a03517928918067fbd9b067b9b378a08660641c6f4d8545416cc5dd34addb2afeb4bf5607df7de6e89a3b2d9031fa68fb70fac15edd24e8cba2408fa563e1278abde0a695a597b4180f9dc01400f4a4cf732282a45f2996a1d1610910334c47560372bdb6584686ff5e0ba00dc9fc2020550f8d0020f602c72cf3d22edf5fe4b6e81ae7b00a4e4790f3539cb8900000000",
+          "inclusion_height": 201,
+          "model_height_eligible": true,
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231650000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235bfdef6e15be88843ca469fc280731a4bec6eb0c79d6645bafad3a192023131d3c3a7205e4aa98bf7a32f3b1e30c7c8a9a1bda95f39f4e6ccc274730967f7211e5181a0ecbab752ff3e4fe1b4b0d96dae139934e21a96456e50a37dbcbcc8767318b040b9de7da52ec54ee58523df9f66aff358f7fdec6b9e11e89173b524f23d511dd1dac4b3dc477b0b896aa1c3882b1174023cebe99b56750f503e16980431891c3c1f5f725ef7371a4fa6ace37b2546630bcf9b79064234c41ad7d4afbb42ec861a8cc7f8043800d7830be62bd378334f4123187c5d6b9a9fa80ffd2e39749ebfb5b12c09a4cd6e0c70703bff258d5ca41351426b37b5635f2fe66fa05f7125b9ef76e44c12970ec45945be623f8c5a87b6c053c44dbf351b5de19d862282d83f20dd95c248fc571e634043def62b1bf05e480b3d0122d8ab08b02abbbb0895380da22823b206029ea917e15eb5e5eb3ed24abebe30d2eedeca0ce42507a50aec7168cc7be4e4a20dff7b5aadb4e525426c1bb89327e5225ef02734ff4f4cfade894fb58b6386d193fb3ba91f83856368c40df7d59e3ceaacad51c6cf704f88b184cd279c6799590c52aed57ea035ad06c45747875a480277a136320c1fd461fc8bd4cc8dc1034137643a03517928918067fbd9b067b9b378a08660641c6f4d8545416cc5dd34addb2afeb4bf5607df7de6e89a3b2d9031fa68fb70fac15edd24e8cba2408fa563e1278abde0a695a597b4180f9dc",
+          "rate_sat_vb": 1,
+          "txid": "3fc22ff315031719233888cc1b62646cfa9b9b69d151cf0dbe4c41a4e074c388",
+          "vsize": 736,
+          "weight": 2944
+        },
+        {
+          "anchor_age": 101,
+          "anchor_height": 100,
+          "authentic_shielded_acceptance": null,
+          "fee_sats": 736,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "032b89f9bdda1c29127bdb03ab582d13bcd0d3800d28169d9e0924c1dbb419c6",
+            "vout": 0
+          },
+          "hex": "02000000000101c619b4dbc124099e9d16280d80d3d0bc132d58ab03db7b12291cdabdf9892b030000000000fdffffff0220ef052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231640000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235bb6a9e9222012978141a87bcb1548db1634a84155d710fa439d3066623cd6d62a5b033c0c1d95e9cfadeab86f0b8a02f496c3663825ceb60867661621295c3d72b250677f9a84b4f09e290b1dea143f819bf018a24017716ad850f8777040a50b470f5c45fc12770a38536436d3c98d4de7886e225226b3c7bf973f4c661b2a5b5cccda597d712bd7d9542053f4a99a67dcd3f4c61ea57f862d8c26e4319d8033bf12ec8c83e6cdeae79739dc84b1d8ec5362d25485a97753391b1b393d5f4afb7237190c308775823c24d4456d46b2ac1348c5dc0ce906773d03466ca29181ed366e09c32326e544d5ec4dc9b141e07026ba185a2f9d62e90a7a54181244e2d3901b15074dfbde3c779174eaa3b05a5163afe5718d94eb80738a7b0e560b3eb3726c1e23ac6c63cc32afddb0a2e7f97fafc0651249a01c2c126d63c8304abdae62ff10f5535cadd65da4e205b8de1a122bcd51daae3a56ca202bb7163f084d641696c885ed2a99485f4db40dc046eeee39c4859c3daba16a4cf0132a34bfe32552b0e83c9fff052527e03126411b8395de17b251e5b143a01293096adbfe437a76f6439f86a776d19b6b193a19e7eaf17d187948ee2a8bc1a595fc9373ff6c6f0da832b6f65c273e219a119222ef5d3a1fe3fc2e903e7f071ca9641e7529d7cb090c436efa88ef22bafbdb532418e5193f2d286a7a29635350aa19d8cd17ba1b6f005781d99985cc66748215b1de75947f3b52b5331201404b2d2efc14424205cc1ed8d32512263e4e2e5e135bee0cff41ad453c8e624c1f2113031c9bb0d3ae52588f4a62383745c1e060ce40349739c02e9ec84908b79b00000000",
+          "inclusion_height": 201,
+          "model_height_eligible": false,
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231640000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235bb6a9e9222012978141a87bcb1548db1634a84155d710fa439d3066623cd6d62a5b033c0c1d95e9cfadeab86f0b8a02f496c3663825ceb60867661621295c3d72b250677f9a84b4f09e290b1dea143f819bf018a24017716ad850f8777040a50b470f5c45fc12770a38536436d3c98d4de7886e225226b3c7bf973f4c661b2a5b5cccda597d712bd7d9542053f4a99a67dcd3f4c61ea57f862d8c26e4319d8033bf12ec8c83e6cdeae79739dc84b1d8ec5362d25485a97753391b1b393d5f4afb7237190c308775823c24d4456d46b2ac1348c5dc0ce906773d03466ca29181ed366e09c32326e544d5ec4dc9b141e07026ba185a2f9d62e90a7a54181244e2d3901b15074dfbde3c779174eaa3b05a5163afe5718d94eb80738a7b0e560b3eb3726c1e23ac6c63cc32afddb0a2e7f97fafc0651249a01c2c126d63c8304abdae62ff10f5535cadd65da4e205b8de1a122bcd51daae3a56ca202bb7163f084d641696c885ed2a99485f4db40dc046eeee39c4859c3daba16a4cf0132a34bfe32552b0e83c9fff052527e03126411b8395de17b251e5b143a01293096adbfe437a76f6439f86a776d19b6b193a19e7eaf17d187948ee2a8bc1a595fc9373ff6c6f0da832b6f65c273e219a119222ef5d3a1fe3fc2e903e7f071ca9641e7529d7cb090c436efa88ef22bafbdb532418e5193f2d286a7a29635350aa19d8cd17ba1b6f005781d99985cc66748215b1de75947f3b52b53312",
+          "rate_sat_vb": 1,
+          "txid": "7968e7d33f5115a9396ed5debfa2e6b6df91d39d7fbeffa68cb61c4552fac8bc",
+          "vsize": 736,
+          "weight": 2944
+        }
+      ],
+      "kind": "forced-height control, not a fee-performance measurement",
+      "node_stopped": true
+    },
+    "relay": [
+      {
+        "authentic_shielded_acceptance": null,
+        "barrier_received": true,
+        "high_fee": {
+          "fee_sats": 14720,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "021e4e13baedd00607facdb20819154908fc5708d74c75868a2d9b58da2d88e4",
+            "vout": 0
+          },
+          "hex": "02000000000101e4882dda589b2d8a86754cd70857fc0849151908b2cdfa0706d0edba134e1e020000000000fdffffff0280b8052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b4220140318ffb1eae01bb248122b369fecaef3b90bb01eed148c5cd677da2613ee38b68593d03d7023834de7806e2b13f63073ace88ce4f43ad0db95cbe1dd30307e48d00000000",
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b422",
+          "rate_sat_vb": 20,
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "vsize": 736,
+          "weight": 2944
+        },
+        "high_fee_large_received": true,
+        "large": {
+          "fee_sats": 736,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "021e4e13baedd00607facdb20819154908fc5708d74c75868a2d9b58da2d88e4",
+            "vout": 0
+          },
+          "hex": "02000000000101e4882dda589b2d8a86754cd70857fc0849151908b2cdfa0706d0edba134e1e020000000000fdffffff0220ef052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b42201409c5a801bc80e6988a57c29be6cde63fe4227d19f87c64a847c6502dcc3bb0ef5dfafa4e016c6ee7754a613f17f2f8aa09e6243691abcd44510d8b2000009cfb600000000",
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b422",
+          "rate_sat_vb": 1,
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "vsize": 736,
+          "weight": 2944
+        },
+        "large_received": true,
+        "nodes_stopped": true,
+        "receiver_datacarriersize": 100000,
+        "receiver_direct_check": {
+          "allowed": false,
+          "reject-details": "txn-already-in-mempool",
+          "reject-reason": "txn-already-in-mempool",
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "wtxid": "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+        },
+        "receiver_high_fee_check": {
+          "allowed": false,
+          "reject-details": "txn-already-in-mempool",
+          "reject-reason": "txn-already-in-mempool",
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "wtxid": "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+        },
+        "relay_clock": "mock time advances five seconds per wait iteration; not a latency measurement",
+        "sender_admission": {
+          "allowed": true,
+          "fees": {
+            "base": "0.00000736",
+            "effective-feerate": "0.00001000",
+            "effective-includes": [
+              "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+            ]
+          },
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "vsize": 736,
+          "wtxid": "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+        },
+        "sender_high_fee_admission": {
+          "allowed": true,
+          "fees": {
+            "base": "0.00014720",
+            "effective-feerate": "0.00020000",
+            "effective-includes": [
+              "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+            ]
+          },
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "vsize": 736,
+          "wtxid": "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+        },
+        "small_received": true
+      },
+      {
+        "authentic_shielded_acceptance": null,
+        "barrier_received": true,
+        "high_fee": {
+          "fee_sats": 14720,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "021e4e13baedd00607facdb20819154908fc5708d74c75868a2d9b58da2d88e4",
+            "vout": 0
+          },
+          "hex": "02000000000101e4882dda589b2d8a86754cd70857fc0849151908b2cdfa0706d0edba134e1e020000000000fdffffff0280b8052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b4220140318ffb1eae01bb248122b369fecaef3b90bb01eed148c5cd677da2613ee38b68593d03d7023834de7806e2b13f63073ace88ce4f43ad0db95cbe1dd30307e48d00000000",
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b422",
+          "rate_sat_vb": 20,
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "vsize": 736,
+          "weight": 2944
+        },
+        "high_fee_large_received": false,
+        "large": {
+          "fee_sats": 736,
+          "funding_outpoint": {
+            "sequence": 4294967293,
+            "txid": "021e4e13baedd00607facdb20819154908fc5708d74c75868a2d9b58da2d88e4",
+            "vout": 0
+          },
+          "hex": "02000000000101e4882dda589b2d8a86754cd70857fc0849151908b2cdfa0706d0edba134e1e020000000000fdffffff0220ef052a0100000022512049de36fa3cfbfc5a358c79e3ef3ede975fde7fe1f26e3e152372320fab35a1750000000000000000fd66026a4d62024c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b42201409c5a801bc80e6988a57c29be6cde63fe4227d19f87c64a847c6502dcc3bb0ef5dfafa4e016c6ee7754a613f17f2f8aa09e6243691abcd44510d8b2000009cfb600000000",
+          "op_return_script_bytes": 614,
+          "payload_hex": "4c4142534231c00000000202e9b2c90ed26ff0eca660b09f50efeacecb4725117b08a22f8aabd39acdfd8cdb320f621bf43b62afb6c3b9f10c3c3a2e9aa3afe4d86bfb2d10a35b3a7012235b38956e9d9aca881bd5ca63549d9e5d5e7a15a9f5ed82e44cb24991c959bb37add897707051919aefbb05348949866431927f25adcaa3d75bc3014237e179aa183da135f516c95020cdf3dcff6f326e470d0c0d14fb7dde1238d0927acf49b8667074a4be0f9eb6ce74308fd68309582a273f4828f466658f6d61935fec2249f8d273e1d568e9047c09272230c4f2057681584ba5c7a5117d8f90e3e403a5d33add629179e69333ced05df12425fccddaa475f6c6d41233c38876ec7d3363d98b18ba3e24d6f0683a2825409ca9e89413ada9d06cab0f5a32ad38c5abec2ee09a47f91f2044cfdd85db70cc9924c815a106002894298c91f5e873b017dab6d7cdb53798ac8f2bc25206bcc79525ebc4a52d09dd5c6688b538c214b91c9c827645b69a6316d6ad0add038242eee4889cee76de500a6a85822392384615540fcf55f163ef589dbac13e3ab73ec4085a8688040e6e1523469817443c187df6e814aad3b5823503b47eccadca083c0dd3eba574d360e015a5954895be94486cda92ecf2ab1cd784836a88cf8b673ed90f602e59793fdf347e28c0ff6f9c3c60b2a0a4ab1e3663230ee758372fe10af52dcf8f7c538d1c1c7da953b6c4764baf791616c93cd05bad76f0b386649bb0e2d538a267251789d31ba1c9cac7fe507c0211836bf2753c1d25ae74c8aa16364fc3e70038b690372dfd268ae4e96ec3430e6f343475dee1c353d43e24f43472df97c2c4c04f74c1b422",
+          "rate_sat_vb": 1,
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "vsize": 736,
+          "weight": 2944
+        },
+        "large_received": false,
+        "nodes_stopped": true,
+        "receiver_datacarriersize": 83,
+        "receiver_direct_check": {
+          "allowed": false,
+          "reject-details": "datacarrier",
+          "reject-reason": "datacarrier",
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "wtxid": "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+        },
+        "receiver_high_fee_check": {
+          "allowed": false,
+          "reject-details": "datacarrier",
+          "reject-reason": "datacarrier",
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "wtxid": "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+        },
+        "relay_clock": "mock time advances five seconds per wait iteration; not a latency measurement",
+        "sender_admission": {
+          "allowed": true,
+          "fees": {
+            "base": "0.00000736",
+            "effective-feerate": "0.00001000",
+            "effective-includes": [
+              "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+            ]
+          },
+          "txid": "1f92b18584cbda402a09a97ed717333a49575b90aa13adff7bb516722e834759",
+          "vsize": 736,
+          "wtxid": "2ea8c2d6975b5eedd3bcb9e99f7a64d9009313f5c101d464354bed1a7815e620"
+        },
+        "sender_high_fee_admission": {
+          "allowed": true,
+          "fees": {
+            "base": "0.00014720",
+            "effective-feerate": "0.00020000",
+            "effective-includes": [
+              "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+            ]
+          },
+          "txid": "c6127f872641a80350158b7773667ea9adbd0633733e596c495ccb8ce9bcc7c9",
+          "vsize": 736,
+          "wtxid": "b46ad72a0b166b5444bb784b4252bd0a9d5de716d639cd03599b9c506931bcf8"
+        },
+        "small_received": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 14,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 209,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m1-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 11,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 206,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m1-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 11,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 206,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m1-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 17,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 209,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m16-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 14,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 206,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m16-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 14,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 206,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "fresh_congested-m16-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "publication_height": 201,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "fresh_congested",
+        "offline_blocks": 0
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 99,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 294,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "near_deadline-m1-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 96,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "near_deadline-m1-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 96,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "near_deadline-m1-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 102,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 736,
+      "inclusion_height": 294,
+      "initial_anchor": 192,
+      "model_height_eligible": false,
+      "name": "near_deadline-m16-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 99,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "near_deadline-m16-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 2,
+      "final_anchor": 272,
+      "final_anchor_age": 19,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "near_deadline-m16-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+      "publication_height": 286,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "near_deadline",
+        "offline_blocks": 85
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 101,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 736,
+      "inclusion_height": 296,
+      "initial_anchor": 195,
+      "model_height_eligible": false,
+      "name": "deadline_crossed-m1-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 98,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 293,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "deadline_crossed-m1-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 98,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 293,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "deadline_crossed-m1-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 104,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 736,
+      "inclusion_height": 296,
+      "initial_anchor": 192,
+      "model_height_eligible": false,
+      "name": "deadline_crossed-m16-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 101,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 14720,
+      "inclusion_height": 293,
+      "initial_anchor": 192,
+      "model_height_eligible": false,
+      "name": "deadline_crossed-m16-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 2,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 2,
+      "final_anchor": 272,
+      "final_anchor_age": 21,
+      "included_fee_sats": 14720,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 293,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "deadline_crossed-m16-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 8,
+        "name": "deadline_crossed",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 1,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 96,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "early_clear-m1-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 96,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "early_clear-m1-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 195,
+      "final_anchor_age": 96,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 195,
+      "model_height_eligible": true,
+      "name": "early_clear-m1-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 1,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 99,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "early_clear-m16-hold",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "hold",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 99,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "early_clear-m16-fee_only",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "fee_only",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    },
+    {
+      "attempt_count": 1,
+      "authentic_shielded_acceptance": null,
+      "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+      "carrier_weight": 2944,
+      "distinct_synthetic_payloads": 1,
+      "final_anchor": 192,
+      "final_anchor_age": 99,
+      "included_fee_sats": 736,
+      "included_height_ineligible_fee_sats": 0,
+      "inclusion_height": 291,
+      "initial_anchor": 192,
+      "model_height_eligible": true,
+      "name": "early_clear-m16-refresh_on_bump",
+      "node_stopped": true,
+      "op_return_script_bytes": 614,
+      "policy": "refresh_on_bump",
+      "profile": {
+        "minimum_depth": 1,
+        "window": 100
+      },
+      "publication_chain_hash": "5aa4c1ea2020aa5863281d976a8030919a0c5c1c83bce02d68d129ba411826de",
+      "publication_height": 288,
+      "scenario": {
+        "background_blocks": 3,
+        "name": "early_clear",
+        "offline_blocks": 87
+      },
+      "spacing": 16,
+      "synthetic_marker_links": 0,
+      "vsize": 736,
+      "wallet_depth": 6
+    }
+  ]
+}

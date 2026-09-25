@@ -1,0 +1,74 @@
+[
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 201,
+    "remaining_margin": 94,
+    "step": 0
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 202,
+    "remaining_margin": 93,
+    "step": 1
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 203,
+    "remaining_margin": 92,
+    "step": 2
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 204,
+    "remaining_margin": 91,
+    "step": 3
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 205,
+    "remaining_margin": 90,
+    "step": 4
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 206,
+    "remaining_margin": 89,
+    "step": 5
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 207,
+    "remaining_margin": 88,
+    "step": 6
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 208,
+    "remaining_margin": 87,
+    "step": 7
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 209,
+    "remaining_margin": 86,
+    "step": 8
+  }
+]
