@@ -1,0 +1,11 @@
+--- upstream/Cargo.lock
++++ work/Cargo.lock
+@@ -320,7 +320,7 @@
+ [[package]]
+ name = "class_group"
+ version = "0.4.4"
+-source = "git+http://github.com/LLFourn/class?rev=3373e5b94d70d370435e0c8e9636dbbbe978cbef#3373e5b94d70d370435e0c8e9636dbbbe978cbef"
++source = "git+https://github.com/LLFourn/class?rev=3373e5b94d70d370435e0c8e9636dbbbe978cbef#3373e5b94d70d370435e0c8e9636dbbbe978cbef"
+ dependencies = [
+  "bindgen",
+  "curv",

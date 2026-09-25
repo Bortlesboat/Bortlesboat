@@ -30,6 +30,12 @@ The submitted change distinguishes error against the current mempool median from
 
 ## Research experiments
 
+### Ordinary checkout after A²L preparation
+
+Can a wallet pay new merchants after a preparation service becomes unavailable? The [checkout experiment](experiments/prepared-checkout/README.md) runs COMIT's archived A²L completed-payment path, then makes two ordinary Bitcoin payments from the resulting output and its change. It includes a selected-input refusal and a deliberate automatic-funding control that joins prepared and ordinary coins.
+
+The package records mined transactions, source hashes and costs on isolated regtest. It studies spending behavior and public transaction links; it does not establish anonymity or recovery safety. A²L and the COMIT implementation are credited upstream work.
+
 ### Publication fees and anchor expiry
 
 Can a fee increase buy a Bitcoin confirmation after a payload's modeled anchor has expired? The [publication-policy benchmark](experiments/shielded-publication/README.md) compares 24 controlled cases on Bitcoin Core 31.1 regtest, with signed transactions, raw traces and reproducible reports.

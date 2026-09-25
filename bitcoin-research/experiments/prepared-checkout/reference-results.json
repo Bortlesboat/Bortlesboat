@@ -1,0 +1,363 @@
+{
+  "created_utc": "2026-09-25T17:39:15.578117+00:00",
+  "scope": "Single-process A2L preparation, then normal Core wallet payments on isolated regtest.",
+  "upstream_commit": "a261027f4bdb2384f715efa3f634d5796fe95019",
+  "bitcoin_version": "Bitcoin Core daemon version v31.1.0 bitcoind",
+  "bitcoin_binary_sha256": "986e63b3c8770f08d0059820ad3dd085d1ab9e1bea23946c243f858a06888a08",
+  "transaction_source_sha256": "bd6258e14072cd255ccd75ca15e3ae859a8480f62f9d28616d3133bbcd616dfc",
+  "adapter_sha256": "fdeeba8426bc5e6baa460dc2a59b95fa44ad76aa80877d1240fc55b686fa7c49",
+  "experiment_sha256": "ef32bc4edb3587077c39cf45c61873562c620f236733d8c2e48d85777999bf4c",
+  "harness_sha256": "dd0d802e264b24c811dce0c6134136ce623f779c9474aa63c89769ca2cb81b65",
+  "checks": {
+    "completed_preparation": "passed",
+    "arbitrary_amount_without_helper": "passed",
+    "repeat_payment_from_change_without_helper": "passed",
+    "no_silent_topup_with_coin_control": "passed",
+    "unsafe_automatic_topup_control": "reproduced_expected_linkage",
+    "public_transaction_edges": "passed"
+  },
+  "setup_control_deposit": {
+    "txid": "223c73826895b69f042eaaed6240e458b89cb98a42e34ac22fdd7a41c8c7d811",
+    "blockhash": "639197c7b05566f5a04d028b97c7866d4515b84aa02ed29f216ff3efbbad6048",
+    "vsize": 141,
+    "weight": 561,
+    "inputs": [
+      {
+        "txid": "2459ad97de09c4db5c31d3a1e3d2f163cd7cfd5a1ef18d12506b172d2bad6acf",
+        "vout": 1
+      }
+    ],
+    "outputs": [
+      {
+        "vout": 0,
+        "sats": 2994991540,
+        "script_type": "witness_v0_keyhash",
+        "address": "bcrt1qsr2qfgf8k9vfasfwue52c8k09u7txwel4aw7yw"
+      },
+      {
+        "vout": 1,
+        "sats": 5000000,
+        "script_type": "witness_v0_keyhash",
+        "address": "bcrt1qnmvgv9rkhu9ef94x2mpguydh8pxa08mh6vkaa3"
+      }
+    ],
+    "raw_hex": "02000000000101cf6aad2b2d176b50128df11e5afd7ccd63f1d2e3a1d3315cdbc409de97ad59240100000000fdffffff02b4f183b20000000016001480d404a127b1589ec12ee668ac1ecf2f3cb33b3f404b4c00000000001600149ed8861476bf0b9496a656c28e11b7384dd79f7702473044022063af5f1eb0abb1c1198e4fe91096637ec81c57c0cfa1b54a2e54ee18c3706a4e02201c9e6cdadf54c2da4b7ffa6cafb8bb9e83ee9985169e12747bd7e57134e2bbb501210236df35bd0c62bbcbf5ede237936cb6b26e12c2d812ea3a14b45b90d009d2edb96b000000"
+  },
+  "helper_unavailability": {
+    "rust_process_returncode": 0,
+    "all_protocol_actors_in_exited_process": true,
+    "unloaded_wallets": [
+      "tumbler_promise",
+      "tumbler_solver",
+      "sender",
+      "lab_funder"
+    ],
+    "wallet_access_rejected": [
+      "tumbler_promise",
+      "tumbler_solver",
+      "sender"
+    ],
+    "not_a_secure_key_deletion_claim": true
+  },
+  "preparation": {
+    "transactions": [
+      {
+        "txid": "95f2683e890ddd63db2d6833ab3f2bbe77eeac87b76b41d606704b82443a16ec",
+        "blockhash": "5d97ecaf97a901396abd42f593c50878759ee4707a4b909d97bbc2f4fa4c89f2",
+        "vsize": 153,
+        "weight": 609,
+        "inputs": [
+          {
+            "txid": "2459ad97de09c4db5c31d3a1e3d2f163cd7cfd5a1ef18d12506b172d2bad6acf",
+            "vout": 0
+          }
+        ],
+        "outputs": [
+          {
+            "vout": 0,
+            "sats": 10012220,
+            "script_type": "witness_v0_scripthash",
+            "address": "bcrt1q5nmyxyx3hm7qx83cvwazcnmuytlwercuk6wfq7lafl0n2tctqh6slpapme"
+          },
+          {
+            "vout": 1,
+            "sats": 989984960,
+            "script_type": "witness_v0_keyhash",
+            "address": "bcrt1qyu2k4skpvg6zsavyv0wmkg0euhm79qut970m03"
+          }
+        ],
+        "raw_hex": "02000000000101cf6aad2b2d176b50128df11e5afd7ccd63f1d2e3a1d3315cdbc409de97ad59240000000000fdffffff023cc6980000000000220020a4f64310d1befc031e3863ba2c4f7c22feec8f1cb69c907bfd4fdf352f0b05f5c0f8013b0000000016001427156ac2c1623428758463ddbb21f9e5f7e2838b024730440220149d6e15786734a705a8eef83b3d973dadf61dabb4d9e1538750e769a8d72baa022075e4caa25c8640629b1a37d5ce1a3d14ef3558f96e119fea264513065e00db0601210329b188738b4cb43c7f226a4a51857e1770ad775852eb61a2d46f6e1a6f942a2200000000",
+        "fee_sats": 2820,
+        "confirmed_height": 104
+      },
+      {
+        "txid": "3f6a3648bcbdecc11185693f5e5cf0f3d080d40fe31ffb253e1aa63b3a1653ab",
+        "blockhash": "7e91acfebb0caf9704f1c5f2596e4401af177920b07183468b44386d75644723",
+        "vsize": 153,
+        "weight": 609,
+        "inputs": [
+          {
+            "txid": "1bfb34ccfeb21745dd0baf362def52e6c5b1a81b5e3fa1925b3ec384f7264535",
+            "vout": 0
+          }
+        ],
+        "outputs": [
+          {
+            "vout": 0,
+            "sats": 10002220,
+            "script_type": "witness_v0_scripthash",
+            "address": "bcrt1qq3d6lhs3v9ag5xeta0303dqygllzltt3xy4aws8l59c8nz25m6mqqz8q2s"
+          },
+          {
+            "vout": 1,
+            "sats": 989994960,
+            "script_type": "witness_v0_keyhash",
+            "address": "bcrt1qjywwk2djy6fqtqmfuc7t3q2cq5ujgy30k4ams0"
+          }
+        ],
+        "raw_hex": "02000000000101354526f784c33e5b92a13f5e1ba8b1c5e652ef2d36af0bdd4517b2fecc34fb1b0000000000fdffffff022c9f980000000000220020045bafde11617a8a1b2bebe2f8b40447fe2fad71312bd740ffa170798954deb6d01f023b00000000160014911ceb29b22692058369e63cb88158053924122f02473044022018593e45927695c187c9ad8be95ab493d688d2bf2b99038375429989761287950220539c900e79b9cbfa23a93bee373f7d58b13fa89e0a2f0df3c9bff3c0e39b9dd001210262d60ceb56ee76ee914b32bb2b4133d415405e5fbacac9f3962576aba0740b6f00000000",
+        "fee_sats": 2820,
+        "confirmed_height": 105
+      },
+      {
+        "txid": "0f1114dab57756418d3dbb299b643b18533aadc5948b7a05dfaa80a1c25723d2",
+        "blockhash": "110e849401b22374d6c404607f23b555a4922bb7b40e5dd07bc611919e0616c4",
+        "vsize": 137,
+        "weight": 548,
+        "inputs": [
+          {
+            "txid": "95f2683e890ddd63db2d6833ab3f2bbe77eeac87b76b41d606704b82443a16ec",
+            "vout": 0
+          }
+        ],
+        "outputs": [
+          {
+            "vout": 0,
+            "sats": 10010000,
+            "script_type": "witness_v0_keyhash",
+            "address": "bcrt1qr0fljxk3nerllqtnv8z2uau2rwacqrf5q25tvj"
+          }
+        ],
+        "raw_hex": "02000000000101ec163a44824b7006d6416bb787acee77be2b3fab33682ddb63dd0d893e68f2950000000000ffffffff0190bd9800000000001600141bd3f91ad19e47ff817361c4ae778a1bbb800d3403483045022100a90282fabfebd3cd1cc5ed5ec27785ecfb2326ef41e4ae37a073b3af54c50d5f02206ac188056eec21e944670d53a51c8cb0c53d3d743613eda91d4252b02cb3beeb01483045022100a70aeccddcd739050d6534835d9d0e676228a6f3f0e26e68b5eeaf9344d7cb2802201d00a2830da01710c794dea92eb7132fac8e57ec1b77082e920e0a787806dcc6014621027d3e60aa019cdbd118d5e4ada53948dbd4a4c1dc8cafef01e2ae8c7633af777cad2102a44d24aa5393fc3fa09495d2b5060098dd6ab983778b4a326d85e9a63ed28b4eac00000000",
+        "fee_sats": 2220,
+        "confirmed_height": 106
+      },
+      {
+        "txid": "3d9b5c444a9e2303d9c3d8da7a46f39c42197bf0d43dcd7aca6162aae051b72b",
+        "blockhash": "676557b6e337d13e2cc4b280a81a3c4c6a312ea56e704636d2dcf91959f88b27",
+        "vsize": 137,
+        "weight": 546,
+        "inputs": [
+          {
+            "txid": "3f6a3648bcbdecc11185693f5e5cf0f3d080d40fe31ffb253e1aa63b3a1653ab",
+            "vout": 0
+          }
+        ],
+        "outputs": [
+          {
+            "vout": 0,
+            "sats": 10000000,
+            "script_type": "witness_v0_keyhash",
+            "address": "bcrt1q44cull4nxxr49syjp427zv3awm2dzvfjtkuaw3"
+          }
+        ],
+        "raw_hex": "02000000000101ab53163a3ba61a3e25fb1fe30fd480d0f3f05c5e3f698511c1ecbdbc48366a3f0000000000ffffffff018096980000000000160014ad71cffeb3318752c0920d55e1323d76d4d13132034730440220042d23c3df7fd76c704838e7bf137c2c27228bc01f333a2bf3ddd4682c593b7c02202f1f75840529df4845be5966eaea43833e93190650639d7d9d0b5686a4565c37014730440220167a6d3a296b7bdcf5eac3854fa41c65d431ef568045d73c499c28f4dc6af50d022049d94879cfa250bbf2cbdc0664d9623d78f2f8c52164b42249a79d1d21fadfb301462102948deba154a877b6023c15861792a4ee6e7c7631168eb47352070a33ef9d6c3fad210257f3693afde67237ce57caee554859786966e2c04d25c7a75b69e893d47b2eb7ac00000000",
+        "fee_sats": 2220,
+        "confirmed_height": 107
+      }
+    ],
+    "ready_coin": {
+      "txid": "3d9b5c444a9e2303d9c3d8da7a46f39c42197bf0d43dcd7aca6162aae051b72b",
+      "vout": 0
+    },
+    "ready_sats": 10000000,
+    "total_vbytes": 580,
+    "total_network_fee_sats": 10080,
+    "configured_helper_fee_sats": 10000,
+    "fixture_funding_and_control_deposit_excluded_from_protocol_cost": true
+  },
+  "checkouts": [
+    {
+      "txid": "9d7e231de747201385b104095203b6e865b686ee781c3100500bfc7772f56212",
+      "blockhash": "4424118afb922a2e211901de302d446b27d6002b25d9d06c5462de5b89024f4f",
+      "vsize": 141,
+      "weight": 561,
+      "inputs": [
+        {
+          "txid": "3d9b5c444a9e2303d9c3d8da7a46f39c42197bf0d43dcd7aca6162aae051b72b",
+          "vout": 0
+        }
+      ],
+      "outputs": [
+        {
+          "vout": 0,
+          "sats": 123456,
+          "script_type": "witness_v0_keyhash",
+          "address": "bcrt1q7y55eqvxjf6f9uwzuclrdqjpvqw0fm2njdezga"
+        },
+        {
+          "vout": 1,
+          "sats": 9875544,
+          "script_type": "witness_v0_keyhash",
+          "address": "bcrt1q3jd3tqcyvhhf8f4m72r2vkxrkczxqd0c54xxuw"
+        }
+      ],
+      "raw_hex": "020000000001012bb751e0aa6261ca7acd3dd4f07b19429cf3467adad8c3d903239e4a445c9b3d0000000000fdffffff0240e2010000000000160014f1294c8186927492f1c2e63e368241601cf4ed5358b09600000000001600148c9b15830465ee93a6bbf286a658c3b6046035f8024730440220400c55f5225c0c1f1f49590f2d705012f9b7d3eefd9489ad862a2b931613e35502200603dee4a34bc2d234ee966410821f0c3ee6bc412a7c66ea90fff8a73e99dc910121039546dce4fe11f08d379b0cf1928047e7a308b4c39aa6fee9c4d6f19f9d1d9fc500000000",
+      "fee_sats": 1000,
+      "confirmed_height": 109,
+      "payment_sats": 123456,
+      "change_sats": 9875544,
+      "merchant_wallet": "merchant_one",
+      "origin_group": "preparation_1",
+      "uses_only_selected_prepared_coin": true
+    },
+    {
+      "txid": "430fed4c22eb1a06972388c6237a0d492d44c04941857972cf0d3af89d016d51",
+      "blockhash": "54d81b3aa2109a3f21c057faa09dcfd817a3b9578a7902c0ccdbfc55e356b161",
+      "vsize": 141,
+      "weight": 561,
+      "inputs": [
+        {
+          "txid": "9d7e231de747201385b104095203b6e865b686ee781c3100500bfc7772f56212",
+          "vout": 1
+        }
+      ],
+      "outputs": [
+        {
+          "vout": 0,
+          "sats": 1234567,
+          "script_type": "witness_v0_keyhash",
+          "address": "bcrt1qrn9mkcfcpfk8nrycsanffvjx42w442lwn0656q"
+        },
+        {
+          "vout": 1,
+          "sats": 8639977,
+          "script_type": "witness_v0_keyhash",
+          "address": "bcrt1qz043gn7k86deuwthr7pkjzj4g0v0d396mj4rtv"
+        }
+      ],
+      "raw_hex": "020000000001011262f57277fc0b5000311c78ee86b665e8b603520904b185132047e71d237e9d0100000000fdffffff0287d61200000000001600141ccbbb61380a6c798c98876694b246aa9d5aabeee9d583000000000016001413eb144fd63e9b9e39771f83690a5543d8f6c4ba0247304402207bc1331f359e58e5f4e2103a5e3705ed5a8640002c8c7a2fba62c97f8d99d2470220010f83908e7f540c10a98e1b9a3dad5ea1a652f0df08d569f9f7ada89f47ceab01210354869c170532a6f227c37c33373223ee082ea8a766caceeeb74f1cb6391bac5d00000000",
+      "fee_sats": 1000,
+      "confirmed_height": 110,
+      "payment_sats": 1234567,
+      "change_sats": 8639977,
+      "merchant_wallet": "merchant_two",
+      "origin_group": "preparation_1",
+      "uses_only_selected_prepared_coin": true
+    }
+  ],
+  "insufficient_prepared_balance": {
+    "prepared_sats": 8639977,
+    "total_wallet_sats": 13639977,
+    "requested_sats": 9639977,
+    "add_inputs": false,
+    "core_error": "fundrawtransaction: {'code': -4, 'message': 'The preselected coins total amount does not cover the transaction target. Please allow other inputs to be automatically selected or include more coins manually'}",
+    "coins_unchanged": true,
+    "nothing_broadcast": true,
+    "policy_scope": "Coin control prevents merging; this is not an anonymity judgment."
+  },
+  "unsafe_topup_control": {
+    "txid": "4af3b90b2b77c6d3cbfbd253d328b18d479c45faf9af3757bc6a757bf6917236",
+    "blockhash": "07736a33635fcf890690774224e127f6ce62d7ee1dc6db559439db7a9896c13d",
+    "vsize": 208,
+    "weight": 832,
+    "inputs": [
+      {
+        "txid": "430fed4c22eb1a06972388c6237a0d492d44c04941857972cf0d3af89d016d51",
+        "vout": 1
+      },
+      {
+        "txid": "223c73826895b69f042eaaed6240e458b89cb98a42e34ac22fdd7a41c8c7d811",
+        "vout": 1
+      }
+    ],
+    "outputs": [
+      {
+        "vout": 0,
+        "sats": 3999584,
+        "script_type": "witness_v0_keyhash",
+        "address": "bcrt1q0dkycj20r63tfs2f5v6gme6sx6ctyun2v70emy"
+      },
+      {
+        "vout": 1,
+        "sats": 9639977,
+        "script_type": "witness_v0_keyhash",
+        "address": "bcrt1qwyahml5xlm4wpl348heq0npp3wlzrvzaza6ey4"
+      }
+    ],
+    "raw_hex": "02000000000102516d019df83a0dcf7279854149c0442d490d7a23c6882397061aeb224ced0f430100000000fdffffff11d8c7c8417add2fc24ae3428ab99cb858e44062edaa2e049fb6956882733c220100000000fdffffff0260073d00000000001600147b6c4c494f1ea2b4c149a3348de75036b0b2726a2918930000000000160014713b7dfe86feeae0fe353df207cc218bbe21b05d0247304402201731f593ef314091a1d6ac8d8ad05db435978bca799bf820dfd72ba31b9d757802202b975e8070d837518850dd33e99a559d046382d045994d2d48d62777e18ee32b012103f2ad9428c842d863a09bde20f4947be8d09348b8d8ffeb79a3bea1812a8db7aa02473044022007d518b6498ae453bea1e815463569dcf63fceef3dc945cf62dc4989612fc999022030aa9f4e38d5bf0df8a21ef72caca23a8627878f8d596ad3bd856a5c35fe22420121038c54660ab7fb8597a880fdaecd1f04266977257d629f78a4543844ceb085e16d00000000",
+    "fee_sats": 416,
+    "confirmed_height": 111,
+    "expected_unsafe_behavior_reproduced": true,
+    "publicly_joins_prepared_and_unprepared_outpoints": true,
+    "prepared_input": {
+      "txid": "430fed4c22eb1a06972388c6237a0d492d44c04941857972cf0d3af89d016d51",
+      "vout": 1
+    },
+    "unprepared_input": {
+      "txid": "223c73826895b69f042eaaed6240e458b89cb98a42e34ac22fdd7a41c8c7d811",
+      "vout": 1
+    },
+    "warning": "A common transaction is observable; ownership or real identity remains an inference."
+  },
+  "observability": {
+    "preparation_output_to_first_checkout": true,
+    "first_checkout_change_to_second_checkout": true,
+    "second_checkout_change_to_unprepared_merge": true,
+    "all_output_amounts_public": true,
+    "wallet_labels_used_only_to_identify_ground_truth": true,
+    "change_ownership_not_proven_by_public_graph_alone": true,
+    "anonymity_not_measured": true
+  },
+  "space_cost_scenarios": [
+    {
+      "ordinary_payments": 1,
+      "basis": "measured",
+      "measured_payment_vbytes": [
+        141
+      ],
+      "preparation_vbytes": 580,
+      "baseline_total_vbytes": 141,
+      "prepared_total_vbytes": 721,
+      "additional_vbytes_per_payment": 580.0,
+      "at_2_sat_per_vbyte_extra_network_sats_total": 1160,
+      "at_10_sat_per_vbyte_extra_network_sats_total": 5800
+    },
+    {
+      "ordinary_payments": 2,
+      "basis": "measured",
+      "measured_payment_vbytes": [
+        141,
+        141
+      ],
+      "preparation_vbytes": 580,
+      "baseline_total_vbytes": 282,
+      "prepared_total_vbytes": 862,
+      "additional_vbytes_per_payment": 290.0,
+      "at_2_sat_per_vbyte_extra_network_sats_total": 1160,
+      "at_10_sat_per_vbyte_extra_network_sats_total": 5800
+    },
+    {
+      "ordinary_payments": 10,
+      "basis": "modeled_from_two_payment_mean",
+      "measured_payment_vbytes": null,
+      "preparation_vbytes": 580,
+      "baseline_total_vbytes": 1410.0,
+      "prepared_total_vbytes": 1990.0,
+      "additional_vbytes_per_payment": 58.0,
+      "at_2_sat_per_vbyte_extra_network_sats_total": 1160,
+      "at_10_sat_per_vbyte_extra_network_sats_total": 5800
+    }
+  ],
+  "cost_scope": "A2L costs sum both sides' four protocol transactions. Source fixtures, the deliberate unprepared deposit and unsafe control are excluded. Helper fee is a separate fixture parameter, not a market quote or an additional network fee. Ten payments are modeled, not executed; change reuse does not create ten independent privacy histories.",
+  "networkactive": false,
+  "connections": 0,
+  "loaded_wallets_at_end": [
+    "receiver",
+    "merchant_one",
+    "merchant_two",
+    "merchant_control"
+  ],
+  "status": "passed",
+  "owned_daemon_stopped": true
+}

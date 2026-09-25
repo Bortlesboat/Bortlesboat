@@ -1,0 +1,21 @@
+struct BitcoindBlockchain {
+    bitcoind_url: String,
+}
+
+impl BitcoindBlockchain {
+    pub fn new() -> anyhow::Result<Self> {
+        let url = std::env::var("A2L_TEST_RPC_URL")?;
+        let info: SerdeValue = rpc_command(&url,
+            ureq::json!({"jsonrpc":"1.0", "method":"getblockchaininfo", "params":[]}))?;
+        anyhow::ensure!(info["chain"] == "regtest", "Lab requires regtest");
+        let network: SerdeValue = rpc_command(&url,
+            ureq::json!({"jsonrpc":"1.0", "method":"getnetworkinfo", "params":[]}))?;
+        anyhow::ensure!(network["networkactive"] == false && network["connections"] == 0,
+                        "Lab requires disabled networking");
+        let address: String = rpc_command(&url,
+            ureq::json!({"jsonrpc":"1.0", "method":"getnewaddress", "params":["", "bech32"]}))?;
+        let _: SerdeValue = rpc_command(&url,
+            ureq::json!({"jsonrpc":"1.0", "method":"generatetoaddress", "params":[101, address]}))?;
+        Ok(Self { bitcoind_url: url })
+    }
+}

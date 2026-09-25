@@ -1,0 +1,193 @@
+--- upstream/tests/e2e.rs
++++ work/tests/community_checkout.rs
+@@ -8,10 +8,9 @@
+ use bitcoin::{
+     consensus::deserialize, consensus::encode::serialize_hex, hashes::hex::FromHex, Transaction,
+ };
+-use harness::{run_happy_path, run_refund};
++use harness::run_happy_path;
+ use rand::{thread_rng, Rng};
+ use serde::*;
+-use testcontainers::{clients, images::coblox_bitcoincore::BitcoinCore, Container, Docker};
+ use ureq::SerdeValue;
+ 
+ #[test]
+@@ -25,9 +24,7 @@
+     let spend_transaction_fee_per_wu = bitcoin::Amount::from_sat(10);
+     let tumbler_fee = bitcoin::Amount::from_sat(10_000);
+ 
+-    let client = clients::Cli::default();
+-
+-    let blockchain = BitcoindBlockchain::new(&client)?;
++    let blockchain = BitcoindBlockchain::new()?;
+     let (tumbler_promise, receiver) = make_puzzle_promise_actors(
+         &blockchain.bitcoind_url,
+         tumble_amount,
+@@ -80,67 +77,6 @@
+         "Tumbler should make money: solver_wallet_diff({}) > promise_wallet_diff({})",
+         tumbler_solver_diff,
+         tumbler_promise_diff
+-    );
+-
+-    Ok(())
+-}
+-
+-#[test]
+-fn e2e_refund() -> anyhow::Result<()> {
+-    // global A2L parameters
+-    let he_keypair = hsm_cl::keygen();
+-    let ps_keypair = pointcheval_sanders::keygen(&mut thread_rng());
+-
+-    // parameters for this instance of a2l
+-    let tumble_amount = bitcoin::Amount::from_sat(10_000_000);
+-    let spend_transaction_fee_per_wu = bitcoin::Amount::from_sat(10);
+-    let tumbler_fee = bitcoin::Amount::from_sat(10_000);
+-
+-    let client = clients::Cli::default();
+-
+-    let blockchain = BitcoindBlockchain::new(&client)?;
+-    let (tumbler_promise, receiver) = make_puzzle_promise_actors(
+-        &blockchain.bitcoind_url,
+-        tumble_amount,
+-        spend_transaction_fee_per_wu,
+-        he_keypair.clone(),
+-        he_keypair.to_pk(),
+-        ps_keypair.clone(),
+-    )?;
+-    let (tumbler_solver, sender) = make_puzzle_solver_actors(
+-        &blockchain.bitcoind_url,
+-        tumble_amount,
+-        spend_transaction_fee_per_wu,
+-        tumbler_fee,
+-        he_keypair,
+-        ps_keypair.clone(),
+-        ps_keypair.public_key,
+-    )?;
+-
+-    let (tumbler_promise, tumbler_solver, sender, receiver, _) = run_refund(
+-        tumbler_promise,
+-        tumbler_solver,
+-        sender,
+-        receiver,
+-        blockchain,
+-        &mut thread_rng(),
+-    )?;
+-
+-    assert_eq!(
+-        receiver.current_balance()?,
+-        receiver.expected_balance_after_no_tumble()
+-    );
+-    assert_eq!(
+-        tumbler_promise.current_balance()?,
+-        tumbler_promise.expected_balance_after_no_tumble()
+-    );
+-    assert_eq!(
+-        tumbler_solver.current_balance()?,
+-        tumbler_solver.expected_balance_after_no_tumble()
+-    );
+-    assert_eq!(
+-        sender.current_balance()?,
+-        sender.expected_balance_after_no_tumble()
+     );
+ 
+     Ok(())
+@@ -285,43 +221,44 @@
+     }
+ }
+ 
+-struct BitcoindBlockchain<'c> {
+-    _container: Container<'c, clients::Cli, BitcoinCore>,
++struct BitcoindBlockchain {
+     bitcoind_url: String,
+ }
+ 
+-impl<'c> BitcoindBlockchain<'c> {
+-    pub fn new(client: &'c clients::Cli) -> anyhow::Result<Self> {
+-        let container = client.run(BitcoinCore::default().with_tag("0.19.1"));
+-        let port = container.get_host_port(18443);
+-
+-        let auth = container.image().auth();
+-        let url = format!(
+-            "http://{}:{}@localhost:{}",
+-            &auth.username,
+-            &auth.password,
+-            port.unwrap()
+-        );
+-
+-        let address = rpc_command::<String>(
+-            &url,
+-            ureq::json!({"jsonrpc": "1.0", "method": "getnewaddress", "params": ["", "bech32"] }),
+-        )?;
+-        let _ = rpc_command::<Vec<String>>(
+-            &url,
+-            ureq::json!({"jsonrpc": "1.0", "method": "generatetoaddress", "params": [101, address] }),
+-        )?;
+-
+-        Ok(Self {
+-            _container: container,
+-            bitcoind_url: url,
+-        })
+-    }
+-}
+-
+-impl Transition<bitcoin::Transaction> for BitcoindBlockchain<'_> {
++impl BitcoindBlockchain {
++    pub fn new() -> anyhow::Result<Self> {
++        let url = std::env::var("A2L_TEST_RPC_URL")?;
++        let info: SerdeValue = rpc_command(&url,
++            ureq::json!({"jsonrpc":"1.0", "method":"getblockchaininfo", "params":[]}))?;
++        anyhow::ensure!(info["chain"] == "regtest", "Lab requires regtest");
++        let network: SerdeValue = rpc_command(&url,
++            ureq::json!({"jsonrpc":"1.0", "method":"getnetworkinfo", "params":[]}))?;
++        anyhow::ensure!(network["networkactive"] == false && network["connections"] == 0,
++                        "Lab requires disabled networking");
++        let address: String = rpc_command(&url,
++            ureq::json!({"jsonrpc":"1.0", "method":"getnewaddress", "params":["", "bech32"]}))?;
++        let _: SerdeValue = rpc_command(&url,
++            ureq::json!({"jsonrpc":"1.0", "method":"generatetoaddress", "params":[101, address]}))?;
++        Ok(Self { bitcoind_url: url })
++    }
++}
++impl Transition<bitcoin::Transaction> for BitcoindBlockchain {
+     fn transition(self, message: Transaction, _: &mut impl Rng) -> anyhow::Result<Self> {
+         let hex = &serialize_hex(&message);
++
++        let before: SerdeValue = rpc_command(&self.bitcoind_url,
++            ureq::json!({"jsonrpc":"1.0", "method":"testmempoolaccept", "params":[[hex]]}))?;
++        let tip: u32 = rpc_command(&self.bitcoind_url,
++            ureq::json!({"jsonrpc":"1.0", "method":"getblockcount", "params":[]}))?;
++        anyhow::ensure!(message.lock_time == 0, "Only the completed-payment path is in scope");
++        anyhow::ensure!(before[0]["allowed"] == true, "Transaction rejected: {}", before);
++        println!("A2L_LAB_PREFLIGHT {}", ureq::json!({"txid":message.txid().to_string(),
++            "tip_height":tip, "locktime":message.lock_time,
++            "sequences":message.input.iter().map(|i| i.sequence).collect::<Vec<_>>(),
++            "allowed":before[0]["allowed"]}));
++        println!("A2L_LAB_TX {}", ureq::json!({"txid":message.txid().to_string(),
++            "locktime":message.lock_time, "before":before[0], "ready":before[0]}));
++
+ 
+         rpc_command::<SerdeValue>(
+             &self.bitcoind_url,
+@@ -329,7 +266,7 @@
+         )
+         .context("bitcoind refused to broadcast raw transaction")?;
+ 
+-        mine(&format!("{}/wallet/", &self.bitcoind_url))?;
++        mine(&format!("{}/wallet/lab_funder", &self.bitcoind_url))?;
+ 
+         Ok(self)
+     }
+@@ -483,11 +420,11 @@
+ 
+         if let Some(mint_amount) = mint_amount {
+             let _ = rpc_command::<SerdeValue>(
+-                &format!("{}/wallet/", &url),
++                &format!("{}/wallet/lab_funder", &url),
+                 ureq::json!({"jsonrpc": "1.0", "method": "sendtoaddress", "params": [wallet.getnewaddress()?, mint_amount] }),
+             ).context(format!("failed to mint {} for wallet {}", mint_amount, name))?;
+ 
+-            mine(&format!("{}/wallet/", &url))?;
++            mine(&format!("{}/wallet/lab_funder", &url))?;
+         }
+ 
+         Ok(wallet)
