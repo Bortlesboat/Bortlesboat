@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Cite this independent benchmark separately from the Shielded Bitcoin paper."
+title: "Shielded publication policy benchmark"
+type: software
+authors:
+  - family-names: Barnes
+    given-names: Andrew
+    alias: Bortlesboat
+date-released: 2026-09-25
+license: MIT
+url: "https://github.com/Bortlesboat/Bortlesboat/tree/main/bitcoin-research/experiments/shielded-publication"
+repository-code: "https://github.com/Bortlesboat/Bortlesboat"
+abstract: >-
+  A controlled Bitcoin Core regtest experiment comparing carrier retry policies
+  and shared-anchor spacing under a height-only model of the Shielded Bitcoin
+  paper. Includes 24 cases, boundary and relay controls, raw traces and tests.
+  Payloads are synthetic; no Shielded proof or complete transfer is verified.

@@ -1,0 +1,100 @@
+[
+  {
+    "hash": "62ffbb60ff78c65bf9df2ff1ce1720e31ce399c36c1456a4e2b584d0e0bce4bc",
+    "height": 286,
+    "template_weight": 5888,
+    "txids": [
+      "19f169e26982f4312c25d71cae9008fccb66ae933e004477bc7c34b127d8e5a9",
+      "2c129e6dd7c0d2565ed277a375d41f9ec718fe4a992c6fd5c8756b1100c9674b",
+      "203f1c0c9c2e45b8fbe6a22332e9e0e0d89ace77b7a7714a3081c56211ab9ec0"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "113c8727830ef8d24984169eeee6a16033a63e7932c63a5b368224ba4032dd47",
+    "height": 287,
+    "template_weight": 5888,
+    "txids": [
+      "4377fc9fe121f38b2f60dab1fde56de52a90b9274c11f031c292547b45932b34",
+      "e669cfa48916e21b9f0f052db90996c70b00caa2e6e42746c10834d92bffd3a0",
+      "f86adae73bdc77ede2d82b6cc542f0e73e723709eaf62faf8ee8f58f27102ed3"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "1e748dd47aebbc4c5c69b1148e64390bf6cc64c4aa603c297a5b1ae8b4e378ed",
+    "height": 288,
+    "template_weight": 5888,
+    "txids": [
+      "9ea07a5cbb500385310ed0a081e3e196d267c8e8c758f2acf82b4b310bf6b0d5",
+      "9bc9dfe773da0e6a37d14363c17e5a6deaaba3fbb22b782d941b5c7b9248c735",
+      "342f087b365c15630938fae541e0db4f117ea0331da576106d9ff7a4f25992dd"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "3a8da6bb05d792dceda4ccf851162c64d2e67e3dd94c74fad75600d34f3ceb5b",
+    "height": 289,
+    "template_weight": 5888,
+    "txids": [
+      "e6d1730edae515d1df3178bc754f87ede23af0c2bf5a57253f77703501fde32f",
+      "464cebfc433e7becd2a0f3c77a157e285f8aaed401daa08b2601c8dee086c61b",
+      "0ee8d6b265d71d907022148848ba120d3aa5d60114824516c37fa36cff5a7294"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "32b46cfd37aceb7291681eb4f193444db6cda3d91be2ffe6dd892c3aad12c6ce",
+    "height": 290,
+    "template_weight": 5888,
+    "txids": [
+      "79e7a073ec1107a437f033d451e4216feda2894914870291e3eeeed606696e08",
+      "246a53a4974e463d18c47f8790094eb563d3eb32683e29d10473e3c930b32a26",
+      "e7c9b8ba6370138b29b7460a15a0271612cdc8ccd899bbd652a5bf4285684d6a"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "44c493cdf8cc640f1c4e23ab8fe7f1e5e15f3db393d38c3ce22d5d72fa33853e",
+    "height": 291,
+    "template_weight": 5888,
+    "txids": [
+      "dd9eebfa61d0191552548af5cebb1efd4ba9384728cda2726b9c35a47ea227d8",
+      "990ab4608b266ef14ffe8758f47e29250b5efac9aeaa12947c25e679cb1d8f45",
+      "95c88b52a3c2e9ce69b1baf470d93f64bae4612e64c996d46dfee2b3b80559cc"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "6422b7148c13d5cf533c18585dae267854b5182acf5a70fd8bc16a29923b6ad9",
+    "height": 292,
+    "template_weight": 5888,
+    "txids": [
+      "df10bc55f0df9cb16c217f4d8f7a7c82f824eac3a14db88af7395d0686bc06ab",
+      "6003a83a94c6b3db7f958dd4cd73ef40e5c03426cc84acdafeb3cc9dc3ce67a4",
+      "22a440ff7f5ec8543fe284ed2fe5bdef230b7cfa8badf1fb3bada4cf60cb73f9"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "76c4515b070ba2369d531fa96a38fd21185ca0ae05835528a92b24ae52f25e4f",
+    "height": 293,
+    "template_weight": 5888,
+    "txids": [
+      "eea8c74df81a36e57fe0ef798e6d1c2d7fb219e1c129eda0b606af4bfc66988e",
+      "b2122d6a97c0de5a4011dc84cf14ff489d8b4e985f2a7121be5f5d4d0226c422",
+      "c6d386db295389c644f7c2342a529614af9daa71e91ef20f8b627552602d053a"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "0fef206f5ff25b22b04e3a568373d0e398e3bbe4d58fcc67ce003f8d95a9569c",
+    "height": 294,
+    "template_weight": 2944,
+    "txids": [
+      "2365fe730db20e47837f11af072949734c62487066e9c788353a612f952e3774",
+      "5aa913cfec545070cb42efbb7b0e3570147435e47e010c912600734ebc40ab2b"
+    ],
+    "weight": 3884
+  }
+]

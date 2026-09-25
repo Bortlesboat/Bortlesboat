@@ -1,0 +1,33 @@
+{
+  "attempt_count": 2,
+  "authentic_shielded_acceptance": null,
+  "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+  "carrier_weight": 2944,
+  "distinct_synthetic_payloads": 1,
+  "final_anchor": 195,
+  "final_anchor_age": 11,
+  "included_fee_sats": 14720,
+  "included_height_ineligible_fee_sats": 0,
+  "inclusion_height": 206,
+  "initial_anchor": 195,
+  "model_height_eligible": true,
+  "name": "fresh_congested-m1-fee_only",
+  "node_stopped": true,
+  "op_return_script_bytes": 614,
+  "policy": "fee_only",
+  "profile": {
+    "minimum_depth": 1,
+    "window": 100
+  },
+  "publication_chain_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+  "publication_height": 201,
+  "scenario": {
+    "background_blocks": 8,
+    "name": "fresh_congested",
+    "offline_blocks": 0
+  },
+  "spacing": 1,
+  "synthetic_marker_links": 1,
+  "vsize": 736,
+  "wallet_depth": 6
+}

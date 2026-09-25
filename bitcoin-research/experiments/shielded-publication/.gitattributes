@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Raw evidence and archived-source hashes must survive checkout byte-for-byte.
+results/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

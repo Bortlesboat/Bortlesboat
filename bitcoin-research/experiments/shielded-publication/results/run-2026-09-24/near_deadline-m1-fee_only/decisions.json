@@ -1,0 +1,50 @@
+[
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 286,
+    "remaining_margin": 9,
+    "step": 0
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 287,
+    "remaining_margin": 8,
+    "step": 1
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 288,
+    "remaining_margin": 7,
+    "step": 2
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 289,
+    "remaining_margin": 6,
+    "step": 3
+  },
+  {
+    "action": "hold",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 290,
+    "remaining_margin": 5,
+    "step": 4
+  },
+  {
+    "action": "bump",
+    "anchor_after": 195,
+    "anchor_before": 195,
+    "candidate_height": 291,
+    "remaining_margin": 4,
+    "step": 5
+  }
+]

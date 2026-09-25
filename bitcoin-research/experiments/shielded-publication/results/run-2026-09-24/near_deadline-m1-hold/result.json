@@ -1,0 +1,33 @@
+{
+  "attempt_count": 1,
+  "authentic_shielded_acceptance": null,
+  "baseline_hash": "26066bda4c902a315da74bd4346bfab238151d30a9d3cefd0002aa341e01f9ff",
+  "carrier_weight": 2944,
+  "distinct_synthetic_payloads": 1,
+  "final_anchor": 195,
+  "final_anchor_age": 99,
+  "included_fee_sats": 736,
+  "included_height_ineligible_fee_sats": 0,
+  "inclusion_height": 294,
+  "initial_anchor": 195,
+  "model_height_eligible": true,
+  "name": "near_deadline-m1-hold",
+  "node_stopped": true,
+  "op_return_script_bytes": 614,
+  "policy": "hold",
+  "profile": {
+    "minimum_depth": 1,
+    "window": 100
+  },
+  "publication_chain_hash": "346846efdb68e240fada8321bfdf5386df136c20e6a7d8cf2c7c60b3329541b3",
+  "publication_height": 286,
+  "scenario": {
+    "background_blocks": 8,
+    "name": "near_deadline",
+    "offline_blocks": 85
+  },
+  "spacing": 1,
+  "synthetic_marker_links": 0,
+  "vsize": 736,
+  "wallet_depth": 6
+}

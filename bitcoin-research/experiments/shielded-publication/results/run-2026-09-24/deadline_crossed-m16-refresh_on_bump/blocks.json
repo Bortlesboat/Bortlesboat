@@ -1,0 +1,68 @@
+[
+  {
+    "hash": "584f81ee1ba209dcb1552c6550abf0e1df5c9244159e1ff7b8207d3ee009ced0",
+    "height": 288,
+    "template_weight": 5888,
+    "txids": [
+      "d8e8d1c3d645738c3c58c38740631d32f8fa72553b0910402233b56f46c2bc22",
+      "2c129e6dd7c0d2565ed277a375d41f9ec718fe4a992c6fd5c8756b1100c9674b",
+      "203f1c0c9c2e45b8fbe6a22332e9e0e0d89ace77b7a7714a3081c56211ab9ec0"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "79ae8eb730c7a6b80aeeb3907b6e08caf9e540f8d49af222c87df32c09d86a2c",
+    "height": 289,
+    "template_weight": 5888,
+    "txids": [
+      "84c5d488e5e49db4f6906e583d164c83792cba10221621d2093b5650c0fbd3a7",
+      "e669cfa48916e21b9f0f052db90996c70b00caa2e6e42746c10834d92bffd3a0",
+      "f86adae73bdc77ede2d82b6cc542f0e73e723709eaf62faf8ee8f58f27102ed3"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "06794a5e39e190611baf949a64135219b434fdd9d446ded850f711d87cc65741",
+    "height": 290,
+    "template_weight": 5888,
+    "txids": [
+      "ae203326448bead5973b28436dad9994fc355b427eec883e2a4af0e1cc6caa67",
+      "9bc9dfe773da0e6a37d14363c17e5a6deaaba3fbb22b782d941b5c7b9248c735",
+      "342f087b365c15630938fae541e0db4f117ea0331da576106d9ff7a4f25992dd"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "2b144aac81d840923c0a811756c05f5472cc1130f6aef743fa662478f91a37a4",
+    "height": 291,
+    "template_weight": 5888,
+    "txids": [
+      "6b5d8b7ed70be84908a7e5ceae44e612e404ee5e5d8da03b6f5d44ec06bfe9ae",
+      "464cebfc433e7becd2a0f3c77a157e285f8aaed401daa08b2601c8dee086c61b",
+      "0ee8d6b265d71d907022148848ba120d3aa5d60114824516c37fa36cff5a7294"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "029ed75447d7f7f3c51a8173ea6b17090957e3a846758c8a35cbe6fff63feef9",
+    "height": 292,
+    "template_weight": 5888,
+    "txids": [
+      "ff8a3b47fee906b71be993a4f0e8fff8852d2e8717564ede02a11ea257634ceb",
+      "246a53a4974e463d18c47f8790094eb563d3eb32683e29d10473e3c930b32a26",
+      "e7c9b8ba6370138b29b7460a15a0271612cdc8ccd899bbd652a5bf4285684d6a"
+    ],
+    "weight": 6828
+  },
+  {
+    "hash": "475127ba2310c5de7255ce86459909e7fb32e87496399c2cb7aa5d9757d7bf22",
+    "height": 293,
+    "template_weight": 5888,
+    "txids": [
+      "3e021cc3cc34d326df0f715b13401d27ba0a068bf2565a8a905d02da218a3e96",
+      "6e1e2a21dd3b4be175491224367a5ade62383dc2c11294d7917449eb57bc5605",
+      "990ab4608b266ef14ffe8758f47e29250b5efac9aeaa12947c25e679cb1d8f45"
+    ],
+    "weight": 6828
+  }
+]

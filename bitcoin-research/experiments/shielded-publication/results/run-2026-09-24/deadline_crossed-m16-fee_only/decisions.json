@@ -1,0 +1,50 @@
+[
+  {
+    "action": "hold",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 288,
+    "remaining_margin": 4,
+    "step": 0
+  },
+  {
+    "action": "hold",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 289,
+    "remaining_margin": 3,
+    "step": 1
+  },
+  {
+    "action": "hold",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 290,
+    "remaining_margin": 2,
+    "step": 2
+  },
+  {
+    "action": "hold",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 291,
+    "remaining_margin": 1,
+    "step": 3
+  },
+  {
+    "action": "hold",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 292,
+    "remaining_margin": 0,
+    "step": 4
+  },
+  {
+    "action": "bump",
+    "anchor_after": 192,
+    "anchor_before": 192,
+    "candidate_height": 293,
+    "remaining_margin": -1,
+    "step": 5
+  }
+]

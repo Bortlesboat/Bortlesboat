@@ -1,0 +1,3214 @@
+[
+  {
+    "minimum_margin": 99,
+    "missing_phases": 0,
+    "phases": [
+      {
+        "anchor_age": 1,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 99
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 1,
+    "wallet_depth": 1,
+    "window": 100
+  },
+  {
+    "minimum_margin": 84,
+    "missing_phases": 0,
+    "phases": [
+      {
+        "anchor_age": 1,
+        "height_eligible": true,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": 99
+      },
+      {
+        "anchor_age": 2,
+        "height_eligible": true,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": 98
+      },
+      {
+        "anchor_age": 3,
+        "height_eligible": true,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": 97
+      },
+      {
+        "anchor_age": 4,
+        "height_eligible": true,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": 96
+      },
+      {
+        "anchor_age": 5,
+        "height_eligible": true,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": 95
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 84
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 16,
+    "wallet_depth": 1,
+    "window": 100
+  },
+  {
+    "minimum_margin": 0,
+    "missing_phases": 0,
+    "phases": [
+      {
+        "anchor_age": 1,
+        "height_eligible": true,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": 99
+      },
+      {
+        "anchor_age": 2,
+        "height_eligible": true,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": 98
+      },
+      {
+        "anchor_age": 3,
+        "height_eligible": true,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": 97
+      },
+      {
+        "anchor_age": 4,
+        "height_eligible": true,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": 96
+      },
+      {
+        "anchor_age": 5,
+        "height_eligible": true,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": 95
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 16,
+        "remaining_height_margin": 84
+      },
+      {
+        "anchor_age": 17,
+        "height_eligible": true,
+        "height_mod_spacing": 17,
+        "remaining_height_margin": 83
+      },
+      {
+        "anchor_age": 18,
+        "height_eligible": true,
+        "height_mod_spacing": 18,
+        "remaining_height_margin": 82
+      },
+      {
+        "anchor_age": 19,
+        "height_eligible": true,
+        "height_mod_spacing": 19,
+        "remaining_height_margin": 81
+      },
+      {
+        "anchor_age": 20,
+        "height_eligible": true,
+        "height_mod_spacing": 20,
+        "remaining_height_margin": 80
+      },
+      {
+        "anchor_age": 21,
+        "height_eligible": true,
+        "height_mod_spacing": 21,
+        "remaining_height_margin": 79
+      },
+      {
+        "anchor_age": 22,
+        "height_eligible": true,
+        "height_mod_spacing": 22,
+        "remaining_height_margin": 78
+      },
+      {
+        "anchor_age": 23,
+        "height_eligible": true,
+        "height_mod_spacing": 23,
+        "remaining_height_margin": 77
+      },
+      {
+        "anchor_age": 24,
+        "height_eligible": true,
+        "height_mod_spacing": 24,
+        "remaining_height_margin": 76
+      },
+      {
+        "anchor_age": 25,
+        "height_eligible": true,
+        "height_mod_spacing": 25,
+        "remaining_height_margin": 75
+      },
+      {
+        "anchor_age": 26,
+        "height_eligible": true,
+        "height_mod_spacing": 26,
+        "remaining_height_margin": 74
+      },
+      {
+        "anchor_age": 27,
+        "height_eligible": true,
+        "height_mod_spacing": 27,
+        "remaining_height_margin": 73
+      },
+      {
+        "anchor_age": 28,
+        "height_eligible": true,
+        "height_mod_spacing": 28,
+        "remaining_height_margin": 72
+      },
+      {
+        "anchor_age": 29,
+        "height_eligible": true,
+        "height_mod_spacing": 29,
+        "remaining_height_margin": 71
+      },
+      {
+        "anchor_age": 30,
+        "height_eligible": true,
+        "height_mod_spacing": 30,
+        "remaining_height_margin": 70
+      },
+      {
+        "anchor_age": 31,
+        "height_eligible": true,
+        "height_mod_spacing": 31,
+        "remaining_height_margin": 69
+      },
+      {
+        "anchor_age": 32,
+        "height_eligible": true,
+        "height_mod_spacing": 32,
+        "remaining_height_margin": 68
+      },
+      {
+        "anchor_age": 33,
+        "height_eligible": true,
+        "height_mod_spacing": 33,
+        "remaining_height_margin": 67
+      },
+      {
+        "anchor_age": 34,
+        "height_eligible": true,
+        "height_mod_spacing": 34,
+        "remaining_height_margin": 66
+      },
+      {
+        "anchor_age": 35,
+        "height_eligible": true,
+        "height_mod_spacing": 35,
+        "remaining_height_margin": 65
+      },
+      {
+        "anchor_age": 36,
+        "height_eligible": true,
+        "height_mod_spacing": 36,
+        "remaining_height_margin": 64
+      },
+      {
+        "anchor_age": 37,
+        "height_eligible": true,
+        "height_mod_spacing": 37,
+        "remaining_height_margin": 63
+      },
+      {
+        "anchor_age": 38,
+        "height_eligible": true,
+        "height_mod_spacing": 38,
+        "remaining_height_margin": 62
+      },
+      {
+        "anchor_age": 39,
+        "height_eligible": true,
+        "height_mod_spacing": 39,
+        "remaining_height_margin": 61
+      },
+      {
+        "anchor_age": 40,
+        "height_eligible": true,
+        "height_mod_spacing": 40,
+        "remaining_height_margin": 60
+      },
+      {
+        "anchor_age": 41,
+        "height_eligible": true,
+        "height_mod_spacing": 41,
+        "remaining_height_margin": 59
+      },
+      {
+        "anchor_age": 42,
+        "height_eligible": true,
+        "height_mod_spacing": 42,
+        "remaining_height_margin": 58
+      },
+      {
+        "anchor_age": 43,
+        "height_eligible": true,
+        "height_mod_spacing": 43,
+        "remaining_height_margin": 57
+      },
+      {
+        "anchor_age": 44,
+        "height_eligible": true,
+        "height_mod_spacing": 44,
+        "remaining_height_margin": 56
+      },
+      {
+        "anchor_age": 45,
+        "height_eligible": true,
+        "height_mod_spacing": 45,
+        "remaining_height_margin": 55
+      },
+      {
+        "anchor_age": 46,
+        "height_eligible": true,
+        "height_mod_spacing": 46,
+        "remaining_height_margin": 54
+      },
+      {
+        "anchor_age": 47,
+        "height_eligible": true,
+        "height_mod_spacing": 47,
+        "remaining_height_margin": 53
+      },
+      {
+        "anchor_age": 48,
+        "height_eligible": true,
+        "height_mod_spacing": 48,
+        "remaining_height_margin": 52
+      },
+      {
+        "anchor_age": 49,
+        "height_eligible": true,
+        "height_mod_spacing": 49,
+        "remaining_height_margin": 51
+      },
+      {
+        "anchor_age": 50,
+        "height_eligible": true,
+        "height_mod_spacing": 50,
+        "remaining_height_margin": 50
+      },
+      {
+        "anchor_age": 51,
+        "height_eligible": true,
+        "height_mod_spacing": 51,
+        "remaining_height_margin": 49
+      },
+      {
+        "anchor_age": 52,
+        "height_eligible": true,
+        "height_mod_spacing": 52,
+        "remaining_height_margin": 48
+      },
+      {
+        "anchor_age": 53,
+        "height_eligible": true,
+        "height_mod_spacing": 53,
+        "remaining_height_margin": 47
+      },
+      {
+        "anchor_age": 54,
+        "height_eligible": true,
+        "height_mod_spacing": 54,
+        "remaining_height_margin": 46
+      },
+      {
+        "anchor_age": 55,
+        "height_eligible": true,
+        "height_mod_spacing": 55,
+        "remaining_height_margin": 45
+      },
+      {
+        "anchor_age": 56,
+        "height_eligible": true,
+        "height_mod_spacing": 56,
+        "remaining_height_margin": 44
+      },
+      {
+        "anchor_age": 57,
+        "height_eligible": true,
+        "height_mod_spacing": 57,
+        "remaining_height_margin": 43
+      },
+      {
+        "anchor_age": 58,
+        "height_eligible": true,
+        "height_mod_spacing": 58,
+        "remaining_height_margin": 42
+      },
+      {
+        "anchor_age": 59,
+        "height_eligible": true,
+        "height_mod_spacing": 59,
+        "remaining_height_margin": 41
+      },
+      {
+        "anchor_age": 60,
+        "height_eligible": true,
+        "height_mod_spacing": 60,
+        "remaining_height_margin": 40
+      },
+      {
+        "anchor_age": 61,
+        "height_eligible": true,
+        "height_mod_spacing": 61,
+        "remaining_height_margin": 39
+      },
+      {
+        "anchor_age": 62,
+        "height_eligible": true,
+        "height_mod_spacing": 62,
+        "remaining_height_margin": 38
+      },
+      {
+        "anchor_age": 63,
+        "height_eligible": true,
+        "height_mod_spacing": 63,
+        "remaining_height_margin": 37
+      },
+      {
+        "anchor_age": 64,
+        "height_eligible": true,
+        "height_mod_spacing": 64,
+        "remaining_height_margin": 36
+      },
+      {
+        "anchor_age": 65,
+        "height_eligible": true,
+        "height_mod_spacing": 65,
+        "remaining_height_margin": 35
+      },
+      {
+        "anchor_age": 66,
+        "height_eligible": true,
+        "height_mod_spacing": 66,
+        "remaining_height_margin": 34
+      },
+      {
+        "anchor_age": 67,
+        "height_eligible": true,
+        "height_mod_spacing": 67,
+        "remaining_height_margin": 33
+      },
+      {
+        "anchor_age": 68,
+        "height_eligible": true,
+        "height_mod_spacing": 68,
+        "remaining_height_margin": 32
+      },
+      {
+        "anchor_age": 69,
+        "height_eligible": true,
+        "height_mod_spacing": 69,
+        "remaining_height_margin": 31
+      },
+      {
+        "anchor_age": 70,
+        "height_eligible": true,
+        "height_mod_spacing": 70,
+        "remaining_height_margin": 30
+      },
+      {
+        "anchor_age": 71,
+        "height_eligible": true,
+        "height_mod_spacing": 71,
+        "remaining_height_margin": 29
+      },
+      {
+        "anchor_age": 72,
+        "height_eligible": true,
+        "height_mod_spacing": 72,
+        "remaining_height_margin": 28
+      },
+      {
+        "anchor_age": 73,
+        "height_eligible": true,
+        "height_mod_spacing": 73,
+        "remaining_height_margin": 27
+      },
+      {
+        "anchor_age": 74,
+        "height_eligible": true,
+        "height_mod_spacing": 74,
+        "remaining_height_margin": 26
+      },
+      {
+        "anchor_age": 75,
+        "height_eligible": true,
+        "height_mod_spacing": 75,
+        "remaining_height_margin": 25
+      },
+      {
+        "anchor_age": 76,
+        "height_eligible": true,
+        "height_mod_spacing": 76,
+        "remaining_height_margin": 24
+      },
+      {
+        "anchor_age": 77,
+        "height_eligible": true,
+        "height_mod_spacing": 77,
+        "remaining_height_margin": 23
+      },
+      {
+        "anchor_age": 78,
+        "height_eligible": true,
+        "height_mod_spacing": 78,
+        "remaining_height_margin": 22
+      },
+      {
+        "anchor_age": 79,
+        "height_eligible": true,
+        "height_mod_spacing": 79,
+        "remaining_height_margin": 21
+      },
+      {
+        "anchor_age": 80,
+        "height_eligible": true,
+        "height_mod_spacing": 80,
+        "remaining_height_margin": 20
+      },
+      {
+        "anchor_age": 81,
+        "height_eligible": true,
+        "height_mod_spacing": 81,
+        "remaining_height_margin": 19
+      },
+      {
+        "anchor_age": 82,
+        "height_eligible": true,
+        "height_mod_spacing": 82,
+        "remaining_height_margin": 18
+      },
+      {
+        "anchor_age": 83,
+        "height_eligible": true,
+        "height_mod_spacing": 83,
+        "remaining_height_margin": 17
+      },
+      {
+        "anchor_age": 84,
+        "height_eligible": true,
+        "height_mod_spacing": 84,
+        "remaining_height_margin": 16
+      },
+      {
+        "anchor_age": 85,
+        "height_eligible": true,
+        "height_mod_spacing": 85,
+        "remaining_height_margin": 15
+      },
+      {
+        "anchor_age": 86,
+        "height_eligible": true,
+        "height_mod_spacing": 86,
+        "remaining_height_margin": 14
+      },
+      {
+        "anchor_age": 87,
+        "height_eligible": true,
+        "height_mod_spacing": 87,
+        "remaining_height_margin": 13
+      },
+      {
+        "anchor_age": 88,
+        "height_eligible": true,
+        "height_mod_spacing": 88,
+        "remaining_height_margin": 12
+      },
+      {
+        "anchor_age": 89,
+        "height_eligible": true,
+        "height_mod_spacing": 89,
+        "remaining_height_margin": 11
+      },
+      {
+        "anchor_age": 90,
+        "height_eligible": true,
+        "height_mod_spacing": 90,
+        "remaining_height_margin": 10
+      },
+      {
+        "anchor_age": 91,
+        "height_eligible": true,
+        "height_mod_spacing": 91,
+        "remaining_height_margin": 9
+      },
+      {
+        "anchor_age": 92,
+        "height_eligible": true,
+        "height_mod_spacing": 92,
+        "remaining_height_margin": 8
+      },
+      {
+        "anchor_age": 93,
+        "height_eligible": true,
+        "height_mod_spacing": 93,
+        "remaining_height_margin": 7
+      },
+      {
+        "anchor_age": 94,
+        "height_eligible": true,
+        "height_mod_spacing": 94,
+        "remaining_height_margin": 6
+      },
+      {
+        "anchor_age": 95,
+        "height_eligible": true,
+        "height_mod_spacing": 95,
+        "remaining_height_margin": 5
+      },
+      {
+        "anchor_age": 96,
+        "height_eligible": true,
+        "height_mod_spacing": 96,
+        "remaining_height_margin": 4
+      },
+      {
+        "anchor_age": 97,
+        "height_eligible": true,
+        "height_mod_spacing": 97,
+        "remaining_height_margin": 3
+      },
+      {
+        "anchor_age": 98,
+        "height_eligible": true,
+        "height_mod_spacing": 98,
+        "remaining_height_margin": 2
+      },
+      {
+        "anchor_age": 99,
+        "height_eligible": true,
+        "height_mod_spacing": 99,
+        "remaining_height_margin": 1
+      },
+      {
+        "anchor_age": 100,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 0
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 100,
+    "wallet_depth": 1,
+    "window": 100
+  },
+  {
+    "minimum_margin": -44,
+    "missing_phases": 44,
+    "phases": [
+      {
+        "anchor_age": 1,
+        "height_eligible": true,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": 99
+      },
+      {
+        "anchor_age": 2,
+        "height_eligible": true,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": 98
+      },
+      {
+        "anchor_age": 3,
+        "height_eligible": true,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": 97
+      },
+      {
+        "anchor_age": 4,
+        "height_eligible": true,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": 96
+      },
+      {
+        "anchor_age": 5,
+        "height_eligible": true,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": 95
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 16,
+        "remaining_height_margin": 84
+      },
+      {
+        "anchor_age": 17,
+        "height_eligible": true,
+        "height_mod_spacing": 17,
+        "remaining_height_margin": 83
+      },
+      {
+        "anchor_age": 18,
+        "height_eligible": true,
+        "height_mod_spacing": 18,
+        "remaining_height_margin": 82
+      },
+      {
+        "anchor_age": 19,
+        "height_eligible": true,
+        "height_mod_spacing": 19,
+        "remaining_height_margin": 81
+      },
+      {
+        "anchor_age": 20,
+        "height_eligible": true,
+        "height_mod_spacing": 20,
+        "remaining_height_margin": 80
+      },
+      {
+        "anchor_age": 21,
+        "height_eligible": true,
+        "height_mod_spacing": 21,
+        "remaining_height_margin": 79
+      },
+      {
+        "anchor_age": 22,
+        "height_eligible": true,
+        "height_mod_spacing": 22,
+        "remaining_height_margin": 78
+      },
+      {
+        "anchor_age": 23,
+        "height_eligible": true,
+        "height_mod_spacing": 23,
+        "remaining_height_margin": 77
+      },
+      {
+        "anchor_age": 24,
+        "height_eligible": true,
+        "height_mod_spacing": 24,
+        "remaining_height_margin": 76
+      },
+      {
+        "anchor_age": 25,
+        "height_eligible": true,
+        "height_mod_spacing": 25,
+        "remaining_height_margin": 75
+      },
+      {
+        "anchor_age": 26,
+        "height_eligible": true,
+        "height_mod_spacing": 26,
+        "remaining_height_margin": 74
+      },
+      {
+        "anchor_age": 27,
+        "height_eligible": true,
+        "height_mod_spacing": 27,
+        "remaining_height_margin": 73
+      },
+      {
+        "anchor_age": 28,
+        "height_eligible": true,
+        "height_mod_spacing": 28,
+        "remaining_height_margin": 72
+      },
+      {
+        "anchor_age": 29,
+        "height_eligible": true,
+        "height_mod_spacing": 29,
+        "remaining_height_margin": 71
+      },
+      {
+        "anchor_age": 30,
+        "height_eligible": true,
+        "height_mod_spacing": 30,
+        "remaining_height_margin": 70
+      },
+      {
+        "anchor_age": 31,
+        "height_eligible": true,
+        "height_mod_spacing": 31,
+        "remaining_height_margin": 69
+      },
+      {
+        "anchor_age": 32,
+        "height_eligible": true,
+        "height_mod_spacing": 32,
+        "remaining_height_margin": 68
+      },
+      {
+        "anchor_age": 33,
+        "height_eligible": true,
+        "height_mod_spacing": 33,
+        "remaining_height_margin": 67
+      },
+      {
+        "anchor_age": 34,
+        "height_eligible": true,
+        "height_mod_spacing": 34,
+        "remaining_height_margin": 66
+      },
+      {
+        "anchor_age": 35,
+        "height_eligible": true,
+        "height_mod_spacing": 35,
+        "remaining_height_margin": 65
+      },
+      {
+        "anchor_age": 36,
+        "height_eligible": true,
+        "height_mod_spacing": 36,
+        "remaining_height_margin": 64
+      },
+      {
+        "anchor_age": 37,
+        "height_eligible": true,
+        "height_mod_spacing": 37,
+        "remaining_height_margin": 63
+      },
+      {
+        "anchor_age": 38,
+        "height_eligible": true,
+        "height_mod_spacing": 38,
+        "remaining_height_margin": 62
+      },
+      {
+        "anchor_age": 39,
+        "height_eligible": true,
+        "height_mod_spacing": 39,
+        "remaining_height_margin": 61
+      },
+      {
+        "anchor_age": 40,
+        "height_eligible": true,
+        "height_mod_spacing": 40,
+        "remaining_height_margin": 60
+      },
+      {
+        "anchor_age": 41,
+        "height_eligible": true,
+        "height_mod_spacing": 41,
+        "remaining_height_margin": 59
+      },
+      {
+        "anchor_age": 42,
+        "height_eligible": true,
+        "height_mod_spacing": 42,
+        "remaining_height_margin": 58
+      },
+      {
+        "anchor_age": 43,
+        "height_eligible": true,
+        "height_mod_spacing": 43,
+        "remaining_height_margin": 57
+      },
+      {
+        "anchor_age": 44,
+        "height_eligible": true,
+        "height_mod_spacing": 44,
+        "remaining_height_margin": 56
+      },
+      {
+        "anchor_age": 45,
+        "height_eligible": true,
+        "height_mod_spacing": 45,
+        "remaining_height_margin": 55
+      },
+      {
+        "anchor_age": 46,
+        "height_eligible": true,
+        "height_mod_spacing": 46,
+        "remaining_height_margin": 54
+      },
+      {
+        "anchor_age": 47,
+        "height_eligible": true,
+        "height_mod_spacing": 47,
+        "remaining_height_margin": 53
+      },
+      {
+        "anchor_age": 48,
+        "height_eligible": true,
+        "height_mod_spacing": 48,
+        "remaining_height_margin": 52
+      },
+      {
+        "anchor_age": 49,
+        "height_eligible": true,
+        "height_mod_spacing": 49,
+        "remaining_height_margin": 51
+      },
+      {
+        "anchor_age": 50,
+        "height_eligible": true,
+        "height_mod_spacing": 50,
+        "remaining_height_margin": 50
+      },
+      {
+        "anchor_age": 51,
+        "height_eligible": true,
+        "height_mod_spacing": 51,
+        "remaining_height_margin": 49
+      },
+      {
+        "anchor_age": 52,
+        "height_eligible": true,
+        "height_mod_spacing": 52,
+        "remaining_height_margin": 48
+      },
+      {
+        "anchor_age": 53,
+        "height_eligible": true,
+        "height_mod_spacing": 53,
+        "remaining_height_margin": 47
+      },
+      {
+        "anchor_age": 54,
+        "height_eligible": true,
+        "height_mod_spacing": 54,
+        "remaining_height_margin": 46
+      },
+      {
+        "anchor_age": 55,
+        "height_eligible": true,
+        "height_mod_spacing": 55,
+        "remaining_height_margin": 45
+      },
+      {
+        "anchor_age": 56,
+        "height_eligible": true,
+        "height_mod_spacing": 56,
+        "remaining_height_margin": 44
+      },
+      {
+        "anchor_age": 57,
+        "height_eligible": true,
+        "height_mod_spacing": 57,
+        "remaining_height_margin": 43
+      },
+      {
+        "anchor_age": 58,
+        "height_eligible": true,
+        "height_mod_spacing": 58,
+        "remaining_height_margin": 42
+      },
+      {
+        "anchor_age": 59,
+        "height_eligible": true,
+        "height_mod_spacing": 59,
+        "remaining_height_margin": 41
+      },
+      {
+        "anchor_age": 60,
+        "height_eligible": true,
+        "height_mod_spacing": 60,
+        "remaining_height_margin": 40
+      },
+      {
+        "anchor_age": 61,
+        "height_eligible": true,
+        "height_mod_spacing": 61,
+        "remaining_height_margin": 39
+      },
+      {
+        "anchor_age": 62,
+        "height_eligible": true,
+        "height_mod_spacing": 62,
+        "remaining_height_margin": 38
+      },
+      {
+        "anchor_age": 63,
+        "height_eligible": true,
+        "height_mod_spacing": 63,
+        "remaining_height_margin": 37
+      },
+      {
+        "anchor_age": 64,
+        "height_eligible": true,
+        "height_mod_spacing": 64,
+        "remaining_height_margin": 36
+      },
+      {
+        "anchor_age": 65,
+        "height_eligible": true,
+        "height_mod_spacing": 65,
+        "remaining_height_margin": 35
+      },
+      {
+        "anchor_age": 66,
+        "height_eligible": true,
+        "height_mod_spacing": 66,
+        "remaining_height_margin": 34
+      },
+      {
+        "anchor_age": 67,
+        "height_eligible": true,
+        "height_mod_spacing": 67,
+        "remaining_height_margin": 33
+      },
+      {
+        "anchor_age": 68,
+        "height_eligible": true,
+        "height_mod_spacing": 68,
+        "remaining_height_margin": 32
+      },
+      {
+        "anchor_age": 69,
+        "height_eligible": true,
+        "height_mod_spacing": 69,
+        "remaining_height_margin": 31
+      },
+      {
+        "anchor_age": 70,
+        "height_eligible": true,
+        "height_mod_spacing": 70,
+        "remaining_height_margin": 30
+      },
+      {
+        "anchor_age": 71,
+        "height_eligible": true,
+        "height_mod_spacing": 71,
+        "remaining_height_margin": 29
+      },
+      {
+        "anchor_age": 72,
+        "height_eligible": true,
+        "height_mod_spacing": 72,
+        "remaining_height_margin": 28
+      },
+      {
+        "anchor_age": 73,
+        "height_eligible": true,
+        "height_mod_spacing": 73,
+        "remaining_height_margin": 27
+      },
+      {
+        "anchor_age": 74,
+        "height_eligible": true,
+        "height_mod_spacing": 74,
+        "remaining_height_margin": 26
+      },
+      {
+        "anchor_age": 75,
+        "height_eligible": true,
+        "height_mod_spacing": 75,
+        "remaining_height_margin": 25
+      },
+      {
+        "anchor_age": 76,
+        "height_eligible": true,
+        "height_mod_spacing": 76,
+        "remaining_height_margin": 24
+      },
+      {
+        "anchor_age": 77,
+        "height_eligible": true,
+        "height_mod_spacing": 77,
+        "remaining_height_margin": 23
+      },
+      {
+        "anchor_age": 78,
+        "height_eligible": true,
+        "height_mod_spacing": 78,
+        "remaining_height_margin": 22
+      },
+      {
+        "anchor_age": 79,
+        "height_eligible": true,
+        "height_mod_spacing": 79,
+        "remaining_height_margin": 21
+      },
+      {
+        "anchor_age": 80,
+        "height_eligible": true,
+        "height_mod_spacing": 80,
+        "remaining_height_margin": 20
+      },
+      {
+        "anchor_age": 81,
+        "height_eligible": true,
+        "height_mod_spacing": 81,
+        "remaining_height_margin": 19
+      },
+      {
+        "anchor_age": 82,
+        "height_eligible": true,
+        "height_mod_spacing": 82,
+        "remaining_height_margin": 18
+      },
+      {
+        "anchor_age": 83,
+        "height_eligible": true,
+        "height_mod_spacing": 83,
+        "remaining_height_margin": 17
+      },
+      {
+        "anchor_age": 84,
+        "height_eligible": true,
+        "height_mod_spacing": 84,
+        "remaining_height_margin": 16
+      },
+      {
+        "anchor_age": 85,
+        "height_eligible": true,
+        "height_mod_spacing": 85,
+        "remaining_height_margin": 15
+      },
+      {
+        "anchor_age": 86,
+        "height_eligible": true,
+        "height_mod_spacing": 86,
+        "remaining_height_margin": 14
+      },
+      {
+        "anchor_age": 87,
+        "height_eligible": true,
+        "height_mod_spacing": 87,
+        "remaining_height_margin": 13
+      },
+      {
+        "anchor_age": 88,
+        "height_eligible": true,
+        "height_mod_spacing": 88,
+        "remaining_height_margin": 12
+      },
+      {
+        "anchor_age": 89,
+        "height_eligible": true,
+        "height_mod_spacing": 89,
+        "remaining_height_margin": 11
+      },
+      {
+        "anchor_age": 90,
+        "height_eligible": true,
+        "height_mod_spacing": 90,
+        "remaining_height_margin": 10
+      },
+      {
+        "anchor_age": 91,
+        "height_eligible": true,
+        "height_mod_spacing": 91,
+        "remaining_height_margin": 9
+      },
+      {
+        "anchor_age": 92,
+        "height_eligible": true,
+        "height_mod_spacing": 92,
+        "remaining_height_margin": 8
+      },
+      {
+        "anchor_age": 93,
+        "height_eligible": true,
+        "height_mod_spacing": 93,
+        "remaining_height_margin": 7
+      },
+      {
+        "anchor_age": 94,
+        "height_eligible": true,
+        "height_mod_spacing": 94,
+        "remaining_height_margin": 6
+      },
+      {
+        "anchor_age": 95,
+        "height_eligible": true,
+        "height_mod_spacing": 95,
+        "remaining_height_margin": 5
+      },
+      {
+        "anchor_age": 96,
+        "height_eligible": true,
+        "height_mod_spacing": 96,
+        "remaining_height_margin": 4
+      },
+      {
+        "anchor_age": 97,
+        "height_eligible": true,
+        "height_mod_spacing": 97,
+        "remaining_height_margin": 3
+      },
+      {
+        "anchor_age": 98,
+        "height_eligible": true,
+        "height_mod_spacing": 98,
+        "remaining_height_margin": 2
+      },
+      {
+        "anchor_age": 99,
+        "height_eligible": true,
+        "height_mod_spacing": 99,
+        "remaining_height_margin": 1
+      },
+      {
+        "anchor_age": 100,
+        "height_eligible": true,
+        "height_mod_spacing": 100,
+        "remaining_height_margin": 0
+      },
+      {
+        "anchor_age": 101,
+        "height_eligible": false,
+        "height_mod_spacing": 101,
+        "remaining_height_margin": -1
+      },
+      {
+        "anchor_age": 102,
+        "height_eligible": false,
+        "height_mod_spacing": 102,
+        "remaining_height_margin": -2
+      },
+      {
+        "anchor_age": 103,
+        "height_eligible": false,
+        "height_mod_spacing": 103,
+        "remaining_height_margin": -3
+      },
+      {
+        "anchor_age": 104,
+        "height_eligible": false,
+        "height_mod_spacing": 104,
+        "remaining_height_margin": -4
+      },
+      {
+        "anchor_age": 105,
+        "height_eligible": false,
+        "height_mod_spacing": 105,
+        "remaining_height_margin": -5
+      },
+      {
+        "anchor_age": 106,
+        "height_eligible": false,
+        "height_mod_spacing": 106,
+        "remaining_height_margin": -6
+      },
+      {
+        "anchor_age": 107,
+        "height_eligible": false,
+        "height_mod_spacing": 107,
+        "remaining_height_margin": -7
+      },
+      {
+        "anchor_age": 108,
+        "height_eligible": false,
+        "height_mod_spacing": 108,
+        "remaining_height_margin": -8
+      },
+      {
+        "anchor_age": 109,
+        "height_eligible": false,
+        "height_mod_spacing": 109,
+        "remaining_height_margin": -9
+      },
+      {
+        "anchor_age": 110,
+        "height_eligible": false,
+        "height_mod_spacing": 110,
+        "remaining_height_margin": -10
+      },
+      {
+        "anchor_age": 111,
+        "height_eligible": false,
+        "height_mod_spacing": 111,
+        "remaining_height_margin": -11
+      },
+      {
+        "anchor_age": 112,
+        "height_eligible": false,
+        "height_mod_spacing": 112,
+        "remaining_height_margin": -12
+      },
+      {
+        "anchor_age": 113,
+        "height_eligible": false,
+        "height_mod_spacing": 113,
+        "remaining_height_margin": -13
+      },
+      {
+        "anchor_age": 114,
+        "height_eligible": false,
+        "height_mod_spacing": 114,
+        "remaining_height_margin": -14
+      },
+      {
+        "anchor_age": 115,
+        "height_eligible": false,
+        "height_mod_spacing": 115,
+        "remaining_height_margin": -15
+      },
+      {
+        "anchor_age": 116,
+        "height_eligible": false,
+        "height_mod_spacing": 116,
+        "remaining_height_margin": -16
+      },
+      {
+        "anchor_age": 117,
+        "height_eligible": false,
+        "height_mod_spacing": 117,
+        "remaining_height_margin": -17
+      },
+      {
+        "anchor_age": 118,
+        "height_eligible": false,
+        "height_mod_spacing": 118,
+        "remaining_height_margin": -18
+      },
+      {
+        "anchor_age": 119,
+        "height_eligible": false,
+        "height_mod_spacing": 119,
+        "remaining_height_margin": -19
+      },
+      {
+        "anchor_age": 120,
+        "height_eligible": false,
+        "height_mod_spacing": 120,
+        "remaining_height_margin": -20
+      },
+      {
+        "anchor_age": 121,
+        "height_eligible": false,
+        "height_mod_spacing": 121,
+        "remaining_height_margin": -21
+      },
+      {
+        "anchor_age": 122,
+        "height_eligible": false,
+        "height_mod_spacing": 122,
+        "remaining_height_margin": -22
+      },
+      {
+        "anchor_age": 123,
+        "height_eligible": false,
+        "height_mod_spacing": 123,
+        "remaining_height_margin": -23
+      },
+      {
+        "anchor_age": 124,
+        "height_eligible": false,
+        "height_mod_spacing": 124,
+        "remaining_height_margin": -24
+      },
+      {
+        "anchor_age": 125,
+        "height_eligible": false,
+        "height_mod_spacing": 125,
+        "remaining_height_margin": -25
+      },
+      {
+        "anchor_age": 126,
+        "height_eligible": false,
+        "height_mod_spacing": 126,
+        "remaining_height_margin": -26
+      },
+      {
+        "anchor_age": 127,
+        "height_eligible": false,
+        "height_mod_spacing": 127,
+        "remaining_height_margin": -27
+      },
+      {
+        "anchor_age": 128,
+        "height_eligible": false,
+        "height_mod_spacing": 128,
+        "remaining_height_margin": -28
+      },
+      {
+        "anchor_age": 129,
+        "height_eligible": false,
+        "height_mod_spacing": 129,
+        "remaining_height_margin": -29
+      },
+      {
+        "anchor_age": 130,
+        "height_eligible": false,
+        "height_mod_spacing": 130,
+        "remaining_height_margin": -30
+      },
+      {
+        "anchor_age": 131,
+        "height_eligible": false,
+        "height_mod_spacing": 131,
+        "remaining_height_margin": -31
+      },
+      {
+        "anchor_age": 132,
+        "height_eligible": false,
+        "height_mod_spacing": 132,
+        "remaining_height_margin": -32
+      },
+      {
+        "anchor_age": 133,
+        "height_eligible": false,
+        "height_mod_spacing": 133,
+        "remaining_height_margin": -33
+      },
+      {
+        "anchor_age": 134,
+        "height_eligible": false,
+        "height_mod_spacing": 134,
+        "remaining_height_margin": -34
+      },
+      {
+        "anchor_age": 135,
+        "height_eligible": false,
+        "height_mod_spacing": 135,
+        "remaining_height_margin": -35
+      },
+      {
+        "anchor_age": 136,
+        "height_eligible": false,
+        "height_mod_spacing": 136,
+        "remaining_height_margin": -36
+      },
+      {
+        "anchor_age": 137,
+        "height_eligible": false,
+        "height_mod_spacing": 137,
+        "remaining_height_margin": -37
+      },
+      {
+        "anchor_age": 138,
+        "height_eligible": false,
+        "height_mod_spacing": 138,
+        "remaining_height_margin": -38
+      },
+      {
+        "anchor_age": 139,
+        "height_eligible": false,
+        "height_mod_spacing": 139,
+        "remaining_height_margin": -39
+      },
+      {
+        "anchor_age": 140,
+        "height_eligible": false,
+        "height_mod_spacing": 140,
+        "remaining_height_margin": -40
+      },
+      {
+        "anchor_age": 141,
+        "height_eligible": false,
+        "height_mod_spacing": 141,
+        "remaining_height_margin": -41
+      },
+      {
+        "anchor_age": 142,
+        "height_eligible": false,
+        "height_mod_spacing": 142,
+        "remaining_height_margin": -42
+      },
+      {
+        "anchor_age": 143,
+        "height_eligible": false,
+        "height_mod_spacing": 143,
+        "remaining_height_margin": -43
+      },
+      {
+        "anchor_age": 144,
+        "height_eligible": false,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": -44
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 144,
+    "wallet_depth": 1,
+    "window": 100
+  },
+  {
+    "minimum_margin": 94,
+    "missing_phases": 0,
+    "phases": [
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 94
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 1,
+    "wallet_depth": 6,
+    "window": 100
+  },
+  {
+    "minimum_margin": 79,
+    "missing_phases": 0,
+    "phases": [
+      {
+        "anchor_age": 17,
+        "height_eligible": true,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": 83
+      },
+      {
+        "anchor_age": 18,
+        "height_eligible": true,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": 82
+      },
+      {
+        "anchor_age": 19,
+        "height_eligible": true,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": 81
+      },
+      {
+        "anchor_age": 20,
+        "height_eligible": true,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": 80
+      },
+      {
+        "anchor_age": 21,
+        "height_eligible": true,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": 79
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 84
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 16,
+    "wallet_depth": 6,
+    "window": 100
+  },
+  {
+    "minimum_margin": -5,
+    "missing_phases": 5,
+    "phases": [
+      {
+        "anchor_age": 101,
+        "height_eligible": false,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": -1
+      },
+      {
+        "anchor_age": 102,
+        "height_eligible": false,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": -2
+      },
+      {
+        "anchor_age": 103,
+        "height_eligible": false,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": -3
+      },
+      {
+        "anchor_age": 104,
+        "height_eligible": false,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": -4
+      },
+      {
+        "anchor_age": 105,
+        "height_eligible": false,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": -5
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 16,
+        "remaining_height_margin": 84
+      },
+      {
+        "anchor_age": 17,
+        "height_eligible": true,
+        "height_mod_spacing": 17,
+        "remaining_height_margin": 83
+      },
+      {
+        "anchor_age": 18,
+        "height_eligible": true,
+        "height_mod_spacing": 18,
+        "remaining_height_margin": 82
+      },
+      {
+        "anchor_age": 19,
+        "height_eligible": true,
+        "height_mod_spacing": 19,
+        "remaining_height_margin": 81
+      },
+      {
+        "anchor_age": 20,
+        "height_eligible": true,
+        "height_mod_spacing": 20,
+        "remaining_height_margin": 80
+      },
+      {
+        "anchor_age": 21,
+        "height_eligible": true,
+        "height_mod_spacing": 21,
+        "remaining_height_margin": 79
+      },
+      {
+        "anchor_age": 22,
+        "height_eligible": true,
+        "height_mod_spacing": 22,
+        "remaining_height_margin": 78
+      },
+      {
+        "anchor_age": 23,
+        "height_eligible": true,
+        "height_mod_spacing": 23,
+        "remaining_height_margin": 77
+      },
+      {
+        "anchor_age": 24,
+        "height_eligible": true,
+        "height_mod_spacing": 24,
+        "remaining_height_margin": 76
+      },
+      {
+        "anchor_age": 25,
+        "height_eligible": true,
+        "height_mod_spacing": 25,
+        "remaining_height_margin": 75
+      },
+      {
+        "anchor_age": 26,
+        "height_eligible": true,
+        "height_mod_spacing": 26,
+        "remaining_height_margin": 74
+      },
+      {
+        "anchor_age": 27,
+        "height_eligible": true,
+        "height_mod_spacing": 27,
+        "remaining_height_margin": 73
+      },
+      {
+        "anchor_age": 28,
+        "height_eligible": true,
+        "height_mod_spacing": 28,
+        "remaining_height_margin": 72
+      },
+      {
+        "anchor_age": 29,
+        "height_eligible": true,
+        "height_mod_spacing": 29,
+        "remaining_height_margin": 71
+      },
+      {
+        "anchor_age": 30,
+        "height_eligible": true,
+        "height_mod_spacing": 30,
+        "remaining_height_margin": 70
+      },
+      {
+        "anchor_age": 31,
+        "height_eligible": true,
+        "height_mod_spacing": 31,
+        "remaining_height_margin": 69
+      },
+      {
+        "anchor_age": 32,
+        "height_eligible": true,
+        "height_mod_spacing": 32,
+        "remaining_height_margin": 68
+      },
+      {
+        "anchor_age": 33,
+        "height_eligible": true,
+        "height_mod_spacing": 33,
+        "remaining_height_margin": 67
+      },
+      {
+        "anchor_age": 34,
+        "height_eligible": true,
+        "height_mod_spacing": 34,
+        "remaining_height_margin": 66
+      },
+      {
+        "anchor_age": 35,
+        "height_eligible": true,
+        "height_mod_spacing": 35,
+        "remaining_height_margin": 65
+      },
+      {
+        "anchor_age": 36,
+        "height_eligible": true,
+        "height_mod_spacing": 36,
+        "remaining_height_margin": 64
+      },
+      {
+        "anchor_age": 37,
+        "height_eligible": true,
+        "height_mod_spacing": 37,
+        "remaining_height_margin": 63
+      },
+      {
+        "anchor_age": 38,
+        "height_eligible": true,
+        "height_mod_spacing": 38,
+        "remaining_height_margin": 62
+      },
+      {
+        "anchor_age": 39,
+        "height_eligible": true,
+        "height_mod_spacing": 39,
+        "remaining_height_margin": 61
+      },
+      {
+        "anchor_age": 40,
+        "height_eligible": true,
+        "height_mod_spacing": 40,
+        "remaining_height_margin": 60
+      },
+      {
+        "anchor_age": 41,
+        "height_eligible": true,
+        "height_mod_spacing": 41,
+        "remaining_height_margin": 59
+      },
+      {
+        "anchor_age": 42,
+        "height_eligible": true,
+        "height_mod_spacing": 42,
+        "remaining_height_margin": 58
+      },
+      {
+        "anchor_age": 43,
+        "height_eligible": true,
+        "height_mod_spacing": 43,
+        "remaining_height_margin": 57
+      },
+      {
+        "anchor_age": 44,
+        "height_eligible": true,
+        "height_mod_spacing": 44,
+        "remaining_height_margin": 56
+      },
+      {
+        "anchor_age": 45,
+        "height_eligible": true,
+        "height_mod_spacing": 45,
+        "remaining_height_margin": 55
+      },
+      {
+        "anchor_age": 46,
+        "height_eligible": true,
+        "height_mod_spacing": 46,
+        "remaining_height_margin": 54
+      },
+      {
+        "anchor_age": 47,
+        "height_eligible": true,
+        "height_mod_spacing": 47,
+        "remaining_height_margin": 53
+      },
+      {
+        "anchor_age": 48,
+        "height_eligible": true,
+        "height_mod_spacing": 48,
+        "remaining_height_margin": 52
+      },
+      {
+        "anchor_age": 49,
+        "height_eligible": true,
+        "height_mod_spacing": 49,
+        "remaining_height_margin": 51
+      },
+      {
+        "anchor_age": 50,
+        "height_eligible": true,
+        "height_mod_spacing": 50,
+        "remaining_height_margin": 50
+      },
+      {
+        "anchor_age": 51,
+        "height_eligible": true,
+        "height_mod_spacing": 51,
+        "remaining_height_margin": 49
+      },
+      {
+        "anchor_age": 52,
+        "height_eligible": true,
+        "height_mod_spacing": 52,
+        "remaining_height_margin": 48
+      },
+      {
+        "anchor_age": 53,
+        "height_eligible": true,
+        "height_mod_spacing": 53,
+        "remaining_height_margin": 47
+      },
+      {
+        "anchor_age": 54,
+        "height_eligible": true,
+        "height_mod_spacing": 54,
+        "remaining_height_margin": 46
+      },
+      {
+        "anchor_age": 55,
+        "height_eligible": true,
+        "height_mod_spacing": 55,
+        "remaining_height_margin": 45
+      },
+      {
+        "anchor_age": 56,
+        "height_eligible": true,
+        "height_mod_spacing": 56,
+        "remaining_height_margin": 44
+      },
+      {
+        "anchor_age": 57,
+        "height_eligible": true,
+        "height_mod_spacing": 57,
+        "remaining_height_margin": 43
+      },
+      {
+        "anchor_age": 58,
+        "height_eligible": true,
+        "height_mod_spacing": 58,
+        "remaining_height_margin": 42
+      },
+      {
+        "anchor_age": 59,
+        "height_eligible": true,
+        "height_mod_spacing": 59,
+        "remaining_height_margin": 41
+      },
+      {
+        "anchor_age": 60,
+        "height_eligible": true,
+        "height_mod_spacing": 60,
+        "remaining_height_margin": 40
+      },
+      {
+        "anchor_age": 61,
+        "height_eligible": true,
+        "height_mod_spacing": 61,
+        "remaining_height_margin": 39
+      },
+      {
+        "anchor_age": 62,
+        "height_eligible": true,
+        "height_mod_spacing": 62,
+        "remaining_height_margin": 38
+      },
+      {
+        "anchor_age": 63,
+        "height_eligible": true,
+        "height_mod_spacing": 63,
+        "remaining_height_margin": 37
+      },
+      {
+        "anchor_age": 64,
+        "height_eligible": true,
+        "height_mod_spacing": 64,
+        "remaining_height_margin": 36
+      },
+      {
+        "anchor_age": 65,
+        "height_eligible": true,
+        "height_mod_spacing": 65,
+        "remaining_height_margin": 35
+      },
+      {
+        "anchor_age": 66,
+        "height_eligible": true,
+        "height_mod_spacing": 66,
+        "remaining_height_margin": 34
+      },
+      {
+        "anchor_age": 67,
+        "height_eligible": true,
+        "height_mod_spacing": 67,
+        "remaining_height_margin": 33
+      },
+      {
+        "anchor_age": 68,
+        "height_eligible": true,
+        "height_mod_spacing": 68,
+        "remaining_height_margin": 32
+      },
+      {
+        "anchor_age": 69,
+        "height_eligible": true,
+        "height_mod_spacing": 69,
+        "remaining_height_margin": 31
+      },
+      {
+        "anchor_age": 70,
+        "height_eligible": true,
+        "height_mod_spacing": 70,
+        "remaining_height_margin": 30
+      },
+      {
+        "anchor_age": 71,
+        "height_eligible": true,
+        "height_mod_spacing": 71,
+        "remaining_height_margin": 29
+      },
+      {
+        "anchor_age": 72,
+        "height_eligible": true,
+        "height_mod_spacing": 72,
+        "remaining_height_margin": 28
+      },
+      {
+        "anchor_age": 73,
+        "height_eligible": true,
+        "height_mod_spacing": 73,
+        "remaining_height_margin": 27
+      },
+      {
+        "anchor_age": 74,
+        "height_eligible": true,
+        "height_mod_spacing": 74,
+        "remaining_height_margin": 26
+      },
+      {
+        "anchor_age": 75,
+        "height_eligible": true,
+        "height_mod_spacing": 75,
+        "remaining_height_margin": 25
+      },
+      {
+        "anchor_age": 76,
+        "height_eligible": true,
+        "height_mod_spacing": 76,
+        "remaining_height_margin": 24
+      },
+      {
+        "anchor_age": 77,
+        "height_eligible": true,
+        "height_mod_spacing": 77,
+        "remaining_height_margin": 23
+      },
+      {
+        "anchor_age": 78,
+        "height_eligible": true,
+        "height_mod_spacing": 78,
+        "remaining_height_margin": 22
+      },
+      {
+        "anchor_age": 79,
+        "height_eligible": true,
+        "height_mod_spacing": 79,
+        "remaining_height_margin": 21
+      },
+      {
+        "anchor_age": 80,
+        "height_eligible": true,
+        "height_mod_spacing": 80,
+        "remaining_height_margin": 20
+      },
+      {
+        "anchor_age": 81,
+        "height_eligible": true,
+        "height_mod_spacing": 81,
+        "remaining_height_margin": 19
+      },
+      {
+        "anchor_age": 82,
+        "height_eligible": true,
+        "height_mod_spacing": 82,
+        "remaining_height_margin": 18
+      },
+      {
+        "anchor_age": 83,
+        "height_eligible": true,
+        "height_mod_spacing": 83,
+        "remaining_height_margin": 17
+      },
+      {
+        "anchor_age": 84,
+        "height_eligible": true,
+        "height_mod_spacing": 84,
+        "remaining_height_margin": 16
+      },
+      {
+        "anchor_age": 85,
+        "height_eligible": true,
+        "height_mod_spacing": 85,
+        "remaining_height_margin": 15
+      },
+      {
+        "anchor_age": 86,
+        "height_eligible": true,
+        "height_mod_spacing": 86,
+        "remaining_height_margin": 14
+      },
+      {
+        "anchor_age": 87,
+        "height_eligible": true,
+        "height_mod_spacing": 87,
+        "remaining_height_margin": 13
+      },
+      {
+        "anchor_age": 88,
+        "height_eligible": true,
+        "height_mod_spacing": 88,
+        "remaining_height_margin": 12
+      },
+      {
+        "anchor_age": 89,
+        "height_eligible": true,
+        "height_mod_spacing": 89,
+        "remaining_height_margin": 11
+      },
+      {
+        "anchor_age": 90,
+        "height_eligible": true,
+        "height_mod_spacing": 90,
+        "remaining_height_margin": 10
+      },
+      {
+        "anchor_age": 91,
+        "height_eligible": true,
+        "height_mod_spacing": 91,
+        "remaining_height_margin": 9
+      },
+      {
+        "anchor_age": 92,
+        "height_eligible": true,
+        "height_mod_spacing": 92,
+        "remaining_height_margin": 8
+      },
+      {
+        "anchor_age": 93,
+        "height_eligible": true,
+        "height_mod_spacing": 93,
+        "remaining_height_margin": 7
+      },
+      {
+        "anchor_age": 94,
+        "height_eligible": true,
+        "height_mod_spacing": 94,
+        "remaining_height_margin": 6
+      },
+      {
+        "anchor_age": 95,
+        "height_eligible": true,
+        "height_mod_spacing": 95,
+        "remaining_height_margin": 5
+      },
+      {
+        "anchor_age": 96,
+        "height_eligible": true,
+        "height_mod_spacing": 96,
+        "remaining_height_margin": 4
+      },
+      {
+        "anchor_age": 97,
+        "height_eligible": true,
+        "height_mod_spacing": 97,
+        "remaining_height_margin": 3
+      },
+      {
+        "anchor_age": 98,
+        "height_eligible": true,
+        "height_mod_spacing": 98,
+        "remaining_height_margin": 2
+      },
+      {
+        "anchor_age": 99,
+        "height_eligible": true,
+        "height_mod_spacing": 99,
+        "remaining_height_margin": 1
+      },
+      {
+        "anchor_age": 100,
+        "height_eligible": true,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": 0
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 100,
+    "wallet_depth": 6,
+    "window": 100
+  },
+  {
+    "minimum_margin": -49,
+    "missing_phases": 49,
+    "phases": [
+      {
+        "anchor_age": 145,
+        "height_eligible": false,
+        "height_mod_spacing": 1,
+        "remaining_height_margin": -45
+      },
+      {
+        "anchor_age": 146,
+        "height_eligible": false,
+        "height_mod_spacing": 2,
+        "remaining_height_margin": -46
+      },
+      {
+        "anchor_age": 147,
+        "height_eligible": false,
+        "height_mod_spacing": 3,
+        "remaining_height_margin": -47
+      },
+      {
+        "anchor_age": 148,
+        "height_eligible": false,
+        "height_mod_spacing": 4,
+        "remaining_height_margin": -48
+      },
+      {
+        "anchor_age": 149,
+        "height_eligible": false,
+        "height_mod_spacing": 5,
+        "remaining_height_margin": -49
+      },
+      {
+        "anchor_age": 6,
+        "height_eligible": true,
+        "height_mod_spacing": 6,
+        "remaining_height_margin": 94
+      },
+      {
+        "anchor_age": 7,
+        "height_eligible": true,
+        "height_mod_spacing": 7,
+        "remaining_height_margin": 93
+      },
+      {
+        "anchor_age": 8,
+        "height_eligible": true,
+        "height_mod_spacing": 8,
+        "remaining_height_margin": 92
+      },
+      {
+        "anchor_age": 9,
+        "height_eligible": true,
+        "height_mod_spacing": 9,
+        "remaining_height_margin": 91
+      },
+      {
+        "anchor_age": 10,
+        "height_eligible": true,
+        "height_mod_spacing": 10,
+        "remaining_height_margin": 90
+      },
+      {
+        "anchor_age": 11,
+        "height_eligible": true,
+        "height_mod_spacing": 11,
+        "remaining_height_margin": 89
+      },
+      {
+        "anchor_age": 12,
+        "height_eligible": true,
+        "height_mod_spacing": 12,
+        "remaining_height_margin": 88
+      },
+      {
+        "anchor_age": 13,
+        "height_eligible": true,
+        "height_mod_spacing": 13,
+        "remaining_height_margin": 87
+      },
+      {
+        "anchor_age": 14,
+        "height_eligible": true,
+        "height_mod_spacing": 14,
+        "remaining_height_margin": 86
+      },
+      {
+        "anchor_age": 15,
+        "height_eligible": true,
+        "height_mod_spacing": 15,
+        "remaining_height_margin": 85
+      },
+      {
+        "anchor_age": 16,
+        "height_eligible": true,
+        "height_mod_spacing": 16,
+        "remaining_height_margin": 84
+      },
+      {
+        "anchor_age": 17,
+        "height_eligible": true,
+        "height_mod_spacing": 17,
+        "remaining_height_margin": 83
+      },
+      {
+        "anchor_age": 18,
+        "height_eligible": true,
+        "height_mod_spacing": 18,
+        "remaining_height_margin": 82
+      },
+      {
+        "anchor_age": 19,
+        "height_eligible": true,
+        "height_mod_spacing": 19,
+        "remaining_height_margin": 81
+      },
+      {
+        "anchor_age": 20,
+        "height_eligible": true,
+        "height_mod_spacing": 20,
+        "remaining_height_margin": 80
+      },
+      {
+        "anchor_age": 21,
+        "height_eligible": true,
+        "height_mod_spacing": 21,
+        "remaining_height_margin": 79
+      },
+      {
+        "anchor_age": 22,
+        "height_eligible": true,
+        "height_mod_spacing": 22,
+        "remaining_height_margin": 78
+      },
+      {
+        "anchor_age": 23,
+        "height_eligible": true,
+        "height_mod_spacing": 23,
+        "remaining_height_margin": 77
+      },
+      {
+        "anchor_age": 24,
+        "height_eligible": true,
+        "height_mod_spacing": 24,
+        "remaining_height_margin": 76
+      },
+      {
+        "anchor_age": 25,
+        "height_eligible": true,
+        "height_mod_spacing": 25,
+        "remaining_height_margin": 75
+      },
+      {
+        "anchor_age": 26,
+        "height_eligible": true,
+        "height_mod_spacing": 26,
+        "remaining_height_margin": 74
+      },
+      {
+        "anchor_age": 27,
+        "height_eligible": true,
+        "height_mod_spacing": 27,
+        "remaining_height_margin": 73
+      },
+      {
+        "anchor_age": 28,
+        "height_eligible": true,
+        "height_mod_spacing": 28,
+        "remaining_height_margin": 72
+      },
+      {
+        "anchor_age": 29,
+        "height_eligible": true,
+        "height_mod_spacing": 29,
+        "remaining_height_margin": 71
+      },
+      {
+        "anchor_age": 30,
+        "height_eligible": true,
+        "height_mod_spacing": 30,
+        "remaining_height_margin": 70
+      },
+      {
+        "anchor_age": 31,
+        "height_eligible": true,
+        "height_mod_spacing": 31,
+        "remaining_height_margin": 69
+      },
+      {
+        "anchor_age": 32,
+        "height_eligible": true,
+        "height_mod_spacing": 32,
+        "remaining_height_margin": 68
+      },
+      {
+        "anchor_age": 33,
+        "height_eligible": true,
+        "height_mod_spacing": 33,
+        "remaining_height_margin": 67
+      },
+      {
+        "anchor_age": 34,
+        "height_eligible": true,
+        "height_mod_spacing": 34,
+        "remaining_height_margin": 66
+      },
+      {
+        "anchor_age": 35,
+        "height_eligible": true,
+        "height_mod_spacing": 35,
+        "remaining_height_margin": 65
+      },
+      {
+        "anchor_age": 36,
+        "height_eligible": true,
+        "height_mod_spacing": 36,
+        "remaining_height_margin": 64
+      },
+      {
+        "anchor_age": 37,
+        "height_eligible": true,
+        "height_mod_spacing": 37,
+        "remaining_height_margin": 63
+      },
+      {
+        "anchor_age": 38,
+        "height_eligible": true,
+        "height_mod_spacing": 38,
+        "remaining_height_margin": 62
+      },
+      {
+        "anchor_age": 39,
+        "height_eligible": true,
+        "height_mod_spacing": 39,
+        "remaining_height_margin": 61
+      },
+      {
+        "anchor_age": 40,
+        "height_eligible": true,
+        "height_mod_spacing": 40,
+        "remaining_height_margin": 60
+      },
+      {
+        "anchor_age": 41,
+        "height_eligible": true,
+        "height_mod_spacing": 41,
+        "remaining_height_margin": 59
+      },
+      {
+        "anchor_age": 42,
+        "height_eligible": true,
+        "height_mod_spacing": 42,
+        "remaining_height_margin": 58
+      },
+      {
+        "anchor_age": 43,
+        "height_eligible": true,
+        "height_mod_spacing": 43,
+        "remaining_height_margin": 57
+      },
+      {
+        "anchor_age": 44,
+        "height_eligible": true,
+        "height_mod_spacing": 44,
+        "remaining_height_margin": 56
+      },
+      {
+        "anchor_age": 45,
+        "height_eligible": true,
+        "height_mod_spacing": 45,
+        "remaining_height_margin": 55
+      },
+      {
+        "anchor_age": 46,
+        "height_eligible": true,
+        "height_mod_spacing": 46,
+        "remaining_height_margin": 54
+      },
+      {
+        "anchor_age": 47,
+        "height_eligible": true,
+        "height_mod_spacing": 47,
+        "remaining_height_margin": 53
+      },
+      {
+        "anchor_age": 48,
+        "height_eligible": true,
+        "height_mod_spacing": 48,
+        "remaining_height_margin": 52
+      },
+      {
+        "anchor_age": 49,
+        "height_eligible": true,
+        "height_mod_spacing": 49,
+        "remaining_height_margin": 51
+      },
+      {
+        "anchor_age": 50,
+        "height_eligible": true,
+        "height_mod_spacing": 50,
+        "remaining_height_margin": 50
+      },
+      {
+        "anchor_age": 51,
+        "height_eligible": true,
+        "height_mod_spacing": 51,
+        "remaining_height_margin": 49
+      },
+      {
+        "anchor_age": 52,
+        "height_eligible": true,
+        "height_mod_spacing": 52,
+        "remaining_height_margin": 48
+      },
+      {
+        "anchor_age": 53,
+        "height_eligible": true,
+        "height_mod_spacing": 53,
+        "remaining_height_margin": 47
+      },
+      {
+        "anchor_age": 54,
+        "height_eligible": true,
+        "height_mod_spacing": 54,
+        "remaining_height_margin": 46
+      },
+      {
+        "anchor_age": 55,
+        "height_eligible": true,
+        "height_mod_spacing": 55,
+        "remaining_height_margin": 45
+      },
+      {
+        "anchor_age": 56,
+        "height_eligible": true,
+        "height_mod_spacing": 56,
+        "remaining_height_margin": 44
+      },
+      {
+        "anchor_age": 57,
+        "height_eligible": true,
+        "height_mod_spacing": 57,
+        "remaining_height_margin": 43
+      },
+      {
+        "anchor_age": 58,
+        "height_eligible": true,
+        "height_mod_spacing": 58,
+        "remaining_height_margin": 42
+      },
+      {
+        "anchor_age": 59,
+        "height_eligible": true,
+        "height_mod_spacing": 59,
+        "remaining_height_margin": 41
+      },
+      {
+        "anchor_age": 60,
+        "height_eligible": true,
+        "height_mod_spacing": 60,
+        "remaining_height_margin": 40
+      },
+      {
+        "anchor_age": 61,
+        "height_eligible": true,
+        "height_mod_spacing": 61,
+        "remaining_height_margin": 39
+      },
+      {
+        "anchor_age": 62,
+        "height_eligible": true,
+        "height_mod_spacing": 62,
+        "remaining_height_margin": 38
+      },
+      {
+        "anchor_age": 63,
+        "height_eligible": true,
+        "height_mod_spacing": 63,
+        "remaining_height_margin": 37
+      },
+      {
+        "anchor_age": 64,
+        "height_eligible": true,
+        "height_mod_spacing": 64,
+        "remaining_height_margin": 36
+      },
+      {
+        "anchor_age": 65,
+        "height_eligible": true,
+        "height_mod_spacing": 65,
+        "remaining_height_margin": 35
+      },
+      {
+        "anchor_age": 66,
+        "height_eligible": true,
+        "height_mod_spacing": 66,
+        "remaining_height_margin": 34
+      },
+      {
+        "anchor_age": 67,
+        "height_eligible": true,
+        "height_mod_spacing": 67,
+        "remaining_height_margin": 33
+      },
+      {
+        "anchor_age": 68,
+        "height_eligible": true,
+        "height_mod_spacing": 68,
+        "remaining_height_margin": 32
+      },
+      {
+        "anchor_age": 69,
+        "height_eligible": true,
+        "height_mod_spacing": 69,
+        "remaining_height_margin": 31
+      },
+      {
+        "anchor_age": 70,
+        "height_eligible": true,
+        "height_mod_spacing": 70,
+        "remaining_height_margin": 30
+      },
+      {
+        "anchor_age": 71,
+        "height_eligible": true,
+        "height_mod_spacing": 71,
+        "remaining_height_margin": 29
+      },
+      {
+        "anchor_age": 72,
+        "height_eligible": true,
+        "height_mod_spacing": 72,
+        "remaining_height_margin": 28
+      },
+      {
+        "anchor_age": 73,
+        "height_eligible": true,
+        "height_mod_spacing": 73,
+        "remaining_height_margin": 27
+      },
+      {
+        "anchor_age": 74,
+        "height_eligible": true,
+        "height_mod_spacing": 74,
+        "remaining_height_margin": 26
+      },
+      {
+        "anchor_age": 75,
+        "height_eligible": true,
+        "height_mod_spacing": 75,
+        "remaining_height_margin": 25
+      },
+      {
+        "anchor_age": 76,
+        "height_eligible": true,
+        "height_mod_spacing": 76,
+        "remaining_height_margin": 24
+      },
+      {
+        "anchor_age": 77,
+        "height_eligible": true,
+        "height_mod_spacing": 77,
+        "remaining_height_margin": 23
+      },
+      {
+        "anchor_age": 78,
+        "height_eligible": true,
+        "height_mod_spacing": 78,
+        "remaining_height_margin": 22
+      },
+      {
+        "anchor_age": 79,
+        "height_eligible": true,
+        "height_mod_spacing": 79,
+        "remaining_height_margin": 21
+      },
+      {
+        "anchor_age": 80,
+        "height_eligible": true,
+        "height_mod_spacing": 80,
+        "remaining_height_margin": 20
+      },
+      {
+        "anchor_age": 81,
+        "height_eligible": true,
+        "height_mod_spacing": 81,
+        "remaining_height_margin": 19
+      },
+      {
+        "anchor_age": 82,
+        "height_eligible": true,
+        "height_mod_spacing": 82,
+        "remaining_height_margin": 18
+      },
+      {
+        "anchor_age": 83,
+        "height_eligible": true,
+        "height_mod_spacing": 83,
+        "remaining_height_margin": 17
+      },
+      {
+        "anchor_age": 84,
+        "height_eligible": true,
+        "height_mod_spacing": 84,
+        "remaining_height_margin": 16
+      },
+      {
+        "anchor_age": 85,
+        "height_eligible": true,
+        "height_mod_spacing": 85,
+        "remaining_height_margin": 15
+      },
+      {
+        "anchor_age": 86,
+        "height_eligible": true,
+        "height_mod_spacing": 86,
+        "remaining_height_margin": 14
+      },
+      {
+        "anchor_age": 87,
+        "height_eligible": true,
+        "height_mod_spacing": 87,
+        "remaining_height_margin": 13
+      },
+      {
+        "anchor_age": 88,
+        "height_eligible": true,
+        "height_mod_spacing": 88,
+        "remaining_height_margin": 12
+      },
+      {
+        "anchor_age": 89,
+        "height_eligible": true,
+        "height_mod_spacing": 89,
+        "remaining_height_margin": 11
+      },
+      {
+        "anchor_age": 90,
+        "height_eligible": true,
+        "height_mod_spacing": 90,
+        "remaining_height_margin": 10
+      },
+      {
+        "anchor_age": 91,
+        "height_eligible": true,
+        "height_mod_spacing": 91,
+        "remaining_height_margin": 9
+      },
+      {
+        "anchor_age": 92,
+        "height_eligible": true,
+        "height_mod_spacing": 92,
+        "remaining_height_margin": 8
+      },
+      {
+        "anchor_age": 93,
+        "height_eligible": true,
+        "height_mod_spacing": 93,
+        "remaining_height_margin": 7
+      },
+      {
+        "anchor_age": 94,
+        "height_eligible": true,
+        "height_mod_spacing": 94,
+        "remaining_height_margin": 6
+      },
+      {
+        "anchor_age": 95,
+        "height_eligible": true,
+        "height_mod_spacing": 95,
+        "remaining_height_margin": 5
+      },
+      {
+        "anchor_age": 96,
+        "height_eligible": true,
+        "height_mod_spacing": 96,
+        "remaining_height_margin": 4
+      },
+      {
+        "anchor_age": 97,
+        "height_eligible": true,
+        "height_mod_spacing": 97,
+        "remaining_height_margin": 3
+      },
+      {
+        "anchor_age": 98,
+        "height_eligible": true,
+        "height_mod_spacing": 98,
+        "remaining_height_margin": 2
+      },
+      {
+        "anchor_age": 99,
+        "height_eligible": true,
+        "height_mod_spacing": 99,
+        "remaining_height_margin": 1
+      },
+      {
+        "anchor_age": 100,
+        "height_eligible": true,
+        "height_mod_spacing": 100,
+        "remaining_height_margin": 0
+      },
+      {
+        "anchor_age": 101,
+        "height_eligible": false,
+        "height_mod_spacing": 101,
+        "remaining_height_margin": -1
+      },
+      {
+        "anchor_age": 102,
+        "height_eligible": false,
+        "height_mod_spacing": 102,
+        "remaining_height_margin": -2
+      },
+      {
+        "anchor_age": 103,
+        "height_eligible": false,
+        "height_mod_spacing": 103,
+        "remaining_height_margin": -3
+      },
+      {
+        "anchor_age": 104,
+        "height_eligible": false,
+        "height_mod_spacing": 104,
+        "remaining_height_margin": -4
+      },
+      {
+        "anchor_age": 105,
+        "height_eligible": false,
+        "height_mod_spacing": 105,
+        "remaining_height_margin": -5
+      },
+      {
+        "anchor_age": 106,
+        "height_eligible": false,
+        "height_mod_spacing": 106,
+        "remaining_height_margin": -6
+      },
+      {
+        "anchor_age": 107,
+        "height_eligible": false,
+        "height_mod_spacing": 107,
+        "remaining_height_margin": -7
+      },
+      {
+        "anchor_age": 108,
+        "height_eligible": false,
+        "height_mod_spacing": 108,
+        "remaining_height_margin": -8
+      },
+      {
+        "anchor_age": 109,
+        "height_eligible": false,
+        "height_mod_spacing": 109,
+        "remaining_height_margin": -9
+      },
+      {
+        "anchor_age": 110,
+        "height_eligible": false,
+        "height_mod_spacing": 110,
+        "remaining_height_margin": -10
+      },
+      {
+        "anchor_age": 111,
+        "height_eligible": false,
+        "height_mod_spacing": 111,
+        "remaining_height_margin": -11
+      },
+      {
+        "anchor_age": 112,
+        "height_eligible": false,
+        "height_mod_spacing": 112,
+        "remaining_height_margin": -12
+      },
+      {
+        "anchor_age": 113,
+        "height_eligible": false,
+        "height_mod_spacing": 113,
+        "remaining_height_margin": -13
+      },
+      {
+        "anchor_age": 114,
+        "height_eligible": false,
+        "height_mod_spacing": 114,
+        "remaining_height_margin": -14
+      },
+      {
+        "anchor_age": 115,
+        "height_eligible": false,
+        "height_mod_spacing": 115,
+        "remaining_height_margin": -15
+      },
+      {
+        "anchor_age": 116,
+        "height_eligible": false,
+        "height_mod_spacing": 116,
+        "remaining_height_margin": -16
+      },
+      {
+        "anchor_age": 117,
+        "height_eligible": false,
+        "height_mod_spacing": 117,
+        "remaining_height_margin": -17
+      },
+      {
+        "anchor_age": 118,
+        "height_eligible": false,
+        "height_mod_spacing": 118,
+        "remaining_height_margin": -18
+      },
+      {
+        "anchor_age": 119,
+        "height_eligible": false,
+        "height_mod_spacing": 119,
+        "remaining_height_margin": -19
+      },
+      {
+        "anchor_age": 120,
+        "height_eligible": false,
+        "height_mod_spacing": 120,
+        "remaining_height_margin": -20
+      },
+      {
+        "anchor_age": 121,
+        "height_eligible": false,
+        "height_mod_spacing": 121,
+        "remaining_height_margin": -21
+      },
+      {
+        "anchor_age": 122,
+        "height_eligible": false,
+        "height_mod_spacing": 122,
+        "remaining_height_margin": -22
+      },
+      {
+        "anchor_age": 123,
+        "height_eligible": false,
+        "height_mod_spacing": 123,
+        "remaining_height_margin": -23
+      },
+      {
+        "anchor_age": 124,
+        "height_eligible": false,
+        "height_mod_spacing": 124,
+        "remaining_height_margin": -24
+      },
+      {
+        "anchor_age": 125,
+        "height_eligible": false,
+        "height_mod_spacing": 125,
+        "remaining_height_margin": -25
+      },
+      {
+        "anchor_age": 126,
+        "height_eligible": false,
+        "height_mod_spacing": 126,
+        "remaining_height_margin": -26
+      },
+      {
+        "anchor_age": 127,
+        "height_eligible": false,
+        "height_mod_spacing": 127,
+        "remaining_height_margin": -27
+      },
+      {
+        "anchor_age": 128,
+        "height_eligible": false,
+        "height_mod_spacing": 128,
+        "remaining_height_margin": -28
+      },
+      {
+        "anchor_age": 129,
+        "height_eligible": false,
+        "height_mod_spacing": 129,
+        "remaining_height_margin": -29
+      },
+      {
+        "anchor_age": 130,
+        "height_eligible": false,
+        "height_mod_spacing": 130,
+        "remaining_height_margin": -30
+      },
+      {
+        "anchor_age": 131,
+        "height_eligible": false,
+        "height_mod_spacing": 131,
+        "remaining_height_margin": -31
+      },
+      {
+        "anchor_age": 132,
+        "height_eligible": false,
+        "height_mod_spacing": 132,
+        "remaining_height_margin": -32
+      },
+      {
+        "anchor_age": 133,
+        "height_eligible": false,
+        "height_mod_spacing": 133,
+        "remaining_height_margin": -33
+      },
+      {
+        "anchor_age": 134,
+        "height_eligible": false,
+        "height_mod_spacing": 134,
+        "remaining_height_margin": -34
+      },
+      {
+        "anchor_age": 135,
+        "height_eligible": false,
+        "height_mod_spacing": 135,
+        "remaining_height_margin": -35
+      },
+      {
+        "anchor_age": 136,
+        "height_eligible": false,
+        "height_mod_spacing": 136,
+        "remaining_height_margin": -36
+      },
+      {
+        "anchor_age": 137,
+        "height_eligible": false,
+        "height_mod_spacing": 137,
+        "remaining_height_margin": -37
+      },
+      {
+        "anchor_age": 138,
+        "height_eligible": false,
+        "height_mod_spacing": 138,
+        "remaining_height_margin": -38
+      },
+      {
+        "anchor_age": 139,
+        "height_eligible": false,
+        "height_mod_spacing": 139,
+        "remaining_height_margin": -39
+      },
+      {
+        "anchor_age": 140,
+        "height_eligible": false,
+        "height_mod_spacing": 140,
+        "remaining_height_margin": -40
+      },
+      {
+        "anchor_age": 141,
+        "height_eligible": false,
+        "height_mod_spacing": 141,
+        "remaining_height_margin": -41
+      },
+      {
+        "anchor_age": 142,
+        "height_eligible": false,
+        "height_mod_spacing": 142,
+        "remaining_height_margin": -42
+      },
+      {
+        "anchor_age": 143,
+        "height_eligible": false,
+        "height_mod_spacing": 143,
+        "remaining_height_margin": -43
+      },
+      {
+        "anchor_age": 144,
+        "height_eligible": false,
+        "height_mod_spacing": 0,
+        "remaining_height_margin": -44
+      }
+    ],
+    "protocol_minimum_depth": 1,
+    "spacing": 144,
+    "wallet_depth": 6,
+    "window": 100
+  }
+]

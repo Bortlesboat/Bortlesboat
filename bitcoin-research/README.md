@@ -30,6 +30,14 @@ The submitted change distinguishes error against the current mempool median from
 
 ## Research experiments
 
+### Publication fees and anchor expiry
+
+Can a fee increase buy a Bitcoin confirmation after a payload's modeled anchor has expired? The [publication-policy benchmark](experiments/shielded-publication/README.md) compares 24 controlled cases on Bitcoin Core 31.1 regtest, with signed transactions, raw traces and reproducible reports.
+
+In one delayed-publication workload, a fee-only retry and an anchor-refresh retry both paid 14,720 regtest satoshis and confirmed at height 293. Their modeled anchor ages were 101 and 21 blocks, respectively; only the latter passed the paper's 100-block height window. This result assumes rebuilding takes zero blocks. The payloads are synthetic, and the experiment does not verify Shielded proofs or implement its replay rules.
+
+This is an independent research artifact. It has not been reviewed or adopted by the Shielded Bitcoin team.
+
 ### Recovering an Arkade wallet across process boundaries
 
 Question: can a wallet reopen a saved database, prepare an exit with Ark services unavailable, and complete that exit through independent Bitcoin access? How does a backup missing the virtual transaction data behave?
