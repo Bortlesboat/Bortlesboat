@@ -1,0 +1,154 @@
+{
+  "requested_fee_rate_sat_vb": 10,
+  "status": "passed_with_expected_merge_violation",
+  "restart": {
+    "before": [
+      {
+        "txid": "2cdada08a1a3177812f0ac3fafb2335274d32151a78bb109852076d246000665",
+        "vout": 0,
+        "sats": 5000000,
+        "labels": [
+          "ordinary"
+        ]
+      },
+      {
+        "txid": "9c6fbdef20ac366bf1ad52d22e43226963a743254054ae47e32a0e9732768da3",
+        "vout": 1,
+        "sats": 9875134,
+        "labels": [
+          "prepared"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "txid": "2cdada08a1a3177812f0ac3fafb2335274d32151a78bb109852076d246000665",
+        "vout": 0,
+        "sats": 5000000,
+        "labels": [
+          "ordinary"
+        ]
+      },
+      {
+        "txid": "9c6fbdef20ac366bf1ad52d22e43226963a743254054ae47e32a0e9732768da3",
+        "vout": 1,
+        "sats": 9875134,
+        "labels": [
+          "prepared"
+        ]
+      }
+    ],
+    "height": 104,
+    "matched": true
+  },
+  "isolated_payment_audit": {
+    "status": "clean",
+    "scope": "Declared pool policy and byte consistency only; anonymity not measured.",
+    "transactions_checked": 4,
+    "fees_verified": 3,
+    "fees_unverified_missing_parents": [
+      "befa69e253d48eec21385743e0094f1d6eeb4f3f8aca3ec5708dfbeb0aac8db9"
+    ],
+    "steps": [
+      {
+        "txid": "9c6fbdef20ac366bf1ad52d22e43226963a743254054ae47e32a0e9732768da3",
+        "required_pool": "prepared",
+        "input_pools": [
+          "prepared"
+        ],
+        "fee_sats": 1410,
+        "vsize": 141,
+        "violations": []
+      },
+      {
+        "txid": "39953a393cc883d9145cae7055e3cad5695ef34cc799806544822559e1de219f",
+        "required_pool": "prepared",
+        "input_pools": [
+          "prepared"
+        ],
+        "fee_sats": 1410,
+        "vsize": 141,
+        "violations": []
+      }
+    ],
+    "undeclared_spends": []
+  },
+  "ordinary_payment_fee_sats": [
+    1410,
+    1410
+  ],
+  "ordinary_payment_vbytes": [
+    141,
+    141
+  ],
+  "insufficient_pool": {
+    "requested_sats": 9639157,
+    "eligible_sats": 8639157,
+    "total_wallet_sats": 13639157,
+    "reason": "fundrawtransaction: {'code': -4, 'message': 'The preselected coins total amount does not cover the transaction target. Please allow other inputs to be automatically selected or include more coins manually'}",
+    "coins_and_labels_unchanged": true,
+    "mempool_unchanged": true
+  },
+  "fee_shortfall": {
+    "requested_sats": 8639156,
+    "eligible_sats": 8639157,
+    "total_wallet_sats": 13639157,
+    "reason": "fundrawtransaction: {'code': -4, 'message': 'The preselected coins total amount does not cover the transaction target. Please allow other inputs to be automatically selected or include more coins manually'}",
+    "coins_and_labels_unchanged": true,
+    "mempool_unchanged": true
+  },
+  "missing_label": {
+    "requested_sats": 123456,
+    "eligible_sats": 0,
+    "total_wallet_sats": 13639157,
+    "reason": "no_eligible_coins",
+    "coins_and_labels_unchanged": true,
+    "mempool_unchanged": true
+  },
+  "merge_control_audit": {
+    "status": "violated",
+    "scope": "Declared pool policy and byte consistency only; anonymity not measured.",
+    "transactions_checked": 5,
+    "fees_verified": 4,
+    "fees_unverified_missing_parents": [
+      "befa69e253d48eec21385743e0094f1d6eeb4f3f8aca3ec5708dfbeb0aac8db9"
+    ],
+    "steps": [
+      {
+        "txid": "9c6fbdef20ac366bf1ad52d22e43226963a743254054ae47e32a0e9732768da3",
+        "required_pool": "prepared",
+        "input_pools": [
+          "prepared"
+        ],
+        "fee_sats": 1410,
+        "vsize": 141,
+        "violations": []
+      },
+      {
+        "txid": "39953a393cc883d9145cae7055e3cad5695ef34cc799806544822559e1de219f",
+        "required_pool": "prepared",
+        "input_pools": [
+          "prepared"
+        ],
+        "fee_sats": 1410,
+        "vsize": 141,
+        "violations": []
+      },
+      {
+        "txid": "a4634db43d5193fca412943d7c7d12b96be9d530a6af04debc929222a3824d34",
+        "required_pool": "prepared",
+        "input_pools": [
+          "prepared",
+          "ordinary"
+        ],
+        "fee_sats": 2080,
+        "vsize": 208,
+        "violations": [
+          "wrong_pool"
+        ]
+      }
+    ],
+    "undeclared_spends": []
+  },
+  "owned_node_stopped": true
+}

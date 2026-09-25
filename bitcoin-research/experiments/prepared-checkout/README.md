@@ -41,6 +41,8 @@ The prototype's single-process cryptographic setup remains unchanged. Unloading 
 
 ## Results and outside reproduction
 
+For a faster follow-up that needs no Rust build, see the [coin-policy regression kit](POLICY_TESTS.md). It audits these recorded transaction bytes and separately tests synthetic wallet labels across a Core restart, fee shortfalls and an intentional merge. It does not rerun A²L or establish anonymity.
+
 The September 25, 2026 clean-extraction run passed all six transaction checks on **Bitcoin Core 31.1**, Ubuntu 24.04 under WSL, Python 3.12.3 and Cargo 1.97.0. It fetched upstream anew and used fresh build outputs. The author's Cargo download cache and existing native tools were reused; this was not an independent reproduction or a fresh operating-system install. Conflicting Cargo output settings were overridden, leaving the pre-existing control directories untouched. The owned Bitcoin node stopped successfully.
 
 | Observed operation | Result |

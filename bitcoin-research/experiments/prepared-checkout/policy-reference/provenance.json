@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-25T18:49:56.845260+00:00",
+  "python": "3.12.3",
+  "system": "Linux",
+  "bitcoin_version": "Bitcoin Core daemon version v31.1.0 bitcoind",
+  "bitcoin_binary_sha256": "986e63b3c8770f08d0059820ad3dd085d1ab9e1bea23946c243f858a06888a08",
+  "source_sha256": {
+    "audit.py": "87618e814efe9c16e1ec7bd7109ce34c2626f6390b8ed94546c313e237246649",
+    "lifecycle.py": "09005fbe2cfd6ae2e11add0f1bee7a8045015794b680e2c55b8b01a9258c25ab",
+    "checkout.py": "ef32bc4edb3587077c39cf45c61873562c620f236733d8c2e48d85777999bf4c",
+    "regtest.py": "dd0d802e264b24c811dce0c6134136ce623f779c9474aa63c89769ca2cb81b65",
+    "run.py": "306601bf77fc9c8b61f5b47a4599ae52f8b39d1e574cbf2803df20eee70849f7"
+  },
+  "scope": "Synthetic labeled regtest coins; no A\u00b2L/OpenSwap execution or anonymity measurement."
+}
