@@ -1,0 +1,46 @@
+{
+  "all_owned_nodes_stopped": true,
+  "authentic_shielded_verifier": false,
+  "binary_sha256": "f79eeb94e1379986df9f7be4c78c8fc8e18dc9be64a31cbaa8acad249d3db77a",
+  "blockmaxweight": 10000,
+  "blockreservedweight": 2000,
+  "case_count": 16,
+  "complete": true,
+  "core_version_required": "31.1",
+  "delays_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "event_order": "candidate readiness and broadcast before template and mining",
+  "experiment": "carrier-rebuild-delay-v1",
+  "fee_rates_sat_vb": {
+    "background": 10,
+    "initial": 1,
+    "retry": 20
+  },
+  "measured_proving_time": false,
+  "network": "regtest",
+  "offline_blocks": 87,
+  "profile": {
+    "minimum_depth": 1,
+    "window": 100
+  },
+  "retry_step": 5,
+  "source_sha256": {
+    "bench.py": "97b0adcdd59e2f7c93ee7521788ae5a7e0a16d0ae0888c75edd834b695395293",
+    "core.py": "3d1d656534fc2bed458b9d6d6efbcf89c7d2a7c58b5921e7ceca08a738687c97",
+    "delay_report.py": "79f9efd9015576b87f58dbba598d79ca777604dae86b20cad6239412afca92f3",
+    "policy.py": "e70eae35c1a10c61c117928144881e1e524462cc6d8cc65401daf74d8405de5a",
+    "rebuild_delay.py": "f1bf8399ac4b47a044b51e973f8aa3fdfd4e46ab0c21bb35593f0ddc8410e845"
+  },
+  "spacing": 16,
+  "wallet_depth": 6,
+  "workloads": {
+    "clear_at_retry": 5,
+    "longer_backlog": 8
+  }
+}

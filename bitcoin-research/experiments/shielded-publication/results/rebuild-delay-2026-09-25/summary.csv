@@ -1,0 +1,17 @@
+name,delay_blocks,candidate_ready_height,winner,inclusion_height,final_anchor_age,included_fee_sats,model_height_eligible,candidate_reject_reason
+clear_at_retry-hold,,,original,293,101,736,False,
+clear_at_retry-fee_only,,293,replacement,293,101,14720,False,
+clear_at_retry-refresh-d0,0,293,replacement,293,21,14720,True,
+clear_at_retry-refresh-d1,1,294,original,293,101,736,False,missing-inputs
+clear_at_retry-refresh-d2,2,295,original,293,101,736,False,missing-inputs
+clear_at_retry-refresh-d3,3,296,original,293,101,736,False,missing-inputs
+clear_at_retry-refresh-d4,4,297,original,293,101,736,False,missing-inputs
+clear_at_retry-refresh-d8,8,301,original,293,101,736,False,missing-inputs
+longer_backlog-hold,,,original,296,104,736,False,
+longer_backlog-fee_only,,293,replacement,293,101,14720,False,
+longer_backlog-refresh-d0,0,293,replacement,293,21,14720,True,
+longer_backlog-refresh-d1,1,294,replacement,294,22,14720,True,
+longer_backlog-refresh-d2,2,295,replacement,295,23,14720,True,
+longer_backlog-refresh-d3,3,296,replacement,296,24,14720,True,
+longer_backlog-refresh-d4,4,297,original,296,104,736,False,missing-inputs
+longer_backlog-refresh-d8,8,301,original,296,104,736,False,missing-inputs

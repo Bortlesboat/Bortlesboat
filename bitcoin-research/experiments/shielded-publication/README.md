@@ -8,6 +8,8 @@ The benchmark does not implement or verify Shielded Bitcoin. Its 610-byte payloa
 
 The [recorded 24-case run](results/run-2026-09-24/REPORT.md) compares both anchor spacings across four controlled workloads. In its delayed spacing-16 case, fee-only and refresh retries both cost 14,720 regtest satoshis and confirmed at height 293; only the refreshed anchor passed the modeled height window. The report includes the other outcomes, relay controls, raw evidence and limits.
 
+A separate [16-case rebuild-delay experiment](REBUILD_DELAY.md) now tests what happens while the old carrier remains live. A three-block synthetic rebuild succeeded in one workload, while a one-block rebuild lost in another. The original code and 24-case evidence below remain unchanged.
+
 This is independent experimental work, with no Shielded Bitcoin team review or adoption claimed. The Shielded protocol and proof-system designs belong to their authors. The contribution here is the controlled Bitcoin carrier experiment, its explicit height model and inspectable evidence.
 
 ## Run
@@ -70,7 +72,7 @@ To inspect the saved evidence without starting a node, run `py -3.12 report.py r
 
 ## What remains to test
 
-The immediate follow-up is rebuild delay: once a refresh begins, the old carrier may still confirm before its replacement is ready. A useful next experiment would vary that delay while holding the background workload fixed and record which carrier actually confirms. A real verifier and witness builder are then needed to measure whether those delay budgets are achievable. Neither result is established here.
+The [rebuild-delay follow-up](REBUILD_DELAY.md) records actual old-versus-refreshed Bitcoin carrier outcomes under declared block delays. A real verifier and witness builder are still needed to measure achievable readiness and connect these schedules to authentic Shielded replay and wallet recovery.
 
 ## Sources
 

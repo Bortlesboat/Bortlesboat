@@ -36,6 +36,8 @@ Can a fee increase buy a Bitcoin confirmation after a payload's modeled anchor h
 
 In one delayed-publication workload, a fee-only retry and an anchor-refresh retry both paid 14,720 regtest satoshis and confirmed at height 293. Their modeled anchor ages were 101 and 21 blocks, respectively; only the latter passed the paper's 100-block height window. This result assumes rebuilding takes zero blocks. The payloads are synthetic, and the experiment does not verify Shielded proofs or implement its replay rules.
 
+The [16-case delay follow-up](experiments/shielded-publication/REBUILD_DELAY.md) leaves the original carrier live during synthetic preparation. A three-block delay succeeded under longer congestion; a one-block delay lost when congestion cleared earlier. Once the original confirmed, Core rejected the later replacement because their shared Bitcoin funding input was already spent. This measures a carrier scheduling constraint, not cryptographic proving time or shielded wallet recovery.
+
 This is an independent research artifact. It has not been reviewed or adopted by the Shielded Bitcoin team.
 
 ### Recovering an Arkade wallet across process boundaries
