@@ -12,9 +12,9 @@ Selected public work includes FP&A automation, OpenBB and qlib finance tooling, 
 
 ## Open Source at a Glance
 
-- **209 authored, merged pull requests across 141 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 209 PRs](oss-contributions.json).
-- Merged work in each month from March through September 2026; **59 merges since July 1** and repeat contributions to **32 repositories**.
-- Repeat work includes ffn (9), vLLM (6), google_workspace_mcp (6), Mesh-LLM (6), deer-flow (5), and Google Workspace CLI (4). Counts use the same dated window.
+- **231 authored, merged pull requests across 152 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 231 PRs](oss-contributions.json).
+- Merged work in each month from March through September 2026; **81 merges since July 1** and repeat contributions to **35 repositories**.
+- Repeat work includes ffn (10), Mesh-LLM (9), google_workspace_mcp (6), vLLM (6), Roboflow supervision (6), and deer-flow (5). Counts use the same dated window.
 - Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp): 50 standard tools, 6 prompts, 8 resources; current source tested with 180 passing tests on Python 3.12. [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) is the self-hostable backend; its former public hosted service is paused.
 
 ## Bitcoin Contributions and Research

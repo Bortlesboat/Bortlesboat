@@ -1,12 +1,12 @@
 # Selected GitHub Contributions
 
-Updated: 2026-09-07
+Updated: 2026-09-25
 
 This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
 
 ## Verified Contribution Pattern
 
-**209 authored, merged PRs in 141 external public repositories**, verified September 7, 2026. There are repeat merges in 32 repositories, including ffn (9), vLLM (6), google_workspace_mcp (6), and Mesh-LLM (6). **59 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
+**231 authored, merged PRs in 152 external public repositories**, verified September 25, 2026. There are repeat merges in 35 repositories, including ffn (10), Mesh-LLM (9), google_workspace_mcp (6), and vLLM (6). **81 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
 
 The record shows merged work in seven consecutive months, March through September 2026. September is partial. The earlier zero months are included below so the full measurement window is visible.
 
@@ -24,9 +24,9 @@ The record shows merged work in seven consecutive months, March through Septembe
 | 2026-06 | 22 |
 | 2026-07 | 40 |
 | 2026-08 | 17 |
-| 2026-09 | 2 |
+| 2026-09 | 24 |
 
-The first and last months cover only the dates inside the September 7, 2025–September 7, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-09-07..2026-09-07&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
+The first and last months cover only the dates inside the September 25, 2025–September 25, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-09-25..2026-09-25&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
 
 ```text
 author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-09-07..2026-09-07
