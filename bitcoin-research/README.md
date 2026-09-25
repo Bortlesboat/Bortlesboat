@@ -36,6 +36,8 @@ Can a wallet pay new merchants after a preparation service becomes unavailable? 
 
 The package records mined transactions, source hashes and costs on isolated regtest. It studies spending behavior and public transaction links; it does not establish anonymity or recovery safety. A²L and the COMIT implementation are credited upstream work.
 
+The [coin-policy regression kit](experiments/prepared-checkout/POLICY_TESTS.md) adds a Python-only audit of the published bytes and a separate Core fixture for wallet labels across restart, fee shortfalls, missing labels and deliberate pool merges. It makes the payment-friction tradeoff reproducible without rebuilding A²L.
+
 ### Publication fees and anchor expiry
 
 Can a fee increase buy a Bitcoin confirmation after a payload's modeled anchor has expired? The [publication-policy benchmark](experiments/shielded-publication/README.md) compares 24 controlled cases on Bitcoin Core 31.1 regtest, with signed transactions, raw traces and reproducible reports.
