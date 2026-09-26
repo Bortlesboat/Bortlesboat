@@ -1,8 +1,8 @@
-# Wallet policy kit 0.1.0
+# Wallet policy kit 0.1.1
 
 Test whether a wallet keeps two coin pools separate through payments, change and a saved-wallet restart. Start with the recorded transactions; no Bitcoin node, package installation or funds are needed for the offline checks.
 
-Download **wallet-policy-kit-v0.1.0.zip** and **SHA256SUMS.txt** from the [versioned release](https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.1.0). Extract the ZIP and open a terminal in the folder containing `START_HERE.md` and `test_policy.py`. Windows “Extract All” may create two nested folders named `wallet-policy-kit-v0.1.0`; use the inner one containing those files.
+Download **wallet-policy-kit-v0.1.1.zip** and **SHA256SUMS.txt** from the [versioned release](https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.1.1). Extract the ZIP and open a terminal in the folder containing `START_HERE.md` and `test_policy.py`. Windows “Extract All” may create two nested folders named `wallet-policy-kit-v0.1.1`; use the inner one containing those files.
 
 ## Run
 
@@ -20,7 +20,7 @@ py -3 -m unittest -v test_policy test_runner
 
 Expected: **19 tests, OK**, exit code 0. The suite checks the recorded transaction bytes and includes intentional mistakes that the auditor must reject. A passing suite means those examples behaved as expected; it does not establish privacy or wallet safety.
 
-To check the download before extraction, compare its SHA-256 with `SHA256SUMS.txt`: `sha256sum wallet-policy-kit-v0.1.0.zip` on Linux, `shasum -a 256 wallet-policy-kit-v0.1.0.zip` on macOS, or `Get-FileHash wallet-policy-kit-v0.1.0.zip -Algorithm SHA256` in PowerShell.
+To check the download before extraction, compare its SHA-256 with `SHA256SUMS.txt`: `sha256sum wallet-policy-kit-v0.1.1.zip` on Linux, `shasum -a 256 wallet-policy-kit-v0.1.1.zip` on macOS, or `Get-FileHash wallet-policy-kit-v0.1.1.zip -Algorithm SHA256` in PowerShell.
 
 ## Try the next step
 
