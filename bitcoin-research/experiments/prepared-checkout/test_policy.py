@@ -84,6 +84,16 @@ class PolicyAudit(unittest.TestCase):
                 trace["transactions"][-1][field] = value
                 with self.assertRaises(ValueError):
                     audit_trace(trace)
+        for extra_output in (False, True):
+            with self.subTest(extra_output=extra_output):
+                trace = copy.deepcopy(self.trace)
+                outputs = trace["transactions"][-1]["outputs"]
+                if extra_output:
+                    outputs.append(copy.deepcopy(outputs[0]))
+                else:
+                    outputs.pop()
+                with self.assertRaises(ValueError):
+                    audit_trace(trace)
         self.trace["transactions"][-1]["outputs"][0]["sats"] += 1
         with self.assertRaises(ValueError):
             audit_trace(self.trace)

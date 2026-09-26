@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 
 MAX_JSON_BYTES = 16_000_000
@@ -27,11 +28,19 @@ def unique_object(pairs: list[tuple]) -> dict:
     return result
 
 
+def finite_number(token: str) -> float:
+    number = float(token)
+    check(math.isfinite(number), "Non-finite JSON number")
+    return number
+
+
 def read_json(path: Path) -> dict:
     with path.open("rb") as source:
         data = source.read(MAX_JSON_BYTES + 1)
     check(len(data) <= MAX_JSON_BYTES, "JSON exceeds 16 MB limit")
-    return json.loads(data.decode("utf-8-sig"), object_pairs_hook=unique_object)
+    # Apply to ignored metadata too: accepted evidence must remain portable JSON.
+    return json.loads(data.decode("utf-8-sig"), object_pairs_hook=unique_object,
+                      parse_float=finite_number, parse_constant=finite_number)
 
 
 def index(value: int, size: int) -> int:
@@ -142,9 +151,10 @@ def audit_trace(trace: dict) -> dict:
                   "Recorded fee must be a nonnegative integer")
         for field in ("txid", "vsize", "weight", "inputs"):
             check(record[field] == decoded[field], f"Recorded {field} differs from bytes")
-        expected = [{"vout": o["vout"], "sats": o["sats"]} for o in decoded["outputs"]]
-        actual = [{"vout": o["vout"], "sats": o["sats"]} for o in record["outputs"]]
-        check(actual == expected, "Recorded outputs differ from bytes")
+        check(len(record["outputs"]) == len(decoded["outputs"]) and
+              all(actual["vout"] == expected["vout"] and actual["sats"] == expected["sats"]
+                  for actual, expected in zip(record["outputs"], decoded["outputs"])),
+              "Recorded outputs differ from bytes")
         transactions[txid] = decoded
 
     def output(coin: dict) -> dict:
