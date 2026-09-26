@@ -58,7 +58,7 @@
   <div class="wrap">
     <header>
       <a href="https://github.com/Bortlesboat/Bortlesboat/tree/main/bitcoin-research">Bitcoin research / Andrew Barnes</a>
-      <span class="edition">Wallet policy kit · 0.2.0</span>
+      <span class="edition">Wallet policy kit · 0.2.1</span>
     </header>
     <main id="main">
       <div class="hero">
@@ -68,10 +68,10 @@
           <p class="lede">Check what happens after a payment, after spending the change, and after restarting the wallet.</p>
           <p>Run 27 shared policy cases with Python. Then connect your wallet's test exporter, check an independent auditor, or reproduce payments on regtest.</p>
           <div class="actions">
-            <a class="button" href="https://github.com/Bortlesboat/Bortlesboat/releases/download/wallet-policy-v0.2.0/wallet-policy-kit-v0.2.0.zip">Download the kit</a>
+            <a class="button" href="https://github.com/Bortlesboat/Bortlesboat/releases/download/wallet-policy-v0.2.1/wallet-policy-kit-v0.2.1.zip">Download the kit</a>
             <a href="#try">Run the checks ↓</a>
           </div>
-          <p class="small">Python 3.10+ · No packages to install for offline checks · <a href="https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.2.0">Release &amp; checksum</a></p>
+          <p class="small">Python 3.10+ · No packages to install for offline checks · <a href="https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.2.1">Release &amp; checksum</a></p>
         </div>
         <figure class="flow">
           <figcaption>The rule this fixture tests</figcaption>
@@ -90,14 +90,14 @@
           <pre><code>python3 conformance.py</code></pre>
           <details><summary>Windows PowerShell command</summary><p>“Extract All” may create two nested folders with the same name. Open the inner one containing <code>conformance.py</code>.</p><pre><code>py -3 conformance.py</code></pre></details>
           <p>Expected: <strong>27 cases checked, 27 passed</strong>. The report compares each expected outcome with the auditor's result, including deliberate pool merges and invalid evidence.</p>
-          <p class="small">Ready for fresh transactions? Follow the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.0/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#run-the-live-fixture">isolated regtest instructions</a>. To use your wallet's evidence, start with the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.0/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#reuse-in-another-wallet">trace format</a>.</p>
+          <p class="small">Ready for fresh transactions? Follow the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.1/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#run-the-live-fixture">isolated regtest instructions</a>. To use your wallet's evidence, start with the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.1/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#reuse-in-another-wallet">trace format</a>.</p>
         </div>
       </section>
       <section class="split">
         <div><div class="step">02 / Evidence</div><h2>What has been<br>observed so far.</h2><p class="small">Author's local run · September 25, 2026<br>Bitcoin Core 31.1 · Linux / WSL<br>Configured rates: 1, 10, 50 sat/vB</p></div>
         <div>
           <table class="evidence"><thead><tr><th scope="col">Controlled scenario</th><th scope="col">Observed result</th></tr></thead><tbody><tr><td>Payments from the selected pool</td><td>6 confirmed</td></tr><tr><td>Saved-wallet restarts</td><td>3 preserved labels</td></tr><tr><td>Fee, balance or missing-label refusals</td><td>9 expected refusals</td></tr><tr><td>Deliberate pool merges</td><td>3 detected</td></tr></tbody></table>
-          <p class="small"><a href="https://github.com/Bortlesboat/Bortlesboat/tree/wallet-policy-v0.2.0/bitcoin-research/experiments/prepared-checkout/policy-reference">Raw transactions, results &amp; provenance</a> · <a href="https://github.com/Bortlesboat/Bortlesboat/actions/workflows/wallet-policy.yml">Offline CI results</a></p>
+          <p class="small"><a href="https://github.com/Bortlesboat/Bortlesboat/tree/wallet-policy-v0.2.1/bitcoin-research/experiments/prepared-checkout/policy-reference">Raw transactions, results &amp; provenance</a> · <a href="https://github.com/Bortlesboat/Bortlesboat/actions/workflows/wallet-policy.yml">Offline CI results</a></p>
           <p>This is developer research tooling. The live fixture uses synthetic labels and an explicit coin-selection adapter. It does not run a privacy protocol, measure anonymity, or establish that a production wallet is safe. The offline audit relies on the labels and history supplied by its exporter.</p>
         </div>
       </section>
@@ -107,7 +107,7 @@
           <p>Export raw transactions, initial pool labels and payment requests from a synthetic wallet test. The bridge derives the transaction details and checks the supplied history. Everything runs locally.</p>
           <pre><code>python3 export_trace.py example-export.json --output example.trace.json
 python3 audit.py example.trace.json</code></pre>
-          <p><a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.0/bitcoin-research/experiments/prepared-checkout/INTEGRATION.md">Connect an exporter or an independent checker →</a></p>
+          <p><a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.2.1/bitcoin-research/experiments/prepared-checkout/INTEGRATION.md">Connect an exporter or an independent checker →</a></p>
           <p class="small">The included example is unsigned synthetic data. This is a draft project format; passing its cases is not wallet certification. The kit adds no service or transaction step for wallet users. Fees, insufficient eligible funds and lost labels still need to be tested in the wallet.</p>
         </div>
       </section>

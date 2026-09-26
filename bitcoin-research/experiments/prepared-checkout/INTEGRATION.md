@@ -27,9 +27,9 @@ Have a **synthetic wallet integration test** write a UTF-8 JSON object shaped li
 | `roots` | Initial outpoints `{ "txid": "…", "vout": 0, "pool": "prepared" }`. Use the wallet's original classifications. Pool names are arbitrary, nonempty strings. |
 | `steps` | Ordered payment requests `{ "txid": "…", "required_pool": "prepared", "payment_vout": 0, "payment_sats": 1000, "change_vout": 1 }`. Use `null` for no declared change. Record intent independently of selected inputs. |
 
-Amounts and indices must be JSON integers, never decimals, booleans or strings. Transaction IDs use 64 lowercase hex characters. Duplicate JSON object fields are invalid. Transaction records can be in any order; payment steps must follow spending order. Additional metadata is ignored. Preserve your native classifications in test evidence and document their mapping to pool names.
+Amounts and indices must be JSON integers, never decimals, booleans or strings. Transaction IDs use 64 lowercase hex characters. Duplicate JSON object fields, `NaN`, `Infinity` and numbers that overflow finite floating-point range are invalid, including in extra metadata. Transaction records can be in any order; payment steps must follow spending order. Additional metadata is ignored after JSON validation. Preserve your native classifications in test evidence and document their mapping to pool names.
 
-Readers must preserve numeric token types to enforce that rule; ordinary JavaScript `JSON.parse` loses the distinction between `6000` and `6000.0`. Writers should emit integer tokens. The bundle and resulting trace each have a 16 MB limit; an oversized conversion fails before creating an output file.
+Readers must preserve numeric token types to enforce that rule; ordinary JavaScript `JSON.parse` loses the distinction between `6000` and `6000.0`. Writers should emit integer tokens. The bundle and resulting trace each have a 16 MB limit; the exporter enforces its output limit while encoding, before creating an output file. File-size limits are not a fixed process-memory quota.
 
 `export_trace.py` derives transaction IDs, size, weight, inputs and outputs from raw bytes. It preserves supplied roots and requests, rejects inconsistent evidence and writes `coin-policy-trace-v1` for `audit.py`. Export exit **0** means conversion succeeded, even when the trace contains a policy violation. Always run the audit afterward. Export exit **2** means invalid input or an output-file error.
 
@@ -84,7 +84,7 @@ Cases contain either `trace` (a JSON object) or `json_text` (literal text for am
 ## Check the evidence independently
 
 ```sh
-python3 -m unittest -v test_policy test_runner test_integration
+python3 -m unittest -v test_policy test_runner test_integration test_security
 python3 verify_corpus.py --bitcoind /path/to/bitcoind
 ```
 
@@ -95,5 +95,7 @@ The [live lifecycle fixture](POLICY_TESTS.md#run-the-live-fixture) covers confir
 ## Contribute something verifiable
 
 The most useful next contribution is an exporter from an existing wallet's synthetic tests, with its pinned revision, commands and expected good/bad results. An independently written checker or a case that demonstrates an incorrect verdict is also useful. Start with the [trial report](https://github.com/Bortlesboat/Bortlesboat/issues/new?template=wallet-policy-trial.yml); share synthetic artifacts only. Never publish real wallet histories, seeds or wallet files.
+
+The [September 26 adversarial review](SECURITY_REVIEW.md) records two corrected input/resource defects, the checks performed and demonstrated limits of trusting supplied labels and history. A passing corpus cannot certify a deliberately dishonest checker.
 
 This tooling lives under the kit's [GPL-3.0-only license](LICENSE). It builds on the original attributed A²L experiment while testing a separate declared-policy rule.

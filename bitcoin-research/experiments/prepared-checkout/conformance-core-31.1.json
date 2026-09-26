@@ -1,11 +1,11 @@
 {
   "format": "coin-policy-decoder-comparison-v1",
   "status": "passed",
-  "created_utc": "2026-09-26T16:20:52.927003+00:00",
+  "created_utc": "2026-09-26T17:17:10.854286+00:00",
   "bitcoin_version": "/Satoshi:31.1.0/",
   "bitcoin_binary_sha256": "986e63b3c8770f08d0059820ad3dd085d1ab9e1bea23946c243f858a06888a08",
   "source_sha256": {
-    "audit.py": "7d9fc4d77b1ba01c37dfb1fcbfce130ed6a98a6ccc5b73790f7904af6c5a1cfb",
+    "audit.py": "67cc62bc7673fd5f6161c7b3a730453e8d9eb12ac094f2c60ea13fe7663b49d8",
     "verify_corpus.py": "dc8beecd75a0ef6fdca5afb1b7f742ca285fcdf05b5d463e5906af2a01a84b79",
     "conformance-v1.json": "ef2a31eb98cfe9409ae049c6322449cc20f8671bfaff61a8dbfc6077a970f51c",
     "regtest.py": "dd0d802e264b24c811dce0c6134136ce623f779c9474aa63c89769ca2cb81b65",

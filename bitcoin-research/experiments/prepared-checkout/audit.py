@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 
 MAX_JSON_BYTES = 16_000_000
@@ -27,11 +28,19 @@ def unique_object(pairs: list[tuple]) -> dict:
     return result
 
 
+def finite_number(token: str) -> float:
+    number = float(token)
+    check(math.isfinite(number), "Non-finite JSON number")
+    return number
+
+
 def read_json(path: Path) -> dict:
     with path.open("rb") as source:
         data = source.read(MAX_JSON_BYTES + 1)
     check(len(data) <= MAX_JSON_BYTES, "JSON exceeds 16 MB limit")
-    return json.loads(data.decode("utf-8-sig"), object_pairs_hook=unique_object)
+    # Apply to ignored metadata too: accepted evidence must remain portable JSON.
+    return json.loads(data.decode("utf-8-sig"), object_pairs_hook=unique_object,
+                      parse_float=finite_number, parse_constant=finite_number)
 
 
 def index(value: int, size: int) -> int:
