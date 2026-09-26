@@ -130,6 +130,49 @@ class PolicyAudit(unittest.TestCase):
         self.assertEqual((decoded["vsize"], decoded["weight"]), (64, 256))
         self.assertEqual(decoded["outputs"], [{"vout": 0, "sats": 0, "script_hex": "6a020001"}])
 
+    def test_recorded_numbers_must_be_integers_not_floats_or_booleans(self):
+        for field in ("weight", "vsize", "output_sats", "output_index", "input_index"):
+            with self.subTest(field=field):
+                trace = copy.deepcopy(self.trace)
+                record = trace["transactions"][0]
+                if field == "output_sats":
+                    record["outputs"][0]["sats"] = float(record["outputs"][0]["sats"])
+                elif field == "output_index":
+                    record["outputs"][0]["vout"] = False
+                elif field == "input_index":
+                    record["inputs"][0]["vout"] = float(record["inputs"][0]["vout"])
+                else:
+                    record[field] = float(record[field])
+                with self.assertRaises(ValueError):
+                    audit_trace(trace)
+
+    def test_known_parent_index_is_checked_even_when_another_parent_is_missing(self):
+        parent = decode_transaction("0200000001" + "11" * 32 +
+                                    "0000000000ffffffff010a000000000000000000000000")
+        # Two inputs: one refers to nonexistent output 1 of the known parent;
+        # the other has an absent parent. Missing fee data must not hide the first error.
+        raw = ("0200000002" + bytes.fromhex(parent["txid"])[::-1].hex() +
+               "0100000000ffffffff" + "22" * 32 +
+               "0000000000ffffffff0101000000000000000000000000")
+        child = {"raw_hex": raw, **decode_transaction(raw)}
+        parent["raw_hex"] = ("0200000001" + "11" * 32 +
+                             "0000000000ffffffff010a000000000000000000000000")
+        trace = {"format": "coin-policy-trace-v1", "transactions": [parent, child],
+                 "roots": [], "steps": [{"txid": child["txid"], "required_pool": "a",
+                 "payment_vout": 0, "payment_sats": 1, "change_vout": None}]}
+        with self.assertRaises(ValueError):
+            audit_trace(trace)
+
+    def test_cli_rejects_duplicate_json_keys(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "duplicate.json"
+            text = json.dumps(self.trace)
+            path.write_text('{"format": "coin-policy-trace-v1",' + text[1:], encoding="utf-8")
+            result = subprocess.run([sys.executable, str(HERE / "audit.py"), str(path)],
+                                    capture_output=True, text=True, timeout=10)
+            self.assertEqual(result.returncode, 2, result.stderr)
+            self.assertEqual(json.loads(result.stdout)["status"], "invalid")
+
     def test_cli_separates_clean_violation_and_invalid_evidence(self):
         clean = copy.deepcopy(self.trace)
         clean["steps"] = clean["steps"][:2]

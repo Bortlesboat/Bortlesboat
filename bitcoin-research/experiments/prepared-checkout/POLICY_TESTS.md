@@ -56,7 +56,7 @@ These are controlled examples, not observed market fees, a payment-failure rate 
 
 ## Reuse in another wallet
 
-Export a JSON object with `format: "coin-policy-trace-v1"` and these fields; the recorded traces provide complete examples:
+Use the [integration guide and raw-transaction export bridge](INTEGRATION.md) to avoid duplicating transaction decoding in your wallet fixture. To write the audit format directly, export a JSON object with `format: "coin-policy-trace-v1"` and these fields; the recorded traces provide complete examples:
 
 | Field | Contents |
 | --- | --- |
@@ -65,6 +65,8 @@ Export a JSON object with `format: "coin-policy-trace-v1"` and these fields; the
 | `steps` | Ordered payments: `txid`, `required_pool`, `payment_vout`, integer `payment_sats`, and `change_vout` (an index or `null`). |
 
 Run `python3 audit.py your-trace.json`. Exit codes: **0** clean declared policy, **1** policy violation, **2** malformed or inconsistent evidence. Every step consumes its inputs. Only a passing step passes its pool label to its declared change; undeclared outputs stay unclassified. Duplicate steps and conflicting roots are rejected. Missing or already consumed input labels fail closed.
+
+Version 0.2.0 also rejects duplicate JSON fields and non-integer recorded amounts, indices, weight and virtual size (including booleans or decimals that compare equal in Python). Every reference to a supplied parent must identify an existing output, even when another missing parent prevents fee computation. These stricter checks preserve results for the previously published valid traces.
 
 Every supplied transaction that spends an initially classified coin or classified change must also appear in `steps`. Otherwise the audit reports `undeclared_spend_of_classified_coin`, including when an exporter tries to reset the classification by supplying a new root. To audit a prefix of a history, omit its later transactions as well as their steps. The auditor still cannot detect transactions or initial classifications the exporter never supplies.
 

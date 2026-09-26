@@ -36,7 +36,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Audit the recorded transactions and failure controls
         working-directory: bitcoin-research/experiments/prepared-checkout
-        run: python -m unittest -v test_policy test_runner
+        run: python -m unittest -v test_policy test_runner test_integration
 
   publish:
     name: Publish project page

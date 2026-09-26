@@ -1,0 +1,3295 @@
+{
+  "format": "coin-policy-conformance-v1",
+  "scope": "Synthetic unsigned serializations and supplied labels; not chain-valid payments or anonymity evidence.",
+  "cases": [
+    {
+      "id": "clean-change-chain",
+      "description": "Two payments carry one initial pool through change; fees are 100 and 200 sat.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 0,
+        "status": "clean",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "transaction-record-order",
+      "description": "Transaction records need not be topologically ordered; steps do.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 0,
+        "status": "clean",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "mixed-pool-inputs",
+      "description": "The third payment combines prepared change with an ordinary root.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "0200000002377c70ffa2622e970a9fa5fab9d2e9f0d7e7455083358968c19d4ce599085cd10100000000ffffffff4452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270100000000ffffffff016419000000000000015100000000",
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "vsize": 102,
+            "weight": 408,
+            "inputs": [
+              {
+                "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+                "vout": 1
+              },
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6500,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          },
+          {
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 6500,
+            "change_vout": null
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [],
+          [],
+          [
+            "wrong_pool"
+          ]
+        ],
+        "step_fee_sats": [
+          100,
+          200,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71,
+          102
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "missing-initial-label",
+      "description": "Unclassified input invalidates the first step and its downstream change.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [
+            "unclassified_or_spent_input"
+          ],
+          [
+            "unclassified_or_spent_input"
+          ]
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "missing-change-label",
+      "description": "Omitting a change annotation leaves the next input unclassified.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": null
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [],
+          [
+            "unclassified_or_spent_input"
+          ]
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "reversed-steps",
+      "description": "A step cannot use change before the earlier step classifies it.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          },
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [
+            "unclassified_or_spent_input"
+          ],
+          []
+        ],
+        "step_fee_sats": [
+          200,
+          100
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "wrong-required-pool",
+      "description": "A mismatched request also prevents classification of downstream change.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "ordinary",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [
+            "wrong_pool"
+          ],
+          [
+            "unclassified_or_spent_input"
+          ]
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "undeclared-supplied-spend",
+      "description": "Hiding the merge step does not hide supplied merge bytes.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "0200000002377c70ffa2622e970a9fa5fab9d2e9f0d7e7455083358968c19d4ce599085cd10100000000ffffffff4452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270100000000ffffffff016419000000000000015100000000",
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "vsize": 102,
+            "weight": 408,
+            "inputs": [
+              {
+                "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+                "vout": 1
+              },
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6500,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 1,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "rerooting-cannot-hide-merge",
+      "description": "Adding a root on an undeclared merge cannot erase its spending edge.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "0200000002377c70ffa2622e970a9fa5fab9d2e9f0d7e7455083358968c19d4ce599085cd10100000000ffffffff4452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270100000000ffffffff016419000000000000015100000000",
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "vsize": 102,
+            "weight": 408,
+            "inputs": [
+              {
+                "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+                "vout": 1
+              },
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6500,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          },
+          {
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "vout": 0,
+            "pool": "prepared"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 1,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "repeated-step",
+      "description": "Repeated payment transaction is invalid.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          },
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "duplicate-transaction",
+      "description": "Repeated raw transaction record is invalid.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "root-relabels-payment-change",
+      "description": "A root cannot relabel an output created by a declared step.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          },
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vout": 1,
+            "pool": "prepared"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "forged-size",
+      "description": "Recorded virtual size must agree with bytes.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 1,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "forged-fee",
+      "description": "A fee with all parents supplied must agree with amounts.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ],
+            "fee_sats": 1
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "unverifiable-funding-fee",
+      "description": "An absent funding ancestor keeps its claimed fee unverified.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ],
+            "fee_sats": 999999
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 0,
+        "status": "clean",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "contradictory-payment-intent",
+      "description": "Raw bytes cannot silently override requested payment amount.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1001,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "boolean-output-index",
+      "description": "JSON false is not integer output index zero.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": false,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "decimal-output-amount",
+      "description": "An amount written as a JSON decimal is not an integer satoshi count.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000.0,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "negative-root-index",
+      "description": "Negative root output indices are invalid.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": -1,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "out-of-range-change",
+      "description": "Change output must exist.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 2
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "no-policy-steps",
+      "description": "An empty set of policy requests cannot earn a clean result.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": []
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "truncated-bytes",
+      "description": "Truncated transaction serialization is invalid.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f0000000000000151000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "bad-known-edge-and-missing-parent",
+      "description": "Missing fee data must not hide another known invalid parent index.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000024452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270200000000ffffffff22222222222222222222222222222222222222222222222222222222222222220000000000ffffffff010100000000000000015100000000",
+            "txid": "c6efc662f186a627885e5ec78698c4a5537863a2f8464969a5a966540f44e68f",
+            "vsize": 102,
+            "weight": 408,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 2
+              },
+              {
+                "txid": "2222222222222222222222222222222222222222222222222222222222222222",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "witness-size-and-txid",
+      "description": "Nonempty witness keeps the stripped txid but changes weight and virtual size.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "020000000001014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015101010100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 73,
+            "weight": 289,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 0,
+        "status": "clean",
+        "step_violations": [
+          [],
+          []
+        ],
+        "step_fee_sats": [
+          100,
+          200
+        ],
+        "step_vsize": [
+          73,
+          71
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "superfluous-empty-witness",
+      "description": "Empty witness serialization must be rejected even with otherwise matching metadata.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "020000000001014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e8030000000000000151241300000000000001510000000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 72,
+            "weight": 287,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 0,
+            "pool": "prepared"
+          },
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      }
+    },
+    {
+      "id": "unclassified-and-wrong-pool",
+      "description": "An unclassified input and a wrong-pool input report both violations in that order.",
+      "trace": {
+        "format": "coin-policy-trace-v1",
+        "transactions": [
+          {
+            "raw_hex": "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "1111111111111111111111111111111111111111111111111111111111111111",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4000,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 0
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 1000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 4900,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000",
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "vsize": 71,
+            "weight": 284,
+            "inputs": [
+              {
+                "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 2000,
+                "script_hex": "51"
+              },
+              {
+                "vout": 1,
+                "sats": 2700,
+                "script_hex": "51"
+              }
+            ]
+          },
+          {
+            "raw_hex": "0200000002377c70ffa2622e970a9fa5fab9d2e9f0d7e7455083358968c19d4ce599085cd10100000000ffffffff4452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270100000000ffffffff016419000000000000015100000000",
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "vsize": 102,
+            "weight": 408,
+            "inputs": [
+              {
+                "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+                "vout": 1
+              },
+              {
+                "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+                "vout": 1
+              }
+            ],
+            "outputs": [
+              {
+                "vout": 0,
+                "sats": 6500,
+                "script_hex": "51"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+            "vout": 1,
+            "pool": "ordinary"
+          }
+        ],
+        "steps": [
+          {
+            "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 1000,
+            "change_vout": 1
+          },
+          {
+            "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 2000,
+            "change_vout": 1
+          },
+          {
+            "txid": "35aa7149bafb4a3520b5a44e73e5a2e90412843ad4d68b976a6c9dbf82c7f9da",
+            "required_pool": "prepared",
+            "payment_vout": 0,
+            "payment_sats": 6500,
+            "change_vout": null
+          }
+        ]
+      },
+      "expected": {
+        "exit_code": 1,
+        "status": "violated",
+        "step_violations": [
+          [
+            "unclassified_or_spent_input"
+          ],
+          [
+            "unclassified_or_spent_input"
+          ],
+          [
+            "unclassified_or_spent_input",
+            "wrong_pool"
+          ]
+        ],
+        "step_fee_sats": [
+          100,
+          200,
+          200
+        ],
+        "step_vsize": [
+          71,
+          71,
+          102
+        ],
+        "undeclared_spends": 0,
+        "fees_unverified": 1
+      }
+    },
+    {
+      "id": "duplicate-json-key",
+      "description": "Ambiguous JSON fields must be rejected before interpretation.",
+      "expected": {
+        "exit_code": 2,
+        "status": "invalid"
+      },
+      "json_text": "{\"format\": \"coin-policy-trace-v1\",\"format\": \"coin-policy-trace-v1\", \"transactions\": [{\"raw_hex\": \"020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000\", \"txid\": \"27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244\", \"vsize\": 71, \"weight\": 284, \"inputs\": [{\"txid\": \"1111111111111111111111111111111111111111111111111111111111111111\", \"vout\": 0}], \"outputs\": [{\"vout\": 0, \"sats\": 6000, \"script_hex\": \"51\"}, {\"vout\": 1, \"sats\": 4000, \"script_hex\": \"51\"}]}, {\"raw_hex\": \"02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000\", \"txid\": \"c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328\", \"vsize\": 71, \"weight\": 284, \"inputs\": [{\"txid\": \"27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244\", \"vout\": 0}], \"outputs\": [{\"vout\": 0, \"sats\": 1000, \"script_hex\": \"51\"}, {\"vout\": 1, \"sats\": 4900, \"script_hex\": \"51\"}]}, {\"raw_hex\": \"02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000\", \"txid\": \"d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37\", \"vsize\": 71, \"weight\": 284, \"inputs\": [{\"txid\": \"c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328\", \"vout\": 1}], \"outputs\": [{\"vout\": 0, \"sats\": 2000, \"script_hex\": \"51\"}, {\"vout\": 1, \"sats\": 2700, \"script_hex\": \"51\"}]}], \"roots\": [{\"txid\": \"27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244\", \"vout\": 0, \"pool\": \"prepared\"}, {\"txid\": \"27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244\", \"vout\": 1, \"pool\": \"ordinary\"}], \"steps\": [{\"txid\": \"c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328\", \"required_pool\": \"prepared\", \"payment_vout\": 0, \"payment_sats\": 1000, \"change_vout\": 1}, {\"txid\": \"d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37\", \"required_pool\": \"prepared\", \"payment_vout\": 0, \"payment_sats\": 2000, \"change_vout\": 1}]}"
+    }
+  ]
+}

@@ -11,10 +11,27 @@ import hashlib
 import json
 from pathlib import Path
 
+MAX_JSON_BYTES = 16_000_000
+
 
 def check(condition: bool, message: str) -> None:
     if not condition:
         raise ValueError(message)
+
+
+def unique_object(pairs: list[tuple]) -> dict:
+    result = {}
+    for name, value in pairs:
+        check(name not in result, f"Duplicate JSON field: {name}")
+        result[name] = value
+    return result
+
+
+def read_json(path: Path) -> dict:
+    with path.open("rb") as source:
+        data = source.read(MAX_JSON_BYTES + 1)
+    check(len(data) <= MAX_JSON_BYTES, "JSON exceeds 16 MB limit")
+    return json.loads(data.decode("utf-8-sig"), object_pairs_hook=unique_object)
 
 
 def index(value: int, size: int) -> int:
@@ -95,18 +112,34 @@ def decode_transaction(raw_hex: str) -> dict:
 
 
 def key(coin: dict) -> tuple[str, int]:
-    check(isinstance(coin["txid"], str) and type(coin["vout"]) is int,
+    check(isinstance(coin["txid"], str) and len(coin["txid"]) == 64
+          and all(c in "0123456789abcdef" for c in coin["txid"])
+          and type(coin["vout"]) is int and 0 <= coin["vout"] <= 0xffffffff,
           "Invalid outpoint")
     return coin["txid"], coin["vout"]
 
 
 def audit_trace(trace: dict) -> dict:
     check(trace["format"] == "coin-policy-trace-v1", "Unknown trace format")
+    for field in ("transactions", "roots", "steps"):
+        check(isinstance(trace[field], list), f"{field} must be an array")
     transactions = {}
     for record in trace["transactions"]:
         decoded = decode_transaction(record["raw_hex"])
         txid = decoded["txid"]
         check(txid not in transactions, "Duplicate transaction record")
+        for field in ("vsize", "weight"):
+            check(type(record[field]) is int, f"Recorded {field} must be an integer")
+        check(isinstance(record["inputs"], list) and isinstance(record["outputs"], list),
+              "Inputs and outputs must be arrays")
+        for item in record["inputs"]:
+            key(item)
+        for item in record["outputs"]:
+            check(type(item["vout"]) is int and type(item["sats"]) is int,
+                  "Output index and amount must be integers")
+        if "fee_sats" in record:
+            check(type(record["fee_sats"]) is int and record["fee_sats"] >= 0,
+                  "Recorded fee must be a nonnegative integer")
         for field in ("txid", "vsize", "weight", "inputs"):
             check(record[field] == decoded[field], f"Recorded {field} differs from bytes")
         expected = [{"vout": o["vout"], "sats": o["sats"]} for o in decoded["outputs"]]
@@ -123,6 +156,10 @@ def audit_trace(trace: dict) -> dict:
     fees, missing = {}, []
     for record in trace["transactions"]:
         decoded = transactions[record["txid"]]
+        # A missing parent prevents fee computation, not validation of known edges.
+        for item in decoded["inputs"]:
+            if item["txid"] in transactions:
+                output(item)
         if any(i["txid"] not in transactions for i in decoded["inputs"]):
             missing.append(decoded["txid"])
             continue
@@ -222,8 +259,7 @@ def main() -> int:
     parser.add_argument("--reference", action="store_true", help="adapt original A²L results")
     args = parser.parse_args()
     try:
-        check(args.trace.stat().st_size <= 16_000_000, "Trace exceeds 16 MB limit")
-        trace = json.loads(args.trace.read_text(encoding="utf-8"))
+        trace = read_json(args.trace)
         result = audit_trace(reference_trace(trace) if args.reference else trace)
     except (OSError, ValueError, KeyError, TypeError, IndexError, AttributeError, RecursionError) as error:
         print(json.dumps({"status": "invalid", "error": str(error)}))

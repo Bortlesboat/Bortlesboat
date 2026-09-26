@@ -1,28 +1,30 @@
-# Wallet policy kit 0.1.1
+# Wallet policy kit 0.2.0
 
 Test whether a wallet keeps two coin pools separate through payments, change and a saved-wallet restart. Start with the recorded transactions; no Bitcoin node, package installation or funds are needed for the offline checks.
 
-Download **wallet-policy-kit-v0.1.1.zip** and **SHA256SUMS.txt** from the [versioned release](https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.1.1). Extract the ZIP and open a terminal in the folder containing `START_HERE.md` and `test_policy.py`. Windows “Extract All” may create two nested folders named `wallet-policy-kit-v0.1.1`; use the inner one containing those files.
+Download **wallet-policy-kit-v0.2.0.zip** and **SHA256SUMS.txt** from the [versioned release](https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.2.0). Extract the ZIP and open a terminal in the folder containing `START_HERE.md` and `test_policy.py`. Windows “Extract All” may create two nested folders named `wallet-policy-kit-v0.2.0`; use the inner one containing those files.
 
 ## Run
 
 Python 3.10 or newer is required. On Linux/macOS:
 
 ```sh
-python3 -m unittest -v test_policy test_runner
+python3 -m unittest -v test_policy test_runner test_integration
 ```
 
 On Windows PowerShell:
 
 ```powershell
-py -3 -m unittest -v test_policy test_runner
+py -3 -m unittest -v test_policy test_runner test_integration
 ```
 
-Expected: **19 tests, OK**, exit code 0. The suite checks the recorded transaction bytes and includes intentional mistakes that the auditor must reject. A passing suite means those examples behaved as expected; it does not establish privacy or wallet safety.
+Expected: **30 tests, OK**, exit code 0. The suite checks the recorded transaction bytes and includes intentional mistakes that the auditor must reject. A passing suite means those examples behaved as expected; it does not establish privacy or wallet safety.
 
-To check the download before extraction, compare its SHA-256 with `SHA256SUMS.txt`: `sha256sum wallet-policy-kit-v0.1.1.zip` on Linux, `shasum -a 256 wallet-policy-kit-v0.1.1.zip` on macOS, or `Get-FileHash wallet-policy-kit-v0.1.1.zip -Algorithm SHA256` in PowerShell.
+To check the download before extraction, compare its SHA-256 with `SHA256SUMS.txt`: `sha256sum wallet-policy-kit-v0.2.0.zip` on Linux, `shasum -a 256 wallet-policy-kit-v0.2.0.zip` on macOS, or `Get-FileHash wallet-policy-kit-v0.2.0.zip -Algorithm SHA256` in PowerShell.
 
 ## Try the next step
+
+- **Run the shared corpus:** `python3 conformance.py` checks 27 policy cases. See the [integration guide](INTEGRATION.md) for the raw-transaction export bridge, CI commands and independent-checker contract. These are synthetic conformance cases, not an anonymity benchmark.
 
 - **Inspect a deliberate pool merge:** `python3 audit.py --reference reference-results.json` (Windows: replace `python3` with `py -3`). Expected exit **1** and a `wrong_pool` violation in the last step. This is a successful detection, not a failed installation.
 - **Run fresh transactions:** follow the [live regtest instructions](POLICY_TESTS.md#run-the-live-fixture). The recorded run used Core 31.1 on Linux/WSL. This creates isolated test wallets and synthetic coins; it does not use a real wallet.
