@@ -1,89 +1,48 @@
 # Andrew Barnes
 
-Senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation.
-
-I pair FP&A judgment with working software: variance commentary, finance-data workflows, AI-tool integrations, and small merged fixes in public codebases maintainers recognize.
-
-Selected public work includes FP&A automation, OpenBB and qlib finance tooling, merged PRs in OpenAI, Microsoft, Google Workspace, CPython, rust-lightning, x402 Foundation, Mesh-LLM, and OpenViking repositories, plus open-source Bitcoin fee intelligence tooling.
+Finance analyst (FP&A) who writes code. Most of my open-source time goes to Bitcoin and Lightning payments, AI inference infrastructure, and the Python tooling in between. I like bugs that only show up on one platform, after a restart, or halfway through a message.
 
 <a href="https://bortlesboat.github.io/#motion-study"><img src="https://bortlesboat.github.io/reel/reel.gif" alt="Proof of Work: a 15-second motion study rendered frame by frame in canvas code" width="100%"></a>
 
 **Proof of Work**, a 15-second motion study drawn frame by frame in canvas code. [Watch it render live](https://bortlesboat.github.io/reel/) · [1080p60 with sound](https://bortlesboat.github.io/reel/reel-1080.mp4)
 
-## Open Source at a Glance
+## Selected work
 
-- **231 authored, merged pull requests across 152 public repositories outside my account.** [Dated evidence and search method](github-contributions.md#verified-contribution-pattern) · [all 231 PRs](oss-contributions.json).
-- Merged work in each month from March through September 2026; **81 merges since July 1** and repeat contributions to **35 repositories**.
-- Repeat work includes ffn (10), Mesh-LLM (9), google_workspace_mcp (6), vLLM (6), Roboflow supervision (6), and deer-flow (5). Counts use the same dated window.
-- Maintainer of [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp): 50 standard tools, 6 prompts, 8 resources; current source tested with 180 passing tests on Python 3.12. [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) is the self-hostable backend; its former public hosted service is paused.
-
-## Bitcoin Contributions and Research
-
-[Bitcoin research portfolio](bitcoin-research/README.md): selected merged changes in rust-lightning, rust-bitcoin and ord, alongside current verifier and fee-benchmark work. Each entry links to its upstream review and states whether it has merged.
-
-My current research question is what a private-payment wallet must retain to recover and spend when a service becomes unavailable. The portfolio includes reproducible experiments and their limits.
-
-## Role Direction
-
-| Direction | Relevant proof |
-| --- | --- |
-| Tech FP&A manager track | Variance Memo, Finance Dashboard write-up, OpenBB PRs, qlib-options, variance-commentary workflows. |
-| AI workflow automation | Google Workspace CLI, google_workspace_mcp, bitcoin-mcp, OpenViking, mesh-llm, MCP/x402 operator work. |
-| Finance-focused engineering | Python, SQL/SQLite, Streamlit, FastAPI, finance parsers, tested data-intake workflows. |
-
-## Who This Work Serves
-
-| Audience | Relevant proof |
-| --- | --- |
-| Finance and FP&A teams | Variance Memo, Finance Dashboard write-up, OpenBB PRs, qlib-options. |
-| AI tool maintainers and operators | OpenAI privacy-filter, Microsoft VibeVoice, mesh-llm, OpenViking. |
-| Workspace and developer-tool users | Google Workspace CLI, google_workspace_mcp, CPython docs. |
-| Protocol and payment operators | Satoshi API, bitcoin-mcp, x402 operator work, rust-lightning. |
-
-## Flagship Work
-
-| Artifact | Proof | Why it matters |
+| Project | Change | What was hard about it |
 | --- | --- | --- |
-| [OpenAI / Microsoft / Google Workspace PRs](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md#openai-microsoft-and-google-workspace) | Merged fixes in `openai/privacy-filter`, `microsoft/VibeVoice`, and `googleworkspace/cli`. | Useful to AI research tooling, speech-model demos, and Workspace admin/developer workflows. |
-| [OpenBB contributions](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) | Merged finance-platform parser cleanup and CLI tests. | Finance tooling credibility for analysts, developers, and tech FP&A teams. |
-| [Satoshi API](https://github.com/Bortlesboat/bitcoin-api) | Self-hostable Bitcoin fee intelligence API with tests and optional x402 integration. Former public hosting is paused. | Turns raw node and mempool data into send/wait decisions that save sats and support paid API distribution. |
-| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 50 standard MCP tools with 6 prompts and 8 resources. Requires a local node or configured compatible API; see the source-install instructions. | AI workflow automation proof: agents can call financial/protocol context through a tested tool layer. |
-| [AgentOps Ledger](https://bortlesboat.github.io/x402-insights/launch.html) | Public AgentOps build with hosted demo, release, architecture diagram, Splunk HEC proof, launch page, and case study. | Makes agent tool calls, approvals, retries, errors, x402 payments, and final outcomes inspectable as run evidence. |
-| [x402 payment work](x402-work.md) | Two merged x402 Foundation contributions; current Python Lightning, MCP and facilitator drafts with explicit test evidence. | Connects protocol behavior with payment approval, replay protection and settlement operations. |
-| [mesh-llm contributions](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat) | Merged security primitives, model-size health timeout, and capacity-label fixes. | Practical distributed inference fixes in a fast-moving Rust AI infrastructure project. |
-| [OpenViking contributions](https://github.com/volcengine/OpenViking/pulls?q=author%3ABortlesboat) | Merged Windows PID-lock and console-input reliability fixes. | Cross-platform agent context infrastructure work with small, testable patches. |
-| [qlib-options](https://github.com/Bortlesboat/qlib-options) | qlib-compatible options snapshot and factor pipeline with 25 focused tests. | Bridges finance workflow needs with reusable quant research tooling. |
+| [NSA Ghidra](https://github.com/NationalSecurityAgency/ghidra/pull/9642) | PyGhidra: keep bean properties out of script globals iteration | With no program open, JPype bean properties like `firstFunction` throw on read, so iterating script globals (and interpreter completion) broke. Took a second round after maintainer review to cover the no-program case. |
+| [vLLM](https://github.com/vllm-project/vllm/pulls?q=author%3ABortlesboat+is%3Amerged) | ROCm fixes, incl. a `cu_seqlens_q` off-by-one in AITER speculative decode ([#39120](https://github.com/vllm-project/vllm/pull/39120)) and config registration before tokenizer init ([#40299](https://github.com/vllm-project/vllm/pull/40299)) | Six merged. Most were found by reading AMD kernel paths against the backend they were supposed to match. |
+| [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat+is%3Amerged) | Owner keystore and signed+encrypted message primitives ([#156](https://github.com/Mesh-LLM/mesh-llm/pull/156)), then a run of Windows fixes | Nine merged in a fast-moving Rust distributed-inference project; I mostly own Windows breakage there now. |
+| [rust-lightning](https://github.com/lightningdevkit/rust-lightning/pull/4470) | Expose current dust exposure in `ChannelDetails` | Operators can now watch how close a channel is to its dust limit, counting commitment fees as well as dust HTLCs. |
+| [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | `From<Infallible>` for 31 public error types | Small idea, wide surface: `units`, `primitives` and `consensus_encoding` all had to line up so generic `?` code compiles. |
+| [HoloViz Panel](https://github.com/holoviz/panel/pull/8758) | Fix nested Plotly array loss across clients | Reusing a figure dropped nested array data for the second client. Binary serialization was mutating containers that shallow copies still shared. |
+| [LiveKit Agents](https://github.com/livekit/agents/pull/6568) | Forward provider events through session restarts | Provider-specific realtime events were lost every time the fallback wrapper swapped its child session. |
+| [ordinals/ord](https://github.com/ordinals/ord/pull/4558) | Warn when exporting addresses without the address index | Replaced a hard error with a warning, following maintainer direction from an earlier PR. |
 
-## Case Studies
+## In review
 
-- [Public proof portfolio](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-portfolio.md)
-- [Case studies](https://github.com/Bortlesboat/Bortlesboat/blob/main/case-studies.md)
-- [AgentOps Ledger launch page](https://bortlesboat.github.io/x402-insights/launch.html)
-- [AgentOps Ledger case study](https://bortlesboat.github.io/x402-insights/case-study.html)
-- [Selected merged contributions](https://github.com/Bortlesboat/Bortlesboat/blob/main/github-contributions.md)
+- **Bitcoin Core** [#36190](https://github.com/bitcoin/bitcoin/pull/36190): tests that the `bitcoin` wrapper reports child exit status correctly on Windows. Code-review ACKed; waiting on a dependency.
+- **x402** [#1873](https://github.com/x402-foundation/x402/pull/1873): request-bound Lightning upfront payments for the Python SDK, with replay protection that holds across restarts.
+- **NEAR** [near-sdk-rs #1638](https://github.com/near/near-sdk-rs/pull/1638): ABI generation failed to link on Windows MSVC hosts for about two years.
 
-## Contribution Pattern
+## What I'm working on
 
-I usually contribute where I can reproduce the problem locally and leave behind a cleaner test boundary: FP&A automation, AI workflow tooling, finance platforms, Bitcoin and Lightning libraries, x402, MCP servers, and Python ecosystem projects.
+- **x402 + Lightning in Python.** Payment verification, settlement and replay handling. Notes: [x402-work.md](x402-work.md).
+- **Bitcoin research.** What a private-payment wallet has to keep so it can still recover and spend after a service disappears. Reproducible experiments and their limits: [bitcoin-research](bitcoin-research/README.md).
+- **Mesh-LLM on Windows.**
 
-Recent merged examples:
+## Things I maintain
 
-- [Moby #53322](https://github.com/moby/moby/pull/53322) — unit-test the AWS client boundary (August 28, 2026).
-- [LiveKit Agents #6568](https://github.com/livekit/agents/pull/6568) — provider-event handling across restarts (August 18, 2026).
-- [google_workspace_mcp #921](https://github.com/taylorwilsdon/google_workspace_mcp/pull/921) — camelCase parameter normalization (August 18, 2026).
-- [Roboflow Supervision #2459](https://github.com/roboflow/supervision/pull/2459) — reset sink state (July 28, 2026).
+- [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp): MCP server that gives agents Bitcoin node, mempool and fee context. 50 tools, 180 tests.
+- [Satoshi API](https://github.com/Bortlesboat/bitcoin-api): self-hostable fee-intelligence API behind bitcoin-mcp, with optional x402 payments. The public hosted instance is paused.
+- [qlib-options](https://github.com/Bortlesboat/qlib-options): options snapshot and factor pipeline for Microsoft qlib.
 
-Further merged work:
+## Finance side
 
-- [OpenAI privacy-filter](https://github.com/openai/privacy-filter/pull/1)
-- [Microsoft VibeVoice](https://github.com/microsoft/VibeVoice/pull/280)
-- [Google Workspace CLI](https://github.com/googleworkspace/cli/pulls?q=author%3ABortlesboat+is%3Apr+is%3Amerged)
-- [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr)
-- [rust-lightning](https://github.com/lightningdevkit/rust-lightning/pull/4470)
-- [CPython](https://github.com/python/cpython/pull/145538)
-- [x402 Foundation](https://github.com/x402-foundation/x402/pulls?q=author%3ABortlesboat+is%3Apr)
-- [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat)
+The day job is FP&A. The overlap shows up in [OpenBB](https://github.com/OpenBB-finance/OpenBB/pulls?q=author%3ABortlesboat+is%3Apr) and qlib work, variance-commentary tooling, and a lot of Python that turns messy finance data into something a person can sign off on. [Case studies](case-studies.md).
 
-## Links
+## Full record
 
-[Portfolio site](https://bortlesboat.github.io) | [Satoshi API source](https://github.com/Bortlesboat/bitcoin-api) | [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
+231 merged pull requests to 152 repositories outside my account since March 2026, every month through September. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
+
+[Site](https://bortlesboat.github.io) · [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
