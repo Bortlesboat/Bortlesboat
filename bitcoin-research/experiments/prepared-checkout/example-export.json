@@ -1,0 +1,36 @@
+{
+  "format": "coin-policy-export-v1",
+  "raw_transactions": [
+    "020000000111111111111111111111111111111111111111111111111111111111111111110000000000ffffffff0270170000000000000151a00f000000000000015100000000",
+    "02000000014452d072c6698d0eeb379bc85630bc8b64d2a95958e54549cd0e6643c1e6d5270000000000ffffffff02e80300000000000001512413000000000000015100000000",
+    "02000000012853c58145e406056ba81404100e4263414713d05ec2232aa00e18c3319276c60100000000ffffffff02d00700000000000001518c0a000000000000015100000000"
+  ],
+  "roots": [
+    {
+      "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+      "vout": 0,
+      "pool": "prepared"
+    },
+    {
+      "txid": "27d5e6c143660ecd4945e55859a9d2648bbc3056c89b37eb0e8d69c672d05244",
+      "vout": 1,
+      "pool": "ordinary"
+    }
+  ],
+  "steps": [
+    {
+      "txid": "c6769231c3180ea02a23c25ed013474163420e100414a86b0506e44581c55328",
+      "required_pool": "prepared",
+      "payment_vout": 0,
+      "payment_sats": 1000,
+      "change_vout": 1
+    },
+    {
+      "txid": "d15c0899e54c9dc1688935835045e7d7f0e9d2b9faa59f0a972e62a2ff707c37",
+      "required_pool": "prepared",
+      "payment_vout": 0,
+      "payment_sats": 2000,
+      "change_vout": 1
+    }
+  ]
+}
