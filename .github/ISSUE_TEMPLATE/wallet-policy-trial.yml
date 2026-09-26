@@ -1,0 +1,46 @@
+name: Wallet policy kit trial
+description: Share a reproduction, a setup problem, or a concrete wallet use case.
+title: '[Wallet policy trial] '
+labels: [wallet-policy-trial]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying the kit. A failed setup or a reason it is not useful is helpful too.
+        This form is public. Share only synthetic/regtest evidence; omit wallet files, seeds, credentials, personal paths and private transaction history.
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What happened?
+      options:
+        - Offline checks passed
+        - Live regtest fixture passed
+        - I got stuck or found a failure
+        - I have a wallet integration use case
+        - It does not solve my problem
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Kit version or commit
+      placeholder: wallet-policy-v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment (if you ran it)
+      placeholder: OS, Python version; Core version for a live run
+  - type: textarea
+    id: result
+    attributes:
+      label: Command and result, or the problem you need solved
+      description: Include the command, expected result and actual result for a failure. For a use case, describe the wallet behavior you want to check.
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: What would make this worth using again?
+      description: A missing capability, an integration target, or a reason you would pass on it.

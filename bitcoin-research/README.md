@@ -38,6 +38,8 @@ The package records mined transactions, source hashes and costs on isolated regt
 
 The [coin-policy regression kit](experiments/prepared-checkout/POLICY_TESTS.md) adds a Python-only audit of the published bytes and a separate Core fixture for wallet labels across restart, fee shortfalls, missing labels and deliberate pool merges. It makes the payment-friction tradeoff reproducible without rebuilding A²L.
 
+[Try wallet policy kit 0.1.0](https://bortlesboat.github.io/Bortlesboat/): download the source bundle, run the offline checks, and report a reproduction, setup failure or wallet integration use case.
+
 ### Publication fees and anchor expiry
 
 Can a fee increase buy a Bitcoin confirmation after a payload's modeled anchor has expired? The [publication-policy benchmark](experiments/shielded-publication/README.md) compares 24 controlled cases on Bitcoin Core 31.1 regtest, with signed transactions, raw traces and reproducible reports.
