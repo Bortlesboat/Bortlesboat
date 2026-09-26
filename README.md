@@ -29,6 +29,7 @@ Finance analyst (FP&A) who writes code. Most of my open-source time goes to Bitc
 
 - **x402 + Lightning in Python.** Payment verification, settlement and replay handling. Notes: [x402-work.md](x402-work.md).
 - **Bitcoin research.** What a private-payment wallet has to keep so it can still recover and spend after a service disappears. Reproducible experiments and their limits: [bitcoin-research](bitcoin-research/README.md).
+- **[Wallet policy kit](https://bortlesboat.github.io/Bortlesboat/).** Try the Python-only checks for coin-pool separation, or reproduce payments and saved-wallet restarts on regtest. [Report a trial or wallet use case](https://github.com/Bortlesboat/Bortlesboat/issues/new?template=wallet-policy-trial.yml).
 - **Mesh-LLM on Windows.**
 
 ## Things I maintain

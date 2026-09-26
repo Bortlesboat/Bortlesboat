@@ -4,6 +4,8 @@ A reproducible research experiment by Andrew Barnes, using the COMIT team's arch
 
 This is test software. It measures Bitcoin spending, transaction sizes and observable links. It does not establish anonymity, validate refund/abort security, or implement Shielded Bitcoin. The original cryptography and protocol are upstream work.
 
+For the Python-only wallet policy kit, [start here](START_HERE.md). The [project page](https://bortlesboat.github.io/Bortlesboat/) has a versioned download and trial-report link.
+
 ## Run
 
 Use Linux or WSL with Python 3.10+, Git, Cargo/Rust, a C toolchain, Clang/libclang, GMP development headers, make, m4 and Bison. On Ubuntu the native prerequisites are provided by `build-essential clang libclang-dev libgmp-dev m4 bison`. Install Rust and a Bitcoin Core release separately. The runner does not install system packages or download a Bitcoin executable.

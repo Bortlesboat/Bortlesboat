@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small, open-source Bitcoin wallet test kit. Reproduce coin-pool separation checks with Python, then test payments and saved-wallet restarts on regtest.">
+  <meta name="theme-color" content="#f5f3ea">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23245442'/%3E%3Cpath d='M9 8v16M23 8v16' stroke='%23f5f3ea' stroke-width='3'/%3E%3C/svg%3E">
+  <title>Wallet policy kit — test what happens after the payment</title>
+  <link rel="canonical" href="https://bortlesboat.github.io/Bortlesboat/">
+  <style>
+    :root { color-scheme: light; --paper: #f5f3ea; --ink: #242f2b; --muted: #536159; --rule: #c8cfc1; --green: #245442; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.65 'Segoe UI', sans-serif; }
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #a34c20; outline-offset: 5px; }
+    .wrap { width: min(1080px, calc(100% - 48px)); margin: auto; }
+    .skip { position: absolute; top: -80px; padding: 12px; background: var(--paper); }
+    .skip:focus { top: 8px; }
+    header { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 27px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+    header a { font-weight: 600; }
+    .edition, .eyebrow { color: var(--muted); font-size: 13px; letter-spacing: .09em; text-transform: uppercase; }
+    .hero { display: grid; grid-template-columns: 1.45fr 1fr; gap: 64px; padding: 78px 0 64px; align-items: start; }
+    h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; letter-spacing: -.025em; }
+    h1 { font-size: clamp(43px, 5.2vw, 68px); margin: 15px 0 25px; max-width: 650px; }
+    h2 { font-size: clamp(30px, 3vw, 40px); margin: 0 0 20px; }
+    p { margin: 0 0 20px; }
+    .lede { font-size: 21px; max-width: 570px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin: 28px 0 17px; }
+    .button { display: inline-block; padding: 12px 22px; background: var(--green); color: var(--paper); text-decoration: none; font-weight: 600; }
+    .button:hover { background: #193f31; }
+    .small { font-size: 14px; color: var(--muted); }
+    .flow { margin: 28px 0 0; border-top: 3px solid var(--green); padding-top: 20px; }
+    .flow figcaption { font-size: 15px; font-weight: 600; margin-bottom: 20px; }
+    .flow ol { list-style: none; padding: 0; margin: 0; }
+    .flow li { padding: 14px 0 14px 23px; border-left: 2px solid var(--rule); position: relative; }
+    .flow li::before { content: ''; position: absolute; left: -6px; top: 25px; width: 10px; height: 10px; background: var(--green); border-radius: 50%; }
+    .flow strong { display: block; font-size: 17px; }
+    .flow span { display: block; font-size: 14px; color: var(--muted); }
+    section { border-top: 1px solid var(--rule); padding: 46px 0; }
+    .split { display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; }
+    .hero > *, .split > * { min-width: 0; }
+    .step { font-size: 13px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
+    pre { margin: 18px 0; padding: 20px; background: #e7ebe1; font-size: 15px; line-height: 1.6; overflow-x: auto; }
+    code { font-family: Consolas, 'Liberation Mono', monospace; }
+    summary { cursor: pointer; color: var(--green); padding: 8px 0; }
+    details { margin-bottom: 15px; }
+    .evidence { border-collapse: collapse; width: 100%; font-size: 16px; margin-bottom: 18px; }
+    .evidence th, .evidence td { text-align: left; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .evidence th:last-child, .evidence td:last-child { text-align: right; padding-left: 20px; }
+    footer { border-top: 1px solid var(--rule); padding: 28px 0 45px; font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    @media (max-width: 760px) { .hero, .split { grid-template-columns: 1fr; gap: 25px; } .hero { padding: 45px 0; } .flow { margin-top: 8px; } .wrap { width: calc(100% - 36px); } header { align-items: start; } section { padding: 35px 0; } .edition { max-width: 110px; text-align: right; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a href="https://github.com/Bortlesboat/Bortlesboat/tree/main/bitcoin-research">Bitcoin research / Andrew Barnes</a>
+      <span class="edition">Wallet policy kit · 0.1.0</span>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">An open-source tool for wallet developers</div>
+          <h1>Does your wallet keep coins separate?</h1>
+          <p class="lede">Check what happens after a payment, after spending the change, and after restarting the wallet.</p>
+          <p>Start with recorded Bitcoin transactions and Python. Then reproduce the experiment on regtest or export a trace from your own wallet tests.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/Bortlesboat/Bortlesboat/releases/download/wallet-policy-v0.1.0/wallet-policy-kit-v0.1.0.zip">Download the kit</a>
+            <a href="#try">Run the checks ↓</a>
+          </div>
+          <p class="small">Python 3.10+ · No packages to install for offline checks · <a href="https://github.com/Bortlesboat/Bortlesboat/releases/tag/wallet-policy-v0.1.0">Release &amp; checksum</a></p>
+        </div>
+        <figure class="flow">
+          <figcaption>The rule this fixture tests</figcaption>
+          <ol>
+            <li><strong>Start with two labeled coin pools</strong><span>A payment may spend from only one.</span></li>
+            <li><strong>Pay, then classify the change</strong><span>The change keeps the same pool label.</span></li>
+            <li><strong>Restart, then pay again</strong><span>The saved wallet must retain its labels.</span></li>
+            <li><strong>Refuse an unsafe top-up</strong><span>Insufficient eligible coins means refusing, even if the other pool has enough.</span></li>
+          </ol>
+        </figure>
+      </div>
+      <section id="try" class="split">
+        <div><div class="step">01 / Try it</div><h2>One command.<br>No node needed.</h2></div>
+        <div>
+          <p>Extract the ZIP and open a terminal in the folder containing <code>START_HERE.md</code> and <code>test_policy.py</code>. On Linux or macOS:</p>
+          <pre><code>python3 -m unittest -v test_policy test_runner</code></pre>
+          <details><summary>Windows PowerShell command</summary><p>“Extract All” may create two nested folders with the same name. Open the inner one containing <code>test_policy.py</code>.</p><pre><code>py -3 -m unittest -v test_policy test_runner</code></pre></details>
+          <p>Expected: <strong>19 tests, OK</strong>. The suite checks the supplied transaction bytes and verifies that deliberately bad cases are detected.</p>
+          <p class="small">Ready for fresh transactions? Follow the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.1.0/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#run-the-live-fixture">isolated regtest instructions</a>. To use your wallet's evidence, start with the <a href="https://github.com/Bortlesboat/Bortlesboat/blob/wallet-policy-v0.1.0/bitcoin-research/experiments/prepared-checkout/POLICY_TESTS.md#reuse-in-another-wallet">trace format</a>.</p>
+        </div>
+      </section>
+      <section class="split">
+        <div><div class="step">02 / Evidence</div><h2>What has been<br>observed so far.</h2><p class="small">Author's local run · September 25, 2026<br>Bitcoin Core 31.1 · Linux / WSL<br>Configured rates: 1, 10, 50 sat/vB</p></div>
+        <div>
+          <table class="evidence"><thead><tr><th scope="col">Controlled scenario</th><th scope="col">Observed result</th></tr></thead><tbody><tr><td>Payments from the selected pool</td><td>6 confirmed</td></tr><tr><td>Saved-wallet restarts</td><td>3 preserved labels</td></tr><tr><td>Fee, balance or missing-label refusals</td><td>9 expected refusals</td></tr><tr><td>Deliberate pool merges</td><td>3 detected</td></tr></tbody></table>
+          <p class="small"><a href="https://github.com/Bortlesboat/Bortlesboat/tree/wallet-policy-v0.1.0/bitcoin-research/experiments/prepared-checkout/policy-reference">Raw transactions, results &amp; provenance</a> · <a href="https://github.com/Bortlesboat/Bortlesboat/actions/workflows/wallet-policy.yml">Offline CI results</a></p>
+          <p>This is developer research tooling. The live fixture uses synthetic labels and an explicit coin-selection adapter. It does not run a privacy protocol, measure anonymity, or establish that a production wallet is safe. The offline audit relies on the labels and history supplied by its exporter.</p>
+        </div>
+      </section>
+      <section class="split">
+        <div><div class="step">03 / Help shape it</div><h2>Would you use this<br>in a wallet test?</h2></div>
+        <div>
+          <p>Tell us what ran, where you got stuck, or which wallet behavior you need to check. A reason to pass on it is useful feedback too.</p>
+          <div class="actions"><a class="button" href="https://github.com/Bortlesboat/Bortlesboat/issues/new?template=wallet-policy-trial.yml">Report a trial or use case</a><a href="https://github.com/Bortlesboat/Bortlesboat/issues?q=is%3Aissue%20label%3Awallet-policy-trial">Read trial reports</a></div>
+          <p class="small">GitHub account required to post. Reports are public: share only synthetic evidence, never wallet files or private transaction histories. Independent reproductions and concrete integration requests are the next milestones.</p>
+        </div>
+      </section>
+    </main>
+    <footer><span>GPL-3.0-only · Builds on COMIT's <a href="https://github.com/comit-network/a2l-poc">archived A²L experiment</a></span><a href="https://github.com/Bortlesboat/Bortlesboat/tree/main/bitcoin-research/experiments/prepared-checkout">Source, attribution &amp; limitations</a></footer>
+  </div>
+</body>
+</html>
