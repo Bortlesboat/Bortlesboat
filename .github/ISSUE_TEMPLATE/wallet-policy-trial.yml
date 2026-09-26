@@ -24,7 +24,7 @@ body:
     id: version
     attributes:
       label: Kit version or commit
-      placeholder: wallet-policy-v0.1.0
+      placeholder: wallet-policy-v0.1.1
     validations:
       required: true
   - type: input
