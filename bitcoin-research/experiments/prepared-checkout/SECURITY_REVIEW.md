@@ -12,7 +12,7 @@ This is an author-run review of a small developer tool, not an independent secur
 
 A 7,200,354-byte bundle with 400,000 minimal outputs was below the input limit. The exporter built the entire indented JSON string before checking its length. Under a 384 MiB address-space limit, the old path raised an uncaught `MemoryError` during the final string join and exited 1. The bounded probe recorded approximately 369 MiB peak child RSS. It used synthetic unsigned bytes, not a consensus-valid transaction.
 
-The fix in [`export_trace.py:26`](export_trace.py#L26) counts encoded bytes incrementally and stops at the existing 16 MB output limit. The same memory-constrained regression now exits 2 with the size-limit error and creates no destination file. This bounds serialized output accumulation; it does not promise a fixed memory quota for all parsing and decoding work.
+The fix in [`export_trace.py:26`](export_trace.py#L26) counts encoded bytes incrementally and stops at the existing 16 MB output limit. Python 3.10 CI also exposed unnecessary output-list copies in validation; [`audit.py:154`](audit.py#L154) now compares the same fields incrementally after checking equal lengths. The same memory-constrained regression now exits 2 with the size-limit error and creates no destination file. These changes avoid the observed allocations; they do not promise a fixed memory quota for all parsing and decoding work.
 
 ### 2. Low: non-finite JSON values pass through extra metadata — fixed
 

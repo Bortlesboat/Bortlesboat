@@ -151,9 +151,10 @@ def audit_trace(trace: dict) -> dict:
                   "Recorded fee must be a nonnegative integer")
         for field in ("txid", "vsize", "weight", "inputs"):
             check(record[field] == decoded[field], f"Recorded {field} differs from bytes")
-        expected = [{"vout": o["vout"], "sats": o["sats"]} for o in decoded["outputs"]]
-        actual = [{"vout": o["vout"], "sats": o["sats"]} for o in record["outputs"]]
-        check(actual == expected, "Recorded outputs differ from bytes")
+        check(len(record["outputs"]) == len(decoded["outputs"]) and
+              all(actual["vout"] == expected["vout"] and actual["sats"] == expected["sats"]
+                  for actual, expected in zip(record["outputs"], decoded["outputs"])),
+              "Recorded outputs differ from bytes")
         transactions[txid] = decoded
 
     def output(coin: dict) -> dict:
