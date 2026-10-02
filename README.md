@@ -10,6 +10,7 @@ Finance analyst (FP&A) who writes code. Most of my open-source time goes to Bitc
 
 | Project | Change | What was hard about it |
 | --- | --- | --- |
+| [OpenAI Python SDK](https://github.com/openai/openai-python/pull/2993) | Publicly export `type_to_response_format_param` | Callers can use `openai.lib` instead of private parsing modules. Resolves an upstream feature request; merged October 2, 2026. |
 | [NSA Ghidra](https://github.com/NationalSecurityAgency/ghidra/pull/9642) | PyGhidra: keep bean properties out of script globals iteration | With no program open, JPype bean properties like `firstFunction` throw on read, so iterating script globals (and interpreter completion) broke. Took a second round after maintainer review to cover the no-program case. |
 | [vLLM](https://github.com/vllm-project/vllm/pulls?q=author%3ABortlesboat+is%3Amerged) | ROCm fixes, incl. a `cu_seqlens_q` off-by-one in AITER speculative decode ([#39120](https://github.com/vllm-project/vllm/pull/39120)) and config registration before tokenizer init ([#40299](https://github.com/vllm-project/vllm/pull/40299)) | Six merged. Most were found by reading AMD kernel paths against the backend they were supposed to match. |
 | [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat+is%3Amerged) | Owner keystore and signed+encrypted message primitives ([#156](https://github.com/Mesh-LLM/mesh-llm/pull/156)), then a run of Windows fixes | Nine merged in a fast-moving Rust distributed-inference project; I mostly own Windows breakage there now. |
@@ -44,6 +45,6 @@ The day job is FP&A. The overlap shows up in [OpenBB](https://github.com/OpenBB-
 
 ## Full record
 
-231 merged pull requests to 152 repositories outside my account since March 2026, every month through September. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
+240 merged pull requests to 160 public repositories outside my account, verified October 2, 2026. Merges in every month from March through October. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
 
 [Site](https://bortlesboat.github.io) · [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)

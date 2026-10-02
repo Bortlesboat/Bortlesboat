@@ -1,6 +1,6 @@
 # GitHub Portfolio Audit
 
-Updated: 2026-09-07
+Updated: 2026-10-02 (OpenAI evidence; other dated entries retain their original scope)
 
 ## Positioning
 
@@ -9,6 +9,10 @@ The portfolio should read as one story:
 > Senior finance analyst and Python builder focused on tech FP&A systems, AI workflow automation, and reputable public software proof.
 
 The more precise career story: senior finance analyst and Python builder focused on tech FP&A systems and AI workflow automation. The profile should lead with audience and recognizable public work, not activity volume. Named merged work in OpenAI, Microsoft, Google Workspace, OpenBB, CPython, Lightning, x402, and AI-infra repos is strongest when it is framed as useful to finance teams, AI tool maintainers, Workspace operators, protocol teams, and maintainers.
+
+## Latest verified contribution
+
+[OpenAI Python SDK #2993](https://github.com/openai/openai-python/pull/2993) merged October 2, 2026. It publicly exports a response-format helper so callers no longer need private parsing imports. This adds an official SDK contribution to the earlier OpenAI privacy-filter merge. The final change is a one-line export.
 
 ## Strongest Public Artifacts
 
