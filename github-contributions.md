@@ -1,18 +1,17 @@
 # Selected GitHub Contributions
 
-Updated: 2026-09-25
+Updated: 2026-10-02
 
 This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
 
 ## Verified Contribution Pattern
 
-**231 authored, merged PRs in 152 external public repositories**, verified September 25, 2026. There are repeat merges in 35 repositories, including ffn (10), Mesh-LLM (9), google_workspace_mcp (6), and vLLM (6). **81 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
+**240 authored, merged PRs in 160 external public repositories**, verified October 2, 2026. There are repeat merges in 36 repositories. **90 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
 
-The record shows merged work in seven consecutive months, March through September 2026. September is partial. The earlier zero months are included below so the full measurement window is visible.
+The record shows merged work in eight consecutive months, March through October 2026. October is partial. The earlier zero months are included below so the full measurement window is visible.
 
 | Merge month | Merged PRs |
 | --- | ---: |
-| 2025-09 | 0 |
 | 2025-10 | 0 |
 | 2025-11 | 0 |
 | 2025-12 | 0 |
@@ -24,12 +23,13 @@ The record shows merged work in seven consecutive months, March through Septembe
 | 2026-06 | 22 |
 | 2026-07 | 40 |
 | 2026-08 | 17 |
-| 2026-09 | 24 |
+| 2026-09 | 29 |
+| 2026-10 | 4 |
 
-The first and last months cover only the dates inside the September 25, 2025–September 25, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-09-25..2026-09-25&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
+The first and last months cover only the dates inside the October 2, 2025–October 2, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-10-02..2026-10-02&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
 
 ```text
-author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-09-07..2026-09-07
+author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-10-02..2026-10-02
 ```
 
 To refresh, run `node scripts/fetch-stats.cjs` in [the portfolio repository](https://github.com/Bortlesboat/Bortlesboat.github.io). It paginates GitHub search, rejects incomplete results, and counts by `pull_request.merged_at`. A failed refresh preserves the previous snapshot and exits with an error. This dated profile snapshot is updated separately after review.
@@ -38,6 +38,9 @@ To refresh, run `node scripts/fetch-stats.cjs` in [the portfolio repository](htt
 
 | Merged | Work | Contribution |
 | --- | --- | --- |
+| 2026-10-02 | [OpenAI Python SDK #2993](https://github.com/openai/openai-python/pull/2993) | Expose a response-format helper through the public API. |
+| 2026-10-02 | [Supabase Python #1624](https://github.com/supabase/supabase-py/pull/1624) | Preserve negation in PostgREST text-search filters. |
+| 2026-10-01 | [RustScan #916](https://github.com/bee-san/RustScan/pull/916) | Keep library scans quiet by default. |
 | 2026-08-28 | [Moby #53322](https://github.com/moby/moby/pull/53322) | Unit-test the AWS client boundary. |
 | 2026-08-18 | [LiveKit Agents #6568](https://github.com/livekit/agents/pull/6568) | Provider-event handling across restarts. |
 | 2026-08-18 | [google_workspace_mcp #921](https://github.com/taylorwilsdon/google_workspace_mcp/pull/921) | Normalize camelCase parameters. |
@@ -50,6 +53,7 @@ Maintainer work on my own projects is listed separately below. The links show co
 
 | Repo | PR | Status | Why it matters |
 | --- | --- | --- | --- |
+| `openai/openai-python` | [#2993 export response-format helper](https://github.com/openai/openai-python/pull/2993) | Merged October 2, 2026 | Makes the existing helper available through `openai.lib`, resolving a request to avoid private imports. |
 | `openai/privacy-filter` | [#1 fix train runner syntax error](https://github.com/openai/privacy-filter/pull/1) | Merged | Small correctness fix in OpenAI research tooling. |
 | `microsoft/VibeVoice` | [#280 fix realtime demo NameError](https://github.com/microsoft/VibeVoice/pull/280) | Merged | AI audio demo reliability fix in a Microsoft repository. |
 | `googleworkspace/cli` | [#108 filter Alert Center scopes from user OAuth login](https://github.com/googleworkspace/cli/pull/108) | Merged | OAuth/setup polish in the Google Workspace CLI. |
