@@ -9,6 +9,9 @@
 !/github-contributions.md
 !/x402-work.md
 !/oss-contributions.json
+!/docs/
+/docs/*
+!/docs/weekly-shipping.md
 !/bitcoin-research/
 !/bitcoin-research/**
 !/.github/

@@ -1,10 +1,16 @@
 # Andrew Barnes
 
-Finance analyst (FP&A) who writes code. Most of my open-source time goes to Bitcoin and Lightning payments, AI inference infrastructure, and the Python tooling in between. I like bugs that only show up on one platform, after a restart, or halfway through a message.
+Finance analyst (FP&A) building Python tools for financial data review and auditable agent workflows. My open-source work spans AI infrastructure, Bitcoin and Lightning payments, and the reliability bugs that show up after a restart or halfway through a message.
 
-<a href="https://bortlesboat.github.io/#motion-study"><img src="https://bortlesboat.github.io/reel/reel.gif" alt="Proof of Work: a 15-second motion study rendered frame by frame in canvas code" width="100%"></a>
+## Try my work
 
-**Proof of Work**, a 15-second motion study drawn frame by frame in canvas code. [Watch it render live](https://bortlesboat.github.io/reel/) · [1080p60 with sound](https://bortlesboat.github.io/reel/reel-1080.mp4)
+| Project | Problem it addresses | What you can try |
+| --- | --- | --- |
+| [Finance File Triage](https://bortlesboat.github.io/variance-memo/) | Turn messy CSV/XLSX data into row-linked review drafts across 4 finance data families: FP&A variance, brokerage positions, cash transactions, and invoices. | Browser app; files stay on your device. |
+| [Agent Payment Ledger](https://bortlesboat.github.io/x402-insights/) | Inspect what an agent attempted, paid for, or was blocked from doing across 3 seeded runs and 6 event types. | Static walkthrough, dashboard screenshot, and [case study](https://bortlesboat.github.io/x402-insights/case-study.html). |
+| [Wallet Policy Kit](https://bortlesboat.github.io/Bortlesboat/) | Check coin-pool separation and restart behavior with 27 conformance cases. | Downloadable Python research kit with reproducible fixtures. |
+
+46 external public PRs merged across 37 repositories, with merges in each of the 8 weeks from August 10 to October 4, 2026. [Weekly contribution log](docs/weekly-shipping.md).
 
 ## Selected work
 
@@ -46,5 +52,11 @@ The day job is FP&A. The overlap shows up in [OpenBB](https://github.com/OpenBB-
 ## Full record
 
 240 merged pull requests to 160 public repositories outside my account, verified October 2, 2026. Merges in every month from March through October. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
+
+## Motion study
+
+<a href="https://bortlesboat.github.io/#motion-study"><img src="https://bortlesboat.github.io/reel/reel.gif" alt="Proof of Work: a 15-second motion study rendered frame by frame in canvas code" width="100%"></a>
+
+**Proof of Work**, a 15-second motion study drawn frame by frame in canvas code. [Watch it render live](https://bortlesboat.github.io/reel/) · [1080p60 with sound](https://bortlesboat.github.io/reel/reel-1080.mp4)
 
 [Site](https://bortlesboat.github.io) · [X @BTCOrangeCoin](https://x.com/BTCOrangeCoin)
