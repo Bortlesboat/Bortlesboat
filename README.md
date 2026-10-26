@@ -10,18 +10,15 @@ Finance analyst (FP&A) building Python tools for financial data review and audit
 | [Agent Payment Ledger](https://bortlesboat.github.io/x402-insights/) | Inspect what an agent attempted, paid for, or was blocked from doing across 3 seeded runs and 6 event types. | Static walkthrough, dashboard screenshot, and [case study](https://bortlesboat.github.io/x402-insights/case-study.html). |
 | [Wallet Policy Kit](https://bortlesboat.github.io/Bortlesboat/) | Check coin-pool separation and restart behavior with 27 conformance cases. | Downloadable Python research kit with reproducible fixtures. |
 
-46 external public PRs merged across 37 repositories, with merges in each of the 8 weeks from August 10 to October 4, 2026. [Weekly contribution log](docs/weekly-shipping.md).
-
 ## Selected work
 
 | Project | Change | What was hard about it |
 | --- | --- | --- |
-| [OpenAI Python SDK](https://github.com/openai/openai-python/pull/2993) | Publicly export `type_to_response_format_param` | Callers can use `openai.lib` instead of private parsing modules. Resolves an upstream feature request; merged October 2, 2026. |
+| [Claude Agent SDK (Python)](https://github.com/anthropics/claude-agent-sdk-python/pull/642) | Wait for the CLI to exit gracefully before sending SIGTERM | `close()` terminated the CLI right after stdin EOF, which could cut off the session write and lose the last assistant message. The maintainer reproduced the race on every call on main before merging. |
 | [NSA Ghidra](https://github.com/NationalSecurityAgency/ghidra/pull/9642) | PyGhidra: keep bean properties out of script globals iteration | With no program open, JPype bean properties like `firstFunction` throw on read, so iterating script globals (and interpreter completion) broke. Took a second round after maintainer review to cover the no-program case. |
 | [vLLM](https://github.com/vllm-project/vllm/pulls?q=author%3ABortlesboat+is%3Amerged) | ROCm fixes, incl. a `cu_seqlens_q` off-by-one in AITER speculative decode ([#39120](https://github.com/vllm-project/vllm/pull/39120)) and config registration before tokenizer init ([#40299](https://github.com/vllm-project/vllm/pull/40299)) | Six merged. Most were found by reading AMD kernel paths against the backend they were supposed to match. |
 | [Mesh-LLM](https://github.com/Mesh-LLM/mesh-llm/pulls?q=author%3ABortlesboat+is%3Amerged) | Owner keystore and signed+encrypted message primitives ([#156](https://github.com/Mesh-LLM/mesh-llm/pull/156)), then a run of Windows fixes | Nine merged in a fast-moving Rust distributed-inference project; I mostly own Windows breakage there now. |
 | [rust-lightning](https://github.com/lightningdevkit/rust-lightning/pull/4470) | Expose current dust exposure in `ChannelDetails` | Operators can now watch how close a channel is to its dust limit, counting commitment fees as well as dust HTLCs. |
-| [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | `From<Infallible>` for 31 public error types | Small idea, wide surface: `units`, `primitives` and `consensus_encoding` all had to line up so generic `?` code compiles. |
 | [HoloViz Panel](https://github.com/holoviz/panel/pull/8758) | Fix nested Plotly array loss across clients | Reusing a figure dropped nested array data for the second client. Binary serialization was mutating containers that shallow copies still shared. |
 | [LiveKit Agents](https://github.com/livekit/agents/pull/6568) | Forward provider events through session restarts | Provider-specific realtime events were lost every time the fallback wrapper swapped its child session. |
 | [ordinals/ord](https://github.com/ordinals/ord/pull/4558) | Warn when exporting addresses without the address index | Replaced a hard error with a warning, following maintainer direction from an earlier PR. |
@@ -51,7 +48,7 @@ The day job is FP&A. The overlap shows up in [OpenBB](https://github.com/OpenBB-
 
 ## Full record
 
-240 merged pull requests to 160 public repositories outside my account, verified October 2, 2026. Merges in every month from March through October. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
+About 300 merged pull requests to public repositories outside my account. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
 
 ## Motion study
 
