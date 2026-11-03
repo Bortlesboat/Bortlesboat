@@ -9,7 +9,6 @@ I contribute to Bitcoin and Lightning libraries and investigate correctness, rec
 | Project | Change | Practical effect | Evidence |
 | --- | --- | --- | --- |
 | Lightning Development Kit / rust-lightning | Expose current dust exposure in `ChannelDetails` | Makes channel dust exposure available to callers for comparison with their configured limit. | [PR #4470](https://github.com/lightningdevkit/rust-lightning/pull/4470), merged May 1, 2026 |
-| rust-bitcoin | Implement `From<Infallible>` for public error types | Improves composition with generic Rust code whose error conversion cannot fail. | [PR #5781](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781), merged March 26, 2026 |
 | ord | Warn when exporting addresses without the address index | Makes the index requirement visible during address export. | [PR #4558](https://github.com/ordinals/ord/pull/4558), merged August 9, 2026 |
 
 These are contributions to the named upstream projects. The protocol designs and libraries remain the work of their respective authors and maintainers.
