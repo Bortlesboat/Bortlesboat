@@ -2,17 +2,16 @@
   "username": "Bortlesboat",
   "scope": "Authored, merged pull requests in public repositories outside Bortlesboat, by merge date",
   "window": {
-    "start": "2025-10-02",
-    "end": "2026-10-02"
+    "start": "2025-11-03",
+    "end": "2026-11-03"
   },
-  "query": "author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-10-02..2026-10-02",
-  "source_url": "https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-10-02..2026-10-02&type=pullrequests",
-  "fetched_at": "2026-10-02T21:02:35.510Z",
-  "merged_prs": 240,
-  "repos_contributed_to": 160,
-  "repeat_repositories": 36,
+  "query": "author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-11-03..2026-11-03",
+  "source_url": "https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-11-03..2026-11-03&type=pullrequests",
+  "fetched_at": "2026-11-03T18:56:40.345Z",
+  "merged_prs": 318,
+  "repos_contributed_to": 226,
+  "repeat_repositories": 44,
   "monthly": {
-    "2025-10": 0,
     "2025-11": 0,
     "2025-12": 0,
     "2026-01": 0,
@@ -24,7 +23,8 @@
     "2026-07": 40,
     "2026-08": 17,
     "2026-09": 29,
-    "2026-10": 4
+    "2026-10": 76,
+    "2026-11": 6
   },
   "items": [
     {
@@ -1466,6 +1466,474 @@
       "url": "https://github.com/openai/openai-python/pull/2993",
       "repo": "openai/openai-python",
       "merged_at": "2026-10-02T20:13:14Z"
+    },
+    {
+      "title": "Include warning and QR strings in translation extraction",
+      "url": "https://github.com/OogaBoogaX/entropylab/pull/701",
+      "repo": "OogaBoogaX/entropylab",
+      "merged_at": "2026-10-03T04:18:02Z"
+    },
+    {
+      "title": "Make i18n test fixtures portable on Windows",
+      "url": "https://github.com/OogaBoogaX/entropylab/pull/710",
+      "repo": "OogaBoogaX/entropylab",
+      "merged_at": "2026-10-03T11:10:09Z"
+    },
+    {
+      "title": "Preserve nested mod metadata without package replacements",
+      "url": "https://github.com/Dingo-Shenanigans/ReSkate/pull/2",
+      "repo": "Dingo-Shenanigans/ReSkate",
+      "merged_at": "2026-10-03T21:18:58Z"
+    },
+    {
+      "title": "Preserve Unicode separators in training JSONL records",
+      "url": "https://github.com/bespokelabsai/nimble/pull/13",
+      "repo": "bespokelabsai/nimble",
+      "merged_at": "2026-10-05T04:41:08Z"
+    },
+    {
+      "title": "fix: select artifacts for the exact release version",
+      "url": "https://github.com/anmolkapil/plexo/pull/67",
+      "repo": "anmolkapil/plexo",
+      "merged_at": "2026-10-05T06:49:42Z"
+    },
+    {
+      "title": "Preserve custom calibration in exported Modelfiles",
+      "url": "https://github.com/ollaya-dev/ollaya/pull/55",
+      "repo": "ollaya-dev/ollaya",
+      "merged_at": "2026-10-05T10:01:51Z"
+    },
+    {
+      "title": "fix: preserve reverted drafts after save errors",
+      "url": "https://github.com/CopilotKit/OpenDots/pull/44",
+      "repo": "CopilotKit/OpenDots",
+      "merged_at": "2026-10-05T18:12:00Z"
+    },
+    {
+      "title": "fix(docker): exclude runtime caches from build context",
+      "url": "https://github.com/mutonby/openshorts/pull/97",
+      "repo": "mutonby/openshorts",
+      "merged_at": "2026-10-06T08:08:25Z"
+    },
+    {
+      "title": "fix: reserve families for every requested dataset split",
+      "url": "https://github.com/firelex/jeff/pull/11",
+      "repo": "firelex/jeff",
+      "merged_at": "2026-10-06T20:35:29Z"
+    },
+    {
+      "title": "fix(cli): preserve UTF-8 BOM in proof file bodies",
+      "url": "https://github.com/mvschwarz/openrig/pull/270",
+      "repo": "mvschwarz/openrig",
+      "merged_at": "2026-10-08T13:44:58Z"
+    },
+    {
+      "title": "fix(browser): report Windows HAR heap exhaustion",
+      "url": "https://github.com/morluto/rea/pull/1147",
+      "repo": "morluto/rea",
+      "merged_at": "2026-10-09T01:13:01Z"
+    },
+    {
+      "title": "Reject unsound binary-frame verifier inputs",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/101",
+      "repo": "CrocSwap/integer-mult-bounds",
+      "merged_at": "2026-10-09T12:57:38Z"
+    },
+    {
+      "title": "fix(updater): stop reporting browser handoffs as Windows downloads",
+      "url": "https://github.com/999sian/melee-pc/pull/108",
+      "repo": "999sian/melee-pc",
+      "merged_at": "2026-10-10T18:31:38Z"
+    },
+    {
+      "title": "fix: make skill.sh fail on unknown skills",
+      "url": "https://github.com/Leonxlnx/taste-skill/pull/41",
+      "repo": "Leonxlnx/taste-skill",
+      "merged_at": "2026-10-11T21:56:48Z"
+    },
+    {
+      "title": "Preserve aligned pairing and its conditional 17*2^-63 witness",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2",
+      "repo": "CrocSwap/integer-mult-bounds",
+      "merged_at": "2026-10-13T21:02:36Z"
+    },
+    {
+      "title": "fix(structured): preserve singleton boolean constraints",
+      "url": "https://github.com/NandhaKishorM/laya/pull/1235",
+      "repo": "NandhaKishorM/laya",
+      "merged_at": "2026-10-15T10:45:59Z"
+    },
+    {
+      "title": "fix(freehire-search): reject empty facet filters before searching",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search/pull/561",
+      "repo": "ai-job-search-dev/ai-job-search",
+      "merged_at": "2026-10-15T16:16:00Z"
+    },
+    {
+      "title": "fix: accept tuple tickers in data.get",
+      "url": "https://github.com/pmorissette/ffn/pull/423",
+      "repo": "pmorissette/ffn",
+      "merged_at": "2026-10-15T19:20:51Z"
+    },
+    {
+      "title": "fix(web): observe responses before the first navigation",
+      "url": "https://github.com/tester-army/e2e/pull/1022",
+      "repo": "tester-army/e2e",
+      "merged_at": "2026-10-16T16:42:23Z"
+    },
+    {
+      "title": "fix: preserve XML-escaped OOXML relationship targets",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover/pull/394",
+      "repo": "guillaumemeyer/watermarks-remover",
+      "merged_at": "2026-10-17T05:19:53Z"
+    },
+    {
+      "title": "tui: detect native Windows sample paths in chat",
+      "url": "https://github.com/openbin-ai/binny/pull/1",
+      "repo": "openbin-ai/binny",
+      "merged_at": "2026-10-17T16:27:54Z"
+    },
+    {
+      "title": "llm: surface errors from OpenAI-compatible streams",
+      "url": "https://github.com/openbin-ai/binny/pull/2",
+      "repo": "openbin-ai/binny",
+      "merged_at": "2026-10-17T16:28:23Z"
+    },
+    {
+      "title": "fix: don't round up exact prices in significant digits mode",
+      "url": "https://github.com/freqtrade/freqtrade/pull/13678",
+      "repo": "freqtrade/freqtrade",
+      "merged_at": "2026-10-17T18:36:58Z"
+    },
+    {
+      "title": "fix: normalize timeframe case for alert poll interval",
+      "url": "https://github.com/OpenByteInc/QuantDinger/pull/293",
+      "repo": "OpenByteInc/QuantDinger",
+      "merged_at": "2026-10-18T02:54:06Z"
+    },
+    {
+      "title": "fix(backtest): keep calmar finite on explosive equity paths",
+      "url": "https://github.com/HKUDS/Vibe-Trading/pull/1901",
+      "repo": "HKUDS/Vibe-Trading",
+      "merged_at": "2026-10-18T04:08:04Z"
+    },
+    {
+      "title": "Fix GPU startup requests exceeding adapter limits",
+      "url": "https://github.com/storytold/photocraft/pull/6050",
+      "repo": "storytold/photocraft",
+      "merged_at": "2026-10-18T07:33:24Z"
+    },
+    {
+      "title": "Fix GPU startup requests exceeding adapter limits",
+      "url": "https://github.com/storytold/pdfcraft/pull/2433",
+      "repo": "storytold/pdfcraft",
+      "merged_at": "2026-10-18T13:50:42Z"
+    },
+    {
+      "title": "Name the daemon's pipe for the home directory, not its spelling, on Windows",
+      "url": "https://github.com/reason-machines/reason-network/pull/23",
+      "repo": "reason-machines/reason-network",
+      "merged_at": "2026-10-18T15:54:13Z"
+    },
+    {
+      "title": "fix(arxiv): honor as-of end dates in the recency cutoff",
+      "url": "https://github.com/mvanhorn/last30days-skill/pull/1295",
+      "repo": "mvanhorn/last30days-skill",
+      "merged_at": "2026-10-18T19:46:37Z"
+    },
+    {
+      "title": "fix: preserve Windows UNC home pipe names",
+      "url": "https://github.com/reason-machines/reason-network/pull/32",
+      "repo": "reason-machines/reason-network",
+      "merged_at": "2026-10-19T01:53:40Z"
+    },
+    {
+      "title": "fix(transform): validate rename entries independently",
+      "url": "https://github.com/galaxy-io/filament/pull/573",
+      "repo": "galaxy-io/filament",
+      "merged_at": "2026-10-19T14:05:21Z"
+    },
+    {
+      "title": "fix(core): preserve multiline skill metadata when saving",
+      "url": "https://github.com/elie222/rakazo/pull/1534",
+      "repo": "elie222/rakazo",
+      "merged_at": "2026-10-19T18:38:36Z"
+    },
+    {
+      "title": "[python] Preserve schema for empty output batches",
+      "url": "https://github.com/feldera/feldera/pull/7451",
+      "repo": "feldera/feldera",
+      "merged_at": "2026-10-19T22:34:06Z"
+    },
+    {
+      "title": "fix(gappsscript): keep existing deployment config when updating",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp/pull/924",
+      "repo": "taylorwilsdon/google_workspace_mcp",
+      "merged_at": "2026-10-19T22:48:01Z"
+    },
+    {
+      "title": "fix: preserve fractional invoice line unit prices",
+      "url": "https://github.com/fivetran/dbt_stripe/pull/163",
+      "repo": "fivetran/dbt_stripe",
+      "merged_at": "2026-10-20T18:49:37Z"
+    },
+    {
+      "title": "fix: Telegram 推送按 UTF-16 长度判断与分段",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis/pull/2419",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "merged_at": "2026-10-21T09:50:51Z"
+    },
+    {
+      "title": "fix(projects): a project named NUL or CON gets a folder Windows can write in",
+      "url": "https://github.com/jub0t/Concat/pull/496",
+      "repo": "jub0t/Concat",
+      "merged_at": "2026-10-22T01:56:24Z"
+    },
+    {
+      "title": "Navigation pane: numbered headings show their list number (#3418)",
+      "url": "https://github.com/storytold/wordcraft/pull/3452",
+      "repo": "storytold/wordcraft",
+      "merged_at": "2026-10-22T04:24:41Z"
+    },
+    {
+      "title": "fix(cli): report non-string config keys without a traceback",
+      "url": "https://github.com/ifixai-ai/iFixAi/pull/354",
+      "repo": "ifixai-ai/iFixAi",
+      "merged_at": "2026-10-22T04:54:09Z"
+    },
+    {
+      "title": "fix(loop-worktree): preserve newline paths during gc",
+      "url": "https://github.com/cobusgreyling/loop-engineering/pull/691",
+      "repo": "cobusgreyling/loop-engineering",
+      "merged_at": "2026-10-22T05:22:33Z"
+    },
+    {
+      "title": "fix: validate hyperlink tooltip length when it is set",
+      "url": "https://github.com/jmcnamara/XlsxWriter/pull/1203",
+      "repo": "jmcnamara/XlsxWriter",
+      "merged_at": "2026-10-22T12:52:37Z"
+    },
+    {
+      "title": "fix(naming): don't expand tokens inside the source file name",
+      "url": "https://github.com/KnifeLemon/Filee/pull/453",
+      "repo": "KnifeLemon/Filee",
+      "merged_at": "2026-10-23T07:02:05Z"
+    },
+    {
+      "title": "Fix Hudson Rock scanner never adding results",
+      "url": "https://github.com/jonluca/anubis/pull/108",
+      "repo": "jonluca/anubis",
+      "merged_at": "2026-10-25T17:40:25Z"
+    },
+    {
+      "title": "Decode GT06 temperature info packet",
+      "url": "https://github.com/traccar/traccar/pull/6092",
+      "repo": "traccar/traccar",
+      "merged_at": "2026-10-25T18:02:05Z"
+    },
+    {
+      "title": "Handle names bound by match statement patterns",
+      "url": "https://github.com/hauntsaninja/pyp/pull/52",
+      "repo": "hauntsaninja/pyp",
+      "merged_at": "2026-10-25T22:39:22Z"
+    },
+    {
+      "title": "fix(gbfs): exclude stations with invalid coordinates",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/1232",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "merged_at": "2026-10-25T23:47:52Z"
+    },
+    {
+      "title": "Fix CancellableQueue retaining tasks that finish before registration",
+      "url": "https://github.com/dfed/swift-async-queue/pull/81",
+      "repo": "dfed/swift-async-queue",
+      "merged_at": "2026-10-26T04:09:15Z"
+    },
+    {
+      "title": "fix: keep every answer when a model task asks again",
+      "url": "https://github.com/CopilotKit/openmuse/pull/191",
+      "repo": "CopilotKit/openmuse",
+      "merged_at": "2026-10-26T05:34:29Z"
+    },
+    {
+      "title": "Fix sbibm paper link",
+      "url": "https://github.com/smsharma/awesome-neural-sbi/pull/10",
+      "repo": "smsharma/awesome-neural-sbi",
+      "merged_at": "2026-10-26T06:14:26Z"
+    },
+    {
+      "title": "fix: authenticate child resource listings",
+      "url": "https://github.com/getlago/lago-python-client/pull/421",
+      "repo": "getlago/lago-python-client",
+      "merged_at": "2026-10-26T08:45:43Z"
+    },
+    {
+      "title": "Report the right field when a SLIDER URL fails to decode",
+      "url": "https://github.com/colinmcintosh/SLIDER-cli/pull/11",
+      "repo": "colinmcintosh/SLIDER-cli",
+      "merged_at": "2026-10-26T13:40:18Z"
+    },
+    {
+      "title": "Remove requests dependency pulled from an unknown fork",
+      "url": "https://github.com/joeylitalien/noise2noise-pytorch/pull/16",
+      "repo": "joeylitalien/noise2noise-pytorch",
+      "merged_at": "2026-10-26T15:16:03Z"
+    },
+    {
+      "title": "Fix NameError with align_y='bottom'",
+      "url": "https://github.com/riley-x/SankeyFlow/pull/7",
+      "repo": "riley-x/SankeyFlow",
+      "merged_at": "2026-10-26T17:16:21Z"
+    },
+    {
+      "title": "refresh: commit regenerated docs/llms.txt and docs/catalog.json",
+      "url": "https://github.com/younatics/MotionBook/pull/11",
+      "repo": "younatics/MotionBook",
+      "merged_at": "2026-10-27T02:04:50Z"
+    },
+    {
+      "title": "Show the real version in Help | About when the update check fails offline",
+      "url": "https://github.com/KirillOsenkov/MSBuildStructuredLog/pull/971",
+      "repo": "KirillOsenkov/MSBuildStructuredLog",
+      "merged_at": "2026-10-27T20:45:47Z"
+    },
+    {
+      "title": "fix(aabb): touches() reports separated boxes as touching",
+      "url": "https://github.com/voxelize/voxelize/pull/136",
+      "repo": "voxelize/voxelize",
+      "merged_at": "2026-10-27T23:58:01Z"
+    },
+    {
+      "title": "fix(miner-server): stop racing a cancel-unsafe read against job sends",
+      "url": "https://github.com/Quantus-Network/chain/pull/699",
+      "repo": "Quantus-Network/chain",
+      "merged_at": "2026-10-28T07:42:17Z"
+    },
+    {
+      "title": "fix: reject empty destination addresses in v2 SendEmail",
+      "url": "https://github.com/domdomegg/aws-ses-v2-local/pull/129",
+      "repo": "domdomegg/aws-ses-v2-local",
+      "merged_at": "2026-10-28T09:36:23Z"
+    },
+    {
+      "title": "hos: answer the heap and ASLR region types of svcGetInfo",
+      "url": "https://github.com/ovsky/compound/pull/5",
+      "repo": "ovsky/compound",
+      "merged_at": "2026-10-28T10:53:06Z"
+    },
+    {
+      "title": "fix(qa): sample distinct frames from short clips",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/pull/113",
+      "repo": "Vincentwei1021/video-shotcraft",
+      "merged_at": "2026-10-28T12:52:07Z"
+    },
+    {
+      "title": "fix(zip): refuse an entry whose name resolves to the output folder",
+      "url": "https://github.com/xevrion/hatchzip/pull/29",
+      "repo": "xevrion/hatchzip",
+      "merged_at": "2026-10-28T15:29:15Z"
+    },
+    {
+      "title": "[tkinter] Fill in remaining tkinter.filedialog defaults",
+      "url": "https://github.com/python/typeshed/pull/16614",
+      "repo": "python/typeshed",
+      "merged_at": "2026-10-28T20:02:41Z"
+    },
+    {
+      "title": "Add RAPTOR_WORLD_FLAG_LIBXML_SKIP_CLEANUP world flag",
+      "url": "https://github.com/dajobe/raptor/pull/94",
+      "repo": "dajobe/raptor",
+      "merged_at": "2026-10-28T21:19:52Z"
+    },
+    {
+      "title": "fix(windows): preserve child process promise contracts",
+      "url": "https://github.com/dataelement/dsh-desktop/pull/711",
+      "repo": "dataelement/dsh-desktop",
+      "merged_at": "2026-10-29T07:43:57Z"
+    },
+    {
+      "title": "sun: split morning/evening by sun azimuth, not clock noon",
+      "url": "https://github.com/Oldcircle/geo-sleuth/pull/44",
+      "repo": "Oldcircle/geo-sleuth",
+      "merged_at": "2026-10-29T08:47:17Z"
+    },
+    {
+      "title": "fix(analysis): aspect and hillshade face the right way on bottom-up grids",
+      "url": "https://github.com/opengeos/RustGIS/pull/1085",
+      "repo": "opengeos/RustGIS",
+      "merged_at": "2026-10-29T09:45:45Z"
+    },
+    {
+      "title": "Keep short words between removed silences",
+      "url": "https://github.com/wassgha/rescript/pull/115",
+      "repo": "wassgha/rescript",
+      "merged_at": "2026-10-29T17:15:58Z"
+    },
+    {
+      "title": "Fit linear_kernel pipeline depth to the shared memory budget",
+      "url": "https://github.com/mirage-project/mirage/pull/813",
+      "repo": "mirage-project/mirage",
+      "merged_at": "2026-10-29T19:03:32Z"
+    },
+    {
+      "title": "perf(proximity): bound memory for large line ranges",
+      "url": "https://github.com/affaan-m/ECC/pull/3631",
+      "repo": "affaan-m/ECC",
+      "merged_at": "2026-10-29T23:23:53Z"
+    },
+    {
+      "title": "Sign form body params when Content-Type has parameters",
+      "url": "https://github.com/dghubble/oauth1/pull/86",
+      "repo": "dghubble/oauth1",
+      "merged_at": "2026-10-30T06:17:08Z"
+    },
+    {
+      "title": "Carry compact volume labels into the next unit at 1,000",
+      "url": "https://github.com/longsurf-ai/openchart/pull/72",
+      "repo": "longsurf-ai/openchart",
+      "merged_at": "2026-10-30T18:38:29Z"
+    },
+    {
+      "title": "Copy PSO particle positions instead of aliasing them",
+      "url": "https://github.com/jansel/opentuner/pull/197",
+      "repo": "jansel/opentuner",
+      "merged_at": "2026-10-31T04:36:43Z"
+    },
+    {
+      "title": "Explorer: random controls no longer show the same-numbered neuron's name and rank",
+      "url": "https://github.com/lyramakesmusic/neuron-explorer/pull/7",
+      "repo": "lyramakesmusic/neuron-explorer",
+      "merged_at": "2026-11-01T00:44:33Z"
+    },
+    {
+      "title": "fix(multisig): drop per-level encoded_size from execute weight annotation",
+      "url": "https://github.com/Quantus-Network/chain/pull/698",
+      "repo": "Quantus-Network/chain",
+      "merged_at": "2026-11-01T06:18:55Z"
+    },
+    {
+      "title": "Keep a cached grade only for the same selection",
+      "url": "https://github.com/google-research/harness2/pull/45",
+      "repo": "google-research/harness2",
+      "merged_at": "2026-11-02T02:06:43Z"
+    },
+    {
+      "title": "fix(claude-md): read the database from CLAUDE_MEM_DATA_DIR in claude-md:regenerate",
+      "url": "https://github.com/thedotmack/claude-mem/pull/5210",
+      "repo": "thedotmack/claude-mem",
+      "merged_at": "2026-11-02T07:40:20Z"
+    },
+    {
+      "title": "fix(share): 晚子时换日按真太阳时判定，与时辰支同一口径",
+      "url": "https://github.com/Renhuai123/ziwei-doushu/pull/63",
+      "repo": "Renhuai123/ziwei-doushu",
+      "merged_at": "2026-11-02T07:40:30Z"
+    },
+    {
+      "title": "fix(validate): require an exact frontmatter closing delimiter",
+      "url": "https://github.com/tigerless-labs/autoharness/pull/267",
+      "repo": "tigerless-labs/autoharness",
+      "merged_at": "2026-11-02T12:29:26Z"
     }
   ]
 }

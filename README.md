@@ -1,6 +1,6 @@
 # Andrew Barnes
 
-Finance analyst (FP&A) building Python tools for financial data review and auditable agent workflows. My open-source work spans AI infrastructure, Bitcoin and Lightning payments, and the reliability bugs that show up after a restart or halfway through a message.
+FP&A lead who builds finance automation in Python. My open-source work spans AI infrastructure, Bitcoin and Lightning payments, and the reliability bugs that show up after a restart or halfway through a message.
 
 ## Try my work
 
@@ -22,6 +22,8 @@ Finance analyst (FP&A) building Python tools for financial data review and audit
 | [HoloViz Panel](https://github.com/holoviz/panel/pull/8758) | Fix nested Plotly array loss across clients | Reusing a figure dropped nested array data for the second client. Binary serialization was mutating containers that shallow copies still shared. |
 | [LiveKit Agents](https://github.com/livekit/agents/pull/6568) | Forward provider events through session restarts | Provider-specific realtime events were lost every time the fallback wrapper swapped its child session. |
 | [ordinals/ord](https://github.com/ordinals/ord/pull/4558) | Warn when exporting addresses without the address index | Replaced a hard error with a warning, following maintainer direction from an earlier PR. |
+
+Credited in release notes: [Ruff 0.15.6](https://github.com/astral-sh/ruff/releases/tag/0.15.6) · [Roboflow Supervision 0.30.0](https://github.com/roboflow/supervision/releases/tag/0.30.0) · [Fivetran dbt_stripe v1.10.2](https://github.com/fivetran/dbt_stripe/releases/tag/v1.10.2) · [ffn v1.2.0](https://github.com/pmorissette/ffn/releases/tag/v1.2.0) · [vLLM v0.20.0](https://github.com/vllm-project/vllm/releases/tag/v0.20.0) · [google_workspace_mcp v2.0.0](https://github.com/taylorwilsdon/google_workspace_mcp/releases/tag/v2.0.0) · [HoloViz Panel v1.10.0](https://github.com/holoviz/panel/releases/tag/v1.10.0) · [Zcash Zebra v6.4.0](https://github.com/ZcashFoundation/zebra/releases/tag/v6.4.0) · [freqtrade 2026.10](https://github.com/freqtrade/freqtrade/releases/tag/2026.10) · [Cloudflare workers-sdk](https://github.com/cloudflare/workers-sdk/blob/main/packages/pages-shared/CHANGELOG.md#013179)
 
 ## In review
 
@@ -48,7 +50,7 @@ The day job is FP&A. The overlap shows up in [OpenBB](https://github.com/OpenBB-
 
 ## Full record
 
-About 300 merged pull requests to public repositories outside my account. [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json) · [portfolio](github-portfolio.md)
+318 merged pull requests to 226 public repositories outside my account (November 3, 2026). [Dated list and search method](github-contributions.md#verified-contribution-pattern) · [raw JSON](oss-contributions.json)
 
 ## Motion study
 

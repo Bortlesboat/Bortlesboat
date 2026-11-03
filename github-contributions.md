@@ -1,18 +1,17 @@
 # Selected GitHub Contributions
 
-Updated: 2026-10-02
+Updated: 2026-11-03
 
 This is a curated contribution record, not a full activity dump. It supports a specific career story: senior finance analyst moving toward tech FP&A leadership and AI workflow automation. It leads with who the work served, then groups recognizable merged work and public artifacts by domain.
 
 ## Verified Contribution Pattern
 
-**240 authored, merged PRs in 160 external public repositories**, verified October 2, 2026. There are repeat merges in 36 repositories. **90 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
+**318 authored, merged PRs in 226 external public repositories**, verified November 3, 2026. There are repeat merges in 44 repositories. **168 PRs merged since July 1.** My own repositories and open/unmerged PRs are excluded from these totals.
 
-The record shows merged work in eight consecutive months, March through October 2026. October is partial. The earlier zero months are included below so the full measurement window is visible.
+The record shows merged work in nine consecutive months, March through November 2026. November is partial. The earlier zero months are included below so the full measurement window is visible.
 
 | Merge month | Merged PRs |
 | --- | ---: |
-| 2025-10 | 0 |
 | 2025-11 | 0 |
 | 2025-12 | 0 |
 | 2026-01 | 0 |
@@ -24,12 +23,13 @@ The record shows merged work in eight consecutive months, March through October 
 | 2026-07 | 40 |
 | 2026-08 | 17 |
 | 2026-09 | 29 |
-| 2026-10 | 4 |
+| 2026-10 | 76 |
+| 2026-11 | 6 |
 
-The first and last months cover only the dates inside the October 2, 2025–October 2, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-10-02..2026-10-02&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
+The first and last months cover only the dates inside the November 3, 2025–November 3, 2026 window. [Full dated JSON snapshot](oss-contributions.json) contains each PR URL, title, repository, and merge timestamp. [GitHub search](https://github.com/search?q=author%3ABortlesboat%20is%3Apr%20is%3Amerged%20is%3Apublic%20-user%3ABortlesboat%20merged%3A2025-11-03..2026-11-03&type=pullrequests) reproduces the scope; totals can change if GitHub visibility changes later.
 
 ```text
-author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-10-02..2026-10-02
+author:Bortlesboat is:pr is:merged is:public -user:Bortlesboat merged:2025-11-03..2026-11-03
 ```
 
 To refresh, run `node scripts/fetch-stats.cjs` in [the portfolio repository](https://github.com/Bortlesboat/Bortlesboat.github.io). It paginates GitHub search, rejects incomplete results, and counts by `pull_request.merged_at`. A failed refresh preserves the previous snapshot and exits with an error. This dated profile snapshot is updated separately after review.
@@ -38,6 +38,7 @@ To refresh, run `node scripts/fetch-stats.cjs` in [the portfolio repository](htt
 
 | Merged | Work | Contribution |
 | --- | --- | --- |
+| 2026-03-19 | [Claude Agent SDK #642](https://github.com/anthropics/claude-agent-sdk-python/pull/642) | Wait for the CLI to exit before SIGTERM so the last assistant message isn't lost. |
 | 2026-10-02 | [OpenAI Python SDK #2993](https://github.com/openai/openai-python/pull/2993) | Expose a response-format helper through the public API. |
 | 2026-10-02 | [Supabase Python #1624](https://github.com/supabase/supabase-py/pull/1624) | Preserve negation in PostgREST text-search filters. |
 | 2026-10-01 | [RustScan #916](https://github.com/bee-san/RustScan/pull/916) | Keep library scans quiet by default. |
@@ -65,11 +66,8 @@ Maintainer work on my own projects is listed separately below. The links show co
 | Repo | PR | Status | Why it matters |
 | --- | --- | --- | --- |
 | `lightningdevkit/rust-lightning` | [#4470 Expose current dust exposure in ChannelDetails](https://github.com/lightningdevkit/rust-lightning/pull/4470) | Merged | Adds wallet/channel visibility in a serious Lightning implementation. |
-| `rust-bitcoin/rust-bitcoin` | [#5781 Implement `From<Infallible>` for public error types](https://github.com/rust-bitcoin/rust-bitcoin/pull/5781) | Merged | Small API ergonomics fix in a core Bitcoin Rust library. |
 | `x402-foundation/x402` | [#1733 test sync MCP server edge cases](https://github.com/x402-foundation/x402/pull/1733) | Merged | Adds maintainer-requested edge-case coverage for x402 MCP server behavior. |
 | `x402-foundation/x402` | [#1937 clarify facilitator key separation](https://github.com/x402-foundation/x402/pull/1937) | Merged | Documents the operator boundary between seller, buyer, and facilitator roles. |
-| `theborakompanioni/bitcoin-fee` | [#10 Add Satoshi API fee provider](https://github.com/theborakompanioni/bitcoin-fee/pull/10) | Merged | Distribution proof for Satoshi API as a fee-data provider. |
-| `sectore/fees` | [#25 Add Satoshi API fee provider](https://github.com/sectore/fees/pull/25) | Merged | Another integration surface for Bitcoin fee data. |
 
 ## AI And Agent Infrastructure
 
@@ -105,10 +103,3 @@ Maintainer work on my own projects is listed separately below. The links show co
 | [Bortlesboat/x402-insights](https://github.com/Bortlesboat/x402-insights) | AgentOps Ledger hosted demo, release, architecture, and Splunk HEC proof | Current public AgentOps artifact. |
 | [Bortlesboat/qlib-options](https://github.com/Bortlesboat/qlib-options) | Options factors for qlib | Finance/quant artifact for the FP&A-to-automation bridge. |
 | [Bortlesboat/Bortlesboat.github.io](https://github.com/Bortlesboat/Bortlesboat.github.io) | Portfolio front door | Public narrative wrapper. |
-
-## Review Notes
-
-- Use merged PRs and live repos as proof.
-- Keep open PRs in conversation as "active work," not as completed evidence.
-- Keep Bitcoin Core phrasing review-oriented until there is a merged `bitcoin/bitcoin` PR.
-- Keep private/local projects sanitized: describe the engineering pattern and tests, not the data.
